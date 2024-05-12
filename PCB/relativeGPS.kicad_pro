@@ -235,8 +235,37 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "001-Resistors",
+      "002-Capacitors",
+      "003-Inductors",
+      "004-Power",
+      "006-Diodes",
+      "005-ICs",
+      "006-Sensors",
+      "007-MCUs",
+      "008-Sensors",
+      "009-Connectors",
+      "010-RF"
+    ],
+    "pinned_symbol_libs": [
+      "myLib-Capacitors",
+      "myLib-Templates",
+      "myLib-Resistors",
+      "000-Templates",
+      "001-Resistors",
+      "002-Capacitors",
+      "Inductors",
+      "003-Inductors",
+      "004-Power",
+      "005-ICs",
+      "006-Diodes",
+      "007-MCUs",
+      "008-Sensors",
+      "009-Connectors",
+      "RFFF",
+      "010-RF"
+    ]
   },
   "meta": {
     "filename": "relativeGPS.kicad_pro",
