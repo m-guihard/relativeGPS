@@ -3509,6 +3509,172 @@
 				)
 			)
 		)
+		(symbol "010-RF:ANT2525B00DT1516S"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "ANT"
+				(at 0.254 9.398 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ANT2525B00DT1516S"
+				(at 0 -10.668 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "010-RF:ANT2525B00DT1516S"
+				(at 0 -23.114 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://productfinder.pulseelectronics.com/api/open/part-attachments/datasheet/ANT2525B00DT1516S"
+				(at 0 -17.526 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "GNSS Antenna, patch, through-hole"
+				(at 0 -25.146 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Web link" "https://www.digikey.ch/en/products/detail/pulse-electronics/ANT2525B00DT1516S/3927219?s=N4IgTCBcDaIIIDkAqYCsaBCAGLARJAjKgQGwDKIAugL5A"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Pulse Electronics"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer P/N" "ANT2525B00DT1516S"
+				(at 0.254 -27.432 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Digikey P/N" "311-1539-ND"
+				(at 0.254 -20.066 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" "2.48"
+				(at 0 -32.004 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "4"
+				(at 0 -33.782 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Temperature" "-40 to 105"
+				(at 0 -29.718 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value Disp" "ANT 25x25"
+				(at 0.254 7.366 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ANT2525B00DT1516S_0_1"
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0 0) (xy -1.27 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ANT2525B00DT1516S_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "010-RF:B39162B4327P810"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5368,6 +5534,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 81.28) (xy 154.94 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7783dea1-008f-4de1-a2a3-d5aa61ba1b94")
+	)
+	(wire
+		(pts
 			(xy 81.28 80.01) (xy 68.58 80.01)
 		)
 		(stroke
@@ -5405,6 +5581,16 @@
 			(type default)
 		)
 		(uuid "7df80a12-72db-4cb0-a57a-b5aacfd14f06")
+	)
+	(wire
+		(pts
+			(xy 148.59 78.74) (xy 148.59 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f236682-c766-45fa-ade5-56a7c680fab8")
 	)
 	(wire
 		(pts
@@ -5748,16 +5934,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 81.28) (xy 154.94 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "deb1b69b-eef7-4388-8200-4e4f67eac30d")
-	)
-	(wire
-		(pts
 			(xy 254 62.23) (xy 254 68.58)
 		)
 		(stroke
@@ -5836,6 +6012,16 @@
 		)
 		(uuid "295a65d1-f7cb-4891-89da-6a4f4437071a")
 	)
+	(text "Add jumper"
+		(exclude_from_sim no)
+		(at 189.484 67.056 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4b099cd1-ea41-4eda-883b-e0d645847f58")
+	)
 	(text "220nF"
 		(exclude_from_sim no)
 		(at 24.638 86.614 0)
@@ -5855,6 +6041,16 @@
 			)
 		)
 		(uuid "81a412de-70ab-4bc9-b8dd-f2c54ac306e0")
+	)
+	(text "Add R0\n"
+		(exclude_from_sim no)
+		(at 201.93 70.104 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "99d5ccb4-d427-4f6c-b4aa-2c0586c6895d")
 	)
 	(text "100nF + 10uF on vdd\n100nF to vdd_io\n"
 		(exclude_from_sim no)
@@ -8524,6 +8720,144 @@
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "010-RF:ANT2525B00DT1516S")
+		(at 148.59 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad9cb692-ae5a-4cfe-9d38-e86a5724ad16")
+		(property "Reference" "ANT1"
+			(at 139.7 74.168 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ANT2525B00DT1516S"
+			(at 148.59 86.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "010-RF:ANT2525B00DT1516S"
+			(at 148.59 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://productfinder.pulseelectronics.com/api/open/part-attachments/datasheet/ANT2525B00DT1516S"
+			(at 148.59 93.726 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "GNSS Antenna, patch, through-hole"
+			(at 148.59 101.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Web link" "https://www.digikey.ch/en/products/detail/pulse-electronics/ANT2525B00DT1516S/3927219?s=N4IgTCBcDaIIIDkAqYCsaBCAGLARJAjKgQGwDKIAugL5A"
+			(at 148.59 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Pulse Electronics"
+			(at 148.59 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "ANT2525B00DT1516S"
+			(at 148.844 103.632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey P/N" "311-1539-ND"
+			(at 148.844 96.266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "2.48"
+			(at 148.59 108.204 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "4"
+			(at 148.59 109.982 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature" "-40 to 105"
+			(at 148.59 105.918 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value Disp" "ANT 25x25"
+			(at 136.144 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "194c21bc-ebb2-4ee4-83fb-1d58b8bd646a")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12"
+					(reference "ANT1")
 					(unit 1)
 				)
 			)
