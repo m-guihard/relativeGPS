@@ -246,7 +246,17 @@
       "007-MCUs",
       "008-Sensors",
       "009-Connectors",
-      "010-RF"
+      "010-RF",
+      "Capacitors",
+      "Connectors",
+      "Diodes",
+      "ICs",
+      "Inductors",
+      "Power",
+      "Resistors",
+      "Sensors",
+      "RF",
+      "MCUs"
     ],
     "pinned_symbol_libs": [
       "myLib-Capacitors",
@@ -264,7 +274,17 @@
       "008-Sensors",
       "009-Connectors",
       "RFFF",
-      "010-RF"
+      "010-RF",
+      "Capacitors",
+      "ICs",
+      "Resistors",
+      "Connectors",
+      "Diodes",
+      "MCUs",
+      "Power",
+      "Templates",
+      "RF",
+      "Sensors"
     ]
   },
   "meta": {
@@ -414,6 +434,14 @@
     [
       "9255e348-2f0c-48d3-8a71-46491dcb1a12",
       "Root"
+    ],
+    [
+      "0a556df8-71a3-440f-aa98-fb69e413d0a5",
+      "MAG_ACC"
+    ],
+    [
+      "273de9fc-47df-4bf4-82b9-7faf6b333760",
+      "GPS"
     ]
   ],
   "text_variables": {}
