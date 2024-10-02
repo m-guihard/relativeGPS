@@ -257,7 +257,7 @@
         0,
         1,
         0,
-        1,
+        0,
         0,
         1,
         2
@@ -335,7 +335,7 @@
       [
         0,
         2,
-        1,
+        0,
         2,
         0,
         0,
@@ -415,7 +415,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -609,6 +609,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -636,6 +644,14 @@
     [
       "15c1922d-035b-4771-885b-611376c0a6b7",
       "POWER"
+    ],
+    [
+      "bf8f6f94-3ffc-4012-b64d-7846202ef01e",
+      "LORA"
+    ],
+    [
+      "0163d1bd-977b-4b50-9d38-5cf06cb7c696",
+      "LED"
     ]
   ],
   "text_variables": {}

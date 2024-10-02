@@ -1,4 +1,4 @@
-23176494365480478
+23190274839404460
 001-Resistors
 R_0402_H0.4
 
@@ -42,7 +42,21 @@ capacitor
 2
 2
 003-Inductors
+FERR_0402_H0.55
+
+
+0
+2
+2
+003-Inductors
 LQG15HS27NJ02D
+
+
+0
+2
+2
+003-Inductors
+LQH3NPZ4R7MGRL
 
 
 0
@@ -98,12 +112,26 @@ TPS7A2633DRVR
 9
 7
 004-Power
-TPS610333DRLR
+TPS61222DCKR
 
 
 0
 6
 6
+004-Power
+TPS79318DBVR
+
+
+0
+5
+5
+004-Power
+TPS610333DRLR
+
+
+0
+8
+8
 005-ICs
 ASE-8.000MHZ-L-C-T
 
@@ -118,6 +146,13 @@ TCA39306DCUR
 0
 8
 8
+006-Diodes
+COM-16347
+
+
+0
+4
+4
 006-Diodes
 LED_B_0402_H0.4
 LED blue
@@ -161,12 +196,26 @@ LSM303AHTR
 5
 5
 009-Connectors
+09.10290.01
+Slider switch
+
+0
+3
+3
+009-Connectors
 Debug_pads_6pin
 
 
 0
 6
 6
+009-Connectors
+EVQ-P7A01P
+
+
+0
+4
+2
 009-Connectors
 PPPC051LGBN-RC
 
@@ -202,6 +251,13 @@ BGA725L6E6327FTSA1
 0
 12
 6
+010-RF
+RYLR998_flat
+
+
+0
+5
+5
 010-RF
 TESEO-LIV3R
 
