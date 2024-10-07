@@ -446,7 +446,9 @@
       "Power",
       "Resistors",
       "Sensors",
-      "MCUs"
+      "MCUs",
+      "011-Misc",
+      "Misc"
     ],
     "pinned_symbol_libs": [
       "myLib-Capacitors",
@@ -474,7 +476,9 @@
       "Power",
       "Templates",
       "RF",
-      "Sensors"
+      "Sensors",
+      "Misc",
+      "011-Misc"
     ]
   },
   "meta": {

@@ -391,6 +391,85 @@
 				)
 			)
 		)
+		(symbol "011-Misc:Testpoint_square_1mm"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TP_square_1mm"
+				(at 0.254 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "011-Misc:Testpoint_square_1mm"
+				(at 0.254 -4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Testpoint_square_1mm_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
@@ -934,7 +1013,7 @@
 		)
 		(uuid "f729f87a-9f14-433a-a1f3-19592d71670b")
 	)
-	(text "LED level shifter\n74hc14 or 74hct14 ?"
+	(text "LED level shifter\nhttps://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf"
 		(exclude_from_sim no)
 		(at 119.888 129.54 0)
 		(effects
@@ -953,6 +1032,16 @@
 			)
 		)
 		(uuid "67427ad3-0f1c-4576-87bc-d2dfb658727e")
+	)
+	(text "TPs"
+		(exclude_from_sim no)
+		(at 119.38 142.748 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "674d6dfc-13db-4d5d-936e-30349f1837b5")
 	)
 	(text "MCU"
 		(exclude_from_sim no)
@@ -1952,6 +2041,73 @@
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "011-Misc:Testpoint_square_1mm")
+		(at 120.65 191.77 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "845b6715-4324-4b27-a2cb-b0d2d8c8821d")
+		(property "Reference" "TP1"
+			(at 123.19 190.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 123.19 193.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "011-Misc:Testpoint_square_1mm"
+			(at 116.332 192.024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "5b2d4926-4726-4157-94d5-63eb4b9eb7f2")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
