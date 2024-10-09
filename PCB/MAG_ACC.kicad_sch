@@ -2689,7 +2689,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08604bc1-0d29-4a75-aff6-f89a7c06758a")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR3"
 			(at 153.67 95.25 0)
 			(effects
 				(font
@@ -2739,7 +2739,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0a556df8-71a3-440f-aa98-fb69e413d0a5"
-					(reference "#PWR03")
+					(reference "#PWR3")
 					(unit 1)
 				)
 			)
@@ -3178,7 +3178,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "928dcd26-ebba-4cb8-91a3-28cc3151863d")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR10"
 			(at 186.69 124.46 0)
 			(effects
 				(font
@@ -3228,7 +3228,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0a556df8-71a3-440f-aa98-fb69e413d0a5"
-					(reference "#PWR010")
+					(reference "#PWR10")
 					(unit 1)
 				)
 			)
@@ -3244,7 +3244,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "934c2be0-1aca-4187-97aa-911073404a1f")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR1"
 			(at 119.38 104.14 0)
 			(effects
 				(font
@@ -3294,7 +3294,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0a556df8-71a3-440f-aa98-fb69e413d0a5"
-					(reference "#PWR01")
+					(reference "#PWR1")
 					(unit 1)
 				)
 			)
@@ -3451,7 +3451,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1bf60aa-0cba-4e74-8ecd-3cdf10d82fc4")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR2"
 			(at 134.62 132.08 0)
 			(effects
 				(font
@@ -3501,7 +3501,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0a556df8-71a3-440f-aa98-fb69e413d0a5"
-					(reference "#PWR02")
+					(reference "#PWR2")
 					(unit 1)
 				)
 			)
@@ -3986,7 +3986,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9bffe10-1b9f-4bbc-8419-08f3355d0ee3")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR4"
 			(at 173.99 99.06 0)
 			(effects
 				(font
@@ -4036,7 +4036,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0a556df8-71a3-440f-aa98-fb69e413d0a5"
-					(reference "#PWR04")
+					(reference "#PWR4")
 					(unit 1)
 				)
 			)
@@ -4052,7 +4052,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dcccbad5-ba09-4981-80da-5bd8fd2b4a6d")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR15"
 			(at 198.12 90.17 0)
 			(effects
 				(font
@@ -4102,7 +4102,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0a556df8-71a3-440f-aa98-fb69e413d0a5"
-					(reference "#PWR015")
+					(reference "#PWR15")
 					(unit 1)
 				)
 			)

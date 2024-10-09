@@ -2846,6 +2846,85 @@
 				)
 			)
 		)
+		(symbol "011-Misc:Testpoint_square_1mm"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TP_square_1mm"
+				(at 0.254 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "011-Misc:Testpoint_square_1mm"
+				(at 0.254 -4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Testpoint_square_1mm_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
@@ -3165,6 +3244,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 67.31) (xy 233.68 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "095a918e-acac-4c9e-a661-05c27f58ee92")
+	)
+	(wire
+		(pts
 			(xy 121.92 90.17) (xy 116.84 90.17)
 		)
 		(stroke
@@ -3172,6 +3261,16 @@
 			(type default)
 		)
 		(uuid "0ab8ba84-e089-4ce6-8861-fe032097ac15")
+	)
+	(wire
+		(pts
+			(xy 234.95 85.09) (xy 233.68 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13478b9a-c837-47a5-bfdf-97dd233520c9")
 	)
 	(wire
 		(pts
@@ -3242,6 +3341,16 @@
 			(type default)
 		)
 		(uuid "335ac00a-fcee-4360-9b7b-9b5417698203")
+	)
+	(wire
+		(pts
+			(xy 234.95 83.82) (xy 234.95 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "373d8690-b532-465d-9308-52c5ad9b889a")
 	)
 	(wire
 		(pts
@@ -3325,6 +3434,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 87.63) (xy 234.95 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bec085b-feb0-4019-a38b-20b90b407f1d")
+	)
+	(wire
+		(pts
 			(xy 115.57 115.57) (xy 111.76 115.57)
 		)
 		(stroke
@@ -3342,6 +3461,16 @@
 			(type default)
 		)
 		(uuid "5e0a3ffc-fd0b-43f5-b760-3b5089f0fefb")
+	)
+	(wire
+		(pts
+			(xy 233.68 87.63) (xy 234.95 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f2e4c14-9bc9-45fc-84d6-1eb402c9cbac")
 	)
 	(wire
 		(pts
@@ -3743,6 +3872,16 @@
 		)
 		(uuid "ff0d43b2-3fbe-4d62-abfb-a3fea37bad9b")
 	)
+	(text "GPS with passive antenna and LNA"
+		(exclude_from_sim no)
+		(at 116.078 66.548 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "192ba942-56fd-488e-a244-d9ba16f58d00")
+	)
 	(text "0x3A"
 		(exclude_from_sim no)
 		(at 157.48 118.618 0)
@@ -3820,6 +3959,30 @@
 		)
 		(uuid "1afb7428-5271-4fdb-b811-6425bddd914b")
 	)
+	(hierarchical_label "TESEO_NRST"
+		(shape input)
+		(at 231.14 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "36c80305-8d49-4569-b13d-07dcaef1306b")
+	)
+	(hierarchical_label "TESEO_RX"
+		(shape input)
+		(at 233.68 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "48a1438e-0209-4bd1-8094-60374345ce66")
+	)
 	(hierarchical_label "SCL"
 		(shape bidirectional)
 		(at 160.02 113.03 180)
@@ -3879,6 +4042,18 @@
 			(justify left)
 		)
 		(uuid "f07d84ae-9370-4a86-9bed-a6e4b4911c64")
+	)
+	(hierarchical_label "TESEO_TX"
+		(shape output)
+		(at 233.68 87.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f549b6d3-ee41-4b0d-8fbb-f50a2d2fc657")
 	)
 	(symbol
 		(lib_id "010-RF:B39162B4327P810")
@@ -4380,6 +4555,73 @@
 		)
 	)
 	(symbol
+		(lib_id "011-Misc:Testpoint_square_1mm")
+		(at 234.95 92.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a3a0d0a-760d-4751-bf8c-712b9d0cb722")
+		(property "Reference" "TP6"
+			(at 237.49 91.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 237.49 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "011-Misc:Testpoint_square_1mm"
+			(at 230.632 92.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "1b360ad5-7965-4d1c-b58a-82878cc6aeae")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/273de9fc-47df-4bf4-82b9-7faf6b333760"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 166.37 55.88 0)
 		(unit 1)
@@ -4388,7 +4630,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d892fdf-61ad-4aa8-9fdb-782c18de6261")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR31"
 			(at 166.37 59.69 0)
 			(effects
 				(font
@@ -4397,7 +4639,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V_TESEO"
+		(property "Value" "+3.3V"
 			(at 166.116 51.816 0)
 			(effects
 				(font
@@ -4438,7 +4680,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/273de9fc-47df-4bf4-82b9-7faf6b333760"
-					(reference "#PWR031")
+					(reference "#PWR31")
 					(unit 1)
 				)
 			)
@@ -4579,6 +4821,73 @@
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/273de9fc-47df-4bf4-82b9-7faf6b333760"
 					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "011-Misc:Testpoint_square_1mm")
+		(at 234.95 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6069e413-e786-4d71-a618-0839904d6bda")
+		(property "Reference" "TP7"
+			(at 237.49 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 237.49 81.2799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "011-Misc:Testpoint_square_1mm"
+			(at 239.268 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "995feb78-0248-487b-84c2-a49de7e2fd3f")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/273de9fc-47df-4bf4-82b9-7faf6b333760"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -4736,7 +5045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "724ebfde-9d4b-4c9f-ab48-57f41d12196f")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR14"
 			(at 170.18 76.2 0)
 			(effects
 				(font
@@ -4786,7 +5095,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/273de9fc-47df-4bf4-82b9-7faf6b333760"
-					(reference "#PWR014")
+					(reference "#PWR14")
 					(unit 1)
 				)
 			)
@@ -4802,7 +5111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "781fed61-c42c-4e75-aa26-39af01362261")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR19"
 			(at 189.23 134.62 0)
 			(effects
 				(font
@@ -4852,7 +5161,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/273de9fc-47df-4bf4-82b9-7faf6b333760"
-					(reference "#PWR019")
+					(reference "#PWR19")
 					(unit 1)
 				)
 			)
@@ -4868,7 +5177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b829a45-45b9-4229-b9f0-bb6761cf4cd6")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR9"
 			(at 111.76 123.19 0)
 			(effects
 				(font
@@ -4918,7 +5227,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/273de9fc-47df-4bf4-82b9-7faf6b333760"
-					(reference "#PWR09")
+					(reference "#PWR9")
 					(unit 1)
 				)
 			)
@@ -5058,6 +5367,73 @@
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/273de9fc-47df-4bf4-82b9-7faf6b333760"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "011-Misc:Testpoint_square_1mm")
+		(at 237.49 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9cb4c4d5-3139-4362-aba7-9287a9056128")
+		(property "Reference" "TP8"
+			(at 240.03 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 240.03 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "011-Misc:Testpoint_square_1mm"
+			(at 237.744 71.628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "d232faee-95c7-4641-acaa-adb2d77e7574")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/273de9fc-47df-4bf4-82b9-7faf6b333760"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -5213,7 +5589,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9e0e607-0f4d-4c74-ba61-6ffba460a343")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR17"
 			(at 173.99 137.16 0)
 			(effects
 				(font
@@ -5263,7 +5639,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/273de9fc-47df-4bf4-82b9-7faf6b333760"
-					(reference "#PWR017")
+					(reference "#PWR17")
 					(unit 1)
 				)
 			)
@@ -5421,7 +5797,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bdf68d4b-ace5-4a1d-9155-db553ce47507")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR12"
 			(at 135.89 123.19 0)
 			(effects
 				(font
@@ -5471,7 +5847,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/273de9fc-47df-4bf4-82b9-7faf6b333760"
-					(reference "#PWR012")
+					(reference "#PWR12")
 					(unit 1)
 				)
 			)

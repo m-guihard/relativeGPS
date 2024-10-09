@@ -447,8 +447,8 @@
       "Resistors",
       "Sensors",
       "MCUs",
-      "011-Misc",
-      "Misc"
+      "Misc",
+      "011-Misc"
     ],
     "pinned_symbol_libs": [
       "myLib-Capacitors",
@@ -477,8 +477,7 @@
       "Templates",
       "RF",
       "Sensors",
-      "Misc",
-      "011-Misc"
+      "Misc"
     ]
   },
   "meta": {
@@ -656,6 +655,10 @@
     [
       "0163d1bd-977b-4b50-9d38-5cf06cb7c696",
       "LED"
+    ],
+    [
+      "1325b0fd-5b70-4f48-9356-782ea1a8e95b",
+      "SD"
     ]
   ],
   "text_variables": {}
