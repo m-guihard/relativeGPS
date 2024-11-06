@@ -940,8 +940,28 @@
 		(uuid "88f3aa26-0381-4c1c-a728-ba73f7a01974")
 	)
 	(no_connect
-		(at 196.85 92.71)
-		(uuid "72c3dd09-f69f-429f-bb06-3ea0b472c5c2")
+		(at 168.91 128.27)
+		(uuid "dc8d325b-5f75-47a9-83e2-537230e8fadd")
+	)
+	(wire
+		(pts
+			(xy 113.03 128.27) (xy 116.84 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00b1d1c4-6421-4632-aaa9-cf036fa56078")
+	)
+	(wire
+		(pts
+			(xy 91.44 128.27) (xy 92.71 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "049e88ac-452f-4f9e-b904-4ac0625bd812")
 	)
 	(wire
 		(pts
@@ -1005,6 +1025,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 135.89) (xy 114.3 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b05c007-5997-44bd-89ce-fcbe272c468c")
+	)
+	(wire
+		(pts
 			(xy 168.91 92.71) (xy 172.72 92.71)
 		)
 		(stroke
@@ -1022,6 +1052,16 @@
 			(type default)
 		)
 		(uuid "22e7bc79-4501-407a-8c2b-f629d6e4fddd")
+	)
+	(wire
+		(pts
+			(xy 144.78 128.27) (xy 144.78 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "230f74f0-9348-4c4d-b2fb-e04b9d2f1735")
 	)
 	(wire
 		(pts
@@ -1052,6 +1092,36 @@
 			(type default)
 		)
 		(uuid "3300b802-1d22-47af-b7db-abf5c22cbc76")
+	)
+	(wire
+		(pts
+			(xy 147.32 127) (xy 147.32 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33eeead7-ff9d-4630-aa7a-c1347a652bda")
+	)
+	(wire
+		(pts
+			(xy 142.24 135.89) (xy 142.24 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c3b1ff4-cd84-420a-9674-0d6d9702bae4")
+	)
+	(wire
+		(pts
+			(xy 142.24 134.62) (xy 140.97 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c84069a-740b-42c8-81f9-7664f0ea1afc")
 	)
 	(wire
 		(pts
@@ -1125,6 +1195,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 127) (xy 119.38 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5233e8b0-9108-4cba-9677-2ffa3a671eca")
+	)
+	(wire
+		(pts
 			(xy 111.76 43.18) (xy 115.57 43.18)
 		)
 		(stroke
@@ -1145,6 +1225,36 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 134.62) (xy 113.03 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f446267-171a-441a-9355-78e7764779fe")
+	)
+	(wire
+		(pts
+			(xy 116.84 128.27) (xy 116.84 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6192a168-98e6-41db-9246-e299a425e917")
+	)
+	(wire
+		(pts
+			(xy 170.18 135.89) (xy 170.18 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6307140f-4be8-48c9-8012-fae6b1ec0f88")
+	)
+	(wire
+		(pts
 			(xy 115.57 43.18) (xy 115.57 49.53)
 		)
 		(stroke
@@ -1155,6 +1265,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 113.03) (xy 86.36 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64727e38-6e50-4e42-bf3a-320cf14b9c83")
+	)
+	(wire
+		(pts
 			(xy 54.61 40.64) (xy 54.61 41.91)
 		)
 		(stroke
@@ -1162,6 +1282,16 @@
 			(type default)
 		)
 		(uuid "68939d27-30f7-4d34-8744-9444b39c53ff")
+	)
+	(wire
+		(pts
+			(xy 140.97 128.27) (xy 144.78 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71281b21-e2bc-4d94-8a9e-2ea9d9e47b1e")
 	)
 	(wire
 		(pts
@@ -1215,6 +1345,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 92.71) (xy 205.74 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f55a921-762a-4010-b708-e4014bf39059")
+	)
+	(wire
+		(pts
 			(xy 114.3 100.33) (xy 114.3 99.06)
 		)
 		(stroke
@@ -1222,6 +1362,16 @@
 			(type default)
 		)
 		(uuid "7f648b2a-8427-4ff4-a7d8-31cd2b3a006c")
+	)
+	(wire
+		(pts
+			(xy 119.38 128.27) (xy 120.65 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86612358-c01c-4b45-9eae-b7dfa1c8853b")
 	)
 	(wire
 		(pts
@@ -1265,6 +1415,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 127) (xy 91.44 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93d3ab59-8a7c-4ac1-9175-244c6ff8953b")
+	)
+	(wire
+		(pts
 			(xy 168.91 49.53) (xy 167.64 49.53)
 		)
 		(stroke
@@ -1272,6 +1432,16 @@
 			(type default)
 		)
 		(uuid "94f6e309-8a63-4f64-b500-60561e5ea301")
+	)
+	(wire
+		(pts
+			(xy 144.78 134.62) (xy 148.59 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96e8ae57-81bf-4e23-82b4-80bd8ef8dc74")
 	)
 	(wire
 		(pts
@@ -1465,6 +1635,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 92.71) (xy 205.74 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb4ae619-d74c-46d3-8f67-16cb52057315")
+	)
+	(wire
+		(pts
 			(xy 142.24 99.06) (xy 140.97 99.06)
 		)
 		(stroke
@@ -1505,6 +1685,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 113.03) (xy 86.36 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da420633-0862-4998-903c-d0a1f572a37e")
+	)
+	(wire
+		(pts
 			(xy 140.97 50.8) (xy 140.97 49.53)
 		)
 		(stroke
@@ -1512,6 +1702,16 @@
 			(type default)
 		)
 		(uuid "dfd9926c-bdf6-4737-b441-ad05eb0e767f")
+	)
+	(wire
+		(pts
+			(xy 116.84 134.62) (xy 120.65 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfed2407-bd50-48b4-946a-49ce007a7967")
 	)
 	(wire
 		(pts
@@ -1542,6 +1742,26 @@
 			(type default)
 		)
 		(uuid "e40d4d00-793c-40a9-a74b-15d0480f574c")
+	)
+	(wire
+		(pts
+			(xy 170.18 134.62) (xy 168.91 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5819ac4-8c28-4ef2-b319-93bbb68981e7")
+	)
+	(wire
+		(pts
+			(xy 86.36 134.62) (xy 92.71 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7e7f9ac-0c0e-418f-b591-f76452c17cc4")
 	)
 	(wire
 		(pts
@@ -1585,6 +1805,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 128.27) (xy 148.59 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f051040b-1980-4a51-84bb-dc75758396a4")
+	)
+	(wire
+		(pts
 			(xy 113.03 92.71) (xy 116.84 92.71)
 		)
 		(stroke
@@ -1592,6 +1822,16 @@
 			(type default)
 		)
 		(uuid "f5edd385-2454-487f-ac07-e47583206ffb")
+	)
+	(text "3x RGB Information LEDs"
+		(exclude_from_sim no)
+		(at 141.732 116.586 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8f3d2bbe-15a1-4f7e-9dd5-f40e16e2d409")
 	)
 	(text "Level shifter"
 		(exclude_from_sim no)
@@ -1603,7 +1843,7 @@
 		)
 		(uuid "dcd83be8-38d8-4c5c-90cb-ef550ec494ca")
 	)
-	(text "8x RGB LEDs"
+	(text "8x RGB position LEDs"
 		(exclude_from_sim no)
 		(at 143.51 64.008 0)
 		(effects
@@ -1752,6 +1992,72 @@
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
 					(reference "#PWR41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 142.24 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15dbc903-ce04-42ee-947f-f5c15ab73ff2")
+		(property "Reference" "#PWR067"
+			(at 142.24 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 142.24 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "662f6e45-75d7-4a33-9312-8934fdc61585")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -2235,6 +2541,218 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 114.3 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3dbfd836-d1f8-452d-a488-d76c0c3b04e2")
+		(property "Reference" "#PWR065"
+			(at 114.3 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17a4f85f-6010-464c-9382-2b901d46d7ba")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "006-Diodes:COM-16347")
+		(at 130.81 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52169c6f-ffa0-456b-894a-569d04ec0400")
+		(property "Reference" "D10"
+			(at 130.81 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "COM-16347"
+			(at 131.318 144.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "006-Diodes:COM-16347"
+			(at 130.81 156.464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/datasheets/BreakoutBoards/WS2812B.pdf"
+			(at 130.81 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LED RGB WS2812B"
+			(at 131.064 148.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Web link" "https://www.digikey.ch/en/products/detail/sparkfun-electronics/COM-16347/11630204"
+			(at 131.064 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "SparkFun Electronics"
+			(at 131.064 141.732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "COM-16347"
+			(at 131.064 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey P/N" "1568-COM-16347CT-ND"
+			(at 130.81 159.004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.5"
+			(at 131.064 150.876 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "-"
+			(at 130.81 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature" "-25 to 80"
+			(at 131.064 163.322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value Disp" "WS2812B"
+			(at 130.81 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e437ba8e-8189-487b-9375-d17d8f93ddd3")
+		)
+		(pin "3"
+			(uuid "3522c74e-759c-4013-b3ce-acc04605dbb7")
+		)
+		(pin "2"
+			(uuid "534e1e69-768c-463e-8c42-c8052c63d9f7")
+		)
+		(pin "4"
+			(uuid "3597db9a-a72f-4ee0-9b96-93f3a3201c28")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "006-Diodes:COM-16347")
 		(at 158.75 95.25 0)
 		(unit 1)
@@ -2587,6 +3105,218 @@
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 147.32 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d2d68ff-af49-41ef-b6b7-80f0621c8956")
+		(property "Reference" "#PWR068"
+			(at 147.32 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 147.32 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 147.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f68b0c01-2e31-4438-a860-39889341c926")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "006-Diodes:COM-16347")
+		(at 158.75 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64649800-cefb-47d2-8fd1-a13ce87ae269")
+		(property "Reference" "D11"
+			(at 158.75 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "COM-16347"
+			(at 159.258 144.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "006-Diodes:COM-16347"
+			(at 158.75 156.464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/datasheets/BreakoutBoards/WS2812B.pdf"
+			(at 158.75 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LED RGB WS2812B"
+			(at 159.004 148.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Web link" "https://www.digikey.ch/en/products/detail/sparkfun-electronics/COM-16347/11630204"
+			(at 159.004 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "SparkFun Electronics"
+			(at 159.004 141.732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "COM-16347"
+			(at 159.004 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey P/N" "1568-COM-16347CT-ND"
+			(at 158.75 159.004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.5"
+			(at 159.004 150.876 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "-"
+			(at 158.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature" "-25 to 80"
+			(at 159.004 163.322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value Disp" "WS2812B"
+			(at 158.75 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "afce5cdb-7535-43e1-8d97-22136401d1c1")
+		)
+		(pin "3"
+			(uuid "49b4e6dc-5615-4fe0-8526-964a22802249")
+		)
+		(pin "2"
+			(uuid "96ec4e1d-ff7d-4699-a275-1c73fa472376")
+		)
+		(pin "4"
+			(uuid "6a73e0fb-d963-4508-9fa1-985021c2039c")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -3310,6 +4040,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 170.18 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e319a38-4a6d-4565-80c7-8c2d81ede3a9")
+		(property "Reference" "#PWR069"
+			(at 170.18 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 170.18 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "acf37786-9cbe-428c-8da3-faca9a2af102")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 114.3 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3654,6 +4450,72 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
+		(at 119.38 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bea9ecd2-b318-466a-949f-cb912f532c7e")
+		(property "Reference" "#PWR066"
+			(at 119.38 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 119.38 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 119.38 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a389e73-1c08-46af-8acb-e9f718f62e8b")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
 		(at 147.32 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3713,6 +4575,152 @@
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
 					(reference "#PWR42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "006-Diodes:COM-16347")
+		(at 102.87 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d141f145-a18b-46ae-ac44-b07ec471aa30")
+		(property "Reference" "D9"
+			(at 102.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "COM-16347"
+			(at 103.378 144.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "006-Diodes:COM-16347"
+			(at 102.87 156.464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/datasheets/BreakoutBoards/WS2812B.pdf"
+			(at 102.87 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LED RGB WS2812B"
+			(at 103.124 148.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Web link" "https://www.digikey.ch/en/products/detail/sparkfun-electronics/COM-16347/11630204"
+			(at 103.124 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "SparkFun Electronics"
+			(at 103.124 141.732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "COM-16347"
+			(at 103.124 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey P/N" "1568-COM-16347CT-ND"
+			(at 102.87 159.004 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.5"
+			(at 103.124 150.876 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "-"
+			(at 102.87 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature" "-25 to 80"
+			(at 103.124 163.322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value Disp" "WS2812B"
+			(at 102.87 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "55ec4a63-c878-407e-97f8-01531f8bb63b")
+		)
+		(pin "3"
+			(uuid "e64436b2-471f-413b-8333-39d95d8380b6")
+		)
+		(pin "2"
+			(uuid "08eff1f5-cdd1-4303-a920-9a392419a676")
+		)
+		(pin "4"
+			(uuid "b7e2885b-3b0b-45c7-a59e-637d9d37d649")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -3911,6 +4919,72 @@
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
 					(reference "#PWR44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 91.44 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecd14baa-d645-46d4-9a17-4ef74822d57e")
+		(property "Reference" "#PWR064"
+			(at 91.44 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 91.44 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 91.44 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96f711a7-cf23-4bc8-b7ca-307803ed82d5")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
