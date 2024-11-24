@@ -1036,85 +1036,6 @@
 				)
 			)
 		)
-		(symbol "011-Misc:Testpoint_square_1mm"
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TP_square_1mm"
-				(at 0.254 -2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "011-Misc:Testpoint_square_1mm"
-				(at 0.254 -4.318 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Testpoint_square_1mm_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin unspecified line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
@@ -1339,12 +1260,6 @@
 		(uuid "08c6eb05-53bc-4e9b-9b8e-c2265704131b")
 	)
 	(junction
-		(at 130.81 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "095cbded-bee4-4277-9509-f0c30dc91340")
-	)
-	(junction
 		(at 68.58 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1379,12 +1294,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d2e84d25-ae4b-41f1-ae18-b735191b273f")
-	)
-	(junction
-		(at 130.81 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df20baed-967e-4810-9ac5-2c66f3fdcc54")
 	)
 	(wire
 		(pts
@@ -1458,7 +1367,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 95.25) (xy 132.08 95.25)
+			(xy 129.54 95.25) (xy 132.08 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1495,26 +1404,6 @@
 			(type default)
 		)
 		(uuid "4e42510d-9487-49f7-9a99-577f8e7ad755")
-	)
-	(wire
-		(pts
-			(xy 130.81 90.17) (xy 130.81 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57b05f7e-eec1-465f-9f98-3ac5321fa456")
-	)
-	(wire
-		(pts
-			(xy 129.54 95.25) (xy 130.81 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "744ad6ba-e36e-4f84-a6f3-e0794d6a58f6")
 	)
 	(wire
 		(pts
@@ -1555,16 +1444,6 @@
 			(type default)
 		)
 		(uuid "994376d8-27f7-4b51-b520-3d42b54be6fa")
-	)
-	(wire
-		(pts
-			(xy 130.81 100.33) (xy 130.81 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99c83b5a-4f84-4a6e-9dfa-c11badab7d0d")
 	)
 	(wire
 		(pts
@@ -1618,16 +1497,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 100.33) (xy 132.08 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3d3ed64-cedc-4861-92ef-0af67675d785")
-	)
-	(wire
-		(pts
 			(xy 78.74 97.79) (xy 78.74 95.25)
 		)
 		(stroke
@@ -1638,7 +1507,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 100.33) (xy 130.81 100.33)
+			(xy 129.54 100.33) (xy 132.08 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1722,7 +1591,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0cfb5533-5c29-4f66-9e11-f13905ef7f4e")
-		(property "Reference" "#PWR35"
+		(property "Reference" "#PWR035"
 			(at 48.26 115.57 0)
 			(effects
 				(font
@@ -1772,7 +1641,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/bf8f6f94-3ffc-4012-b64d-7846202ef01e"
-					(reference "#PWR35")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -2203,140 +2072,6 @@
 		)
 	)
 	(symbol
-		(lib_id "011-Misc:Testpoint_square_1mm")
-		(at 130.81 86.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e81cff7-24af-40d8-9783-4d030dba5df8")
-		(property "Reference" "TP5"
-			(at 133.35 85.0899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TP_square_1mm"
-			(at 133.35 87.6299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "011-Misc:Testpoint_square_1mm"
-			(at 135.128 86.106 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "8e930929-e187-40cb-8051-0f6b87cd56b4")
-		)
-		(instances
-			(project "relativeGPS"
-				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/bf8f6f94-3ffc-4012-b64d-7846202ef01e"
-					(reference "TP5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "011-Misc:Testpoint_square_1mm")
-		(at 130.81 109.22 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "520ee2c4-37e6-4f94-966d-6373b9d4217e")
-		(property "Reference" "TP4"
-			(at 133.35 107.9499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_square_1mm"
-			(at 133.35 110.4899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "011-Misc:Testpoint_square_1mm"
-			(at 126.492 109.474 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "4946607f-b473-4037-8df8-653f5283e9a2")
-		)
-		(instances
-			(project "relativeGPS"
-				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/bf8f6f94-3ffc-4012-b64d-7846202ef01e"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "003-Inductors:FERR_120R@100MHz_5%_1.5A_95mOhm")
 		(at 58.42 95.25 0)
 		(unit 1)
@@ -2486,7 +2221,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87c966dc-eb5c-49ff-bce6-aa53c017245e")
-		(property "Reference" "#PWR5"
+		(property "Reference" "#PWR05"
 			(at 118.11 111.76 0)
 			(effects
 				(font
@@ -2536,7 +2271,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/bf8f6f94-3ffc-4012-b64d-7846202ef01e"
-					(reference "#PWR5")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2552,7 +2287,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "937db342-2f7a-4103-ae50-e2cce6d713ad")
-		(property "Reference" "#PWR34"
+		(property "Reference" "#PWR034"
 			(at 48.26 96.52 0)
 			(effects
 				(font
@@ -2561,7 +2296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+3.3V_LORA"
 			(at 48.26 87.63 0)
 			(effects
 				(font
@@ -2602,7 +2337,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/bf8f6f94-3ffc-4012-b64d-7846202ef01e"
-					(reference "#PWR34")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)

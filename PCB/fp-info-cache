@@ -1,4 +1,4 @@
-23197188705218955
+23204163982230551
 001-Resistors
 R_0402_H0.4
 
@@ -75,6 +75,13 @@ LTF5022T-100M1R3-D
 
 0
 2
+2
+004-Power
+3034-Coin_battery
+
+
+0
+3
 2
 004-Power
 AAA_2X_Holder
@@ -182,12 +189,26 @@ LED, red
 2
 2
 006-Diodes
+LED_W_0402_H0.4_1
+LED white
+LED, white
+0
+2
+2
+006-Diodes
 SC1210-01ETG
 
 
 0
 2
 2
+007-MCUs
+LQFP-64_10x10mm_P0.5mm
+MCU
+
+0
+64
+64
 008-Sensors
 LSM303AHTR
 Magnetometer, Accelerometer
@@ -250,6 +271,13 @@ SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, open
 solder jumper open
 0
 2
+2
+009-Connectors
+TL3315NF160Q
+Push button
+
+0
+4
 2
 010-RF
 ANT2525B00DT1516S

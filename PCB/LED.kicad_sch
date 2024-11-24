@@ -5,7 +5,7 @@
 	(uuid "af8d20ae-7e4f-4c0c-a9ab-857c00644f3c")
 	(paper "A4")
 	(lib_symbols
-		(symbol "005-ICs:74LVC1T45GW,125"
+		(symbol "005-ICs:74LVC1T45GW.125"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -17,7 +17,7 @@
 					)
 				)
 			)
-			(property "Value" "74LVC1T45GW,125"
+			(property "Value" "74LVC1T45GW.125"
 				(at 0 -29.464 0)
 				(effects
 					(font
@@ -71,7 +71,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer P/N" "74LVC1T45GW,125"
+			(property "Manufacturer P/N" "74LVC1T45GW.125"
 				(at 0 -39.116 0)
 				(effects
 					(font
@@ -124,7 +124,7 @@
 					)
 				)
 			)
-			(symbol "74LVC1T45GW,125_1_1"
+			(symbol "74LVC1T45GW.125_1_1"
 				(rectangle
 					(start -6.35 6.35)
 					(end 6.35 -6.35)
@@ -511,85 +511,6 @@
 				)
 			)
 		)
-		(symbol "011-Misc:Testpoint_square_1mm"
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TP_square_1mm"
-				(at 0.254 -2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "011-Misc:Testpoint_square_1mm"
-				(at 0.254 -4.318 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Testpoint_square_1mm_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin unspecified line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers hide)
@@ -928,12 +849,6 @@
 		)
 	)
 	(junction
-		(at 49.53 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "73d713f3-f4c0-42e6-a691-7cef311ac42c")
-	)
-	(junction
 		(at 54.61 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1075,16 +990,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 49.53) (xy 49.53 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31830f2b-4b7b-41c1-8198-507da35dc897")
-	)
-	(wire
-		(pts
 			(xy 171.45 49.53) (xy 175.26 49.53)
 		)
 		(stroke
@@ -1122,16 +1027,6 @@
 			(type default)
 		)
 		(uuid "3c84069a-740b-42c8-81f9-7664f0ea1afc")
-	)
-	(wire
-		(pts
-			(xy 49.53 49.53) (xy 55.88 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "431cc290-2f09-4c24-911e-bb875ca468c6")
 	)
 	(wire
 		(pts
@@ -1665,7 +1560,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 49.53) (xy 49.53 49.53)
+			(xy 46.99 49.53) (xy 55.88 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1875,7 +1770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08b489ea-3fef-4e87-a5c9-cd53574f3fe4")
-		(property "Reference" "#PWR46"
+		(property "Reference" "#PWR046"
 			(at 140.97 57.15 0)
 			(effects
 				(font
@@ -1925,7 +1820,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR46")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -1941,7 +1836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1210d52b-8088-4398-b80f-6fdc12ca4b94")
-		(property "Reference" "#PWR41"
+		(property "Reference" "#PWR041"
 			(at 175.26 95.25 0)
 			(effects
 				(font
@@ -1991,7 +1886,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR41")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -2073,7 +1968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18dfdd41-0eef-447d-b3ed-6436de336c6c")
-		(property "Reference" "#PWR39"
+		(property "Reference" "#PWR039"
 			(at 146.05 45.72 0)
 			(effects
 				(font
@@ -2123,7 +2018,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR39")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -2139,7 +2034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d1728b8-334a-4c97-ad1f-3af961a96264")
-		(property "Reference" "#PWR50"
+		(property "Reference" "#PWR050"
 			(at 170.18 106.68 0)
 			(effects
 				(font
@@ -2189,7 +2084,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR50")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -2205,7 +2100,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28b327c5-e8c3-4454-84a8-1dac4a167918")
-		(property "Reference" "#PWR55"
+		(property "Reference" "#PWR055"
 			(at 64.77 60.96 0)
 			(effects
 				(font
@@ -2255,7 +2150,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR55")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -2271,7 +2166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2bd7b177-740a-48e2-9beb-329a3d23c166")
-		(property "Reference" "#PWR51"
+		(property "Reference" "#PWR051"
 			(at 142.24 106.68 0)
 			(effects
 				(font
@@ -2321,74 +2216,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "011-Misc:Testpoint_square_1mm")
-		(at 49.53 68.58 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2d9ceec0-11aa-4c39-bc0b-5a7f88759192")
-		(property "Reference" "TP2"
-			(at 52.07 67.3099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_square_1mm"
-			(at 52.07 69.8499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "011-Misc:Testpoint_square_1mm"
-			(at 45.212 68.834 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 49.53 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "ebeccdad-ca00-4c3f-a14f-2f012463444d")
-		)
-		(instances
-			(project "relativeGPS"
-				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "TP2")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -2908,7 +2736,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58b48c2b-3c80-4690-b671-8e24271e1c17")
-		(property "Reference" "#PWR38"
+		(property "Reference" "#PWR038"
 			(at 118.11 45.72 0)
 			(effects
 				(font
@@ -2958,7 +2786,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR38")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -3916,7 +3744,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c8d6a0e-49cc-4076-a092-31a82cfa7292")
-		(property "Reference" "#PWR47"
+		(property "Reference" "#PWR047"
 			(at 168.91 57.15 0)
 			(effects
 				(font
@@ -3966,7 +3794,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR47")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -3982,7 +3810,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87669efc-850f-42fe-b8ab-8b36bfc03f0d")
-		(property "Reference" "#PWR37"
+		(property "Reference" "#PWR037"
 			(at 90.17 45.72 0)
 			(effects
 				(font
@@ -4032,7 +3860,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR37")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -4114,7 +3942,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98fee393-b97a-4abb-85ae-99bd79427a3b")
-		(property "Reference" "#PWR52"
+		(property "Reference" "#PWR052"
 			(at 114.3 106.68 0)
 			(effects
 				(font
@@ -4164,7 +3992,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR52")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -4180,7 +4008,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9fe46fb1-9773-4ce3-b44b-e3b0f19004a1")
-		(property "Reference" "#PWR54"
+		(property "Reference" "#PWR054"
 			(at 54.61 44.45 0)
 			(effects
 				(font
@@ -4230,7 +4058,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR54")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -4246,7 +4074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "acfbbf2d-047e-4426-8087-c69b3710624e")
-		(property "Reference" "#PWR45"
+		(property "Reference" "#PWR045"
 			(at 113.03 57.15 0)
 			(effects
 				(font
@@ -4296,7 +4124,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR45")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -4449,6 +4277,158 @@
 		)
 	)
 	(symbol
+		(lib_id "005-ICs:74LVC1T45GW.125")
+		(at 64.77 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be25048c-b5ec-4f7c-bec6-edcb30f0637e")
+		(property "Reference" "U7"
+			(at 64.77 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC1T45GW.125"
+			(at 64.77 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "005-ICs:TSSOP6_SOT363-2.step"
+			(at 65.024 78.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf"
+			(at 64.77 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Level shifter 1-CH"
+			(at 64.77 86.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Web link" "https://www.digikey.ch/en/products/detail/nexperia-usa-inc/74LVC1T45GW-125/2530577"
+			(at 64.77 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
+			(at 64.77 76.962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "74LVC1T45GW.125"
+			(at 64.77 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey P/N" "1727-4560-1-ND"
+			(at 64.77 81.026 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.29"
+			(at 64.77 82.804 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.1"
+			(at 64.77 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature" "-40 to 125"
+			(at 64.77 90.678 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value Disp" "74LVC1T45GW"
+			(at 64.77 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00d81779-ca57-4f8f-89bb-1ca41a047ffe")
+		)
+		(pin "2"
+			(uuid "910acbfc-43f4-4da5-b4f6-80172f2505e2")
+		)
+		(pin "3"
+			(uuid "6b01f412-437f-444a-a486-c0993a1d85b7")
+		)
+		(pin "5"
+			(uuid "b0a3564b-a958-465f-a502-9cbc3e1b6d28")
+		)
+		(pin "6"
+			(uuid "2d1ac845-7431-4b63-8d77-c719b3be1622")
+		)
+		(pin "4"
+			(uuid "a55293ef-3614-471e-81f6-92426a287c0a")
+		)
+		(instances
+			(project "relativeGPS"
+				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 119.38 127 0)
 		(unit 1)
@@ -4524,7 +4504,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c636be21-744f-42e5-b618-4b5dfccc4efa")
-		(property "Reference" "#PWR42"
+		(property "Reference" "#PWR042"
 			(at 147.32 95.25 0)
 			(effects
 				(font
@@ -4574,7 +4554,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR42")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -4736,7 +4716,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5c8b4c5-b336-4527-a553-c9fdc84118c4")
-		(property "Reference" "#PWR53"
+		(property "Reference" "#PWR053"
 			(at 74.93 44.45 0)
 			(effects
 				(font
@@ -4786,7 +4766,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR53")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -4802,7 +4782,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7b3aa23-4aaf-42f1-9d5c-ef3f986467be")
-		(property "Reference" "#PWR48"
+		(property "Reference" "#PWR048"
 			(at 196.85 57.15 0)
 			(effects
 				(font
@@ -4852,7 +4832,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR48")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -4868,7 +4848,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec2747bb-4cf4-4078-9fb4-f27b9d4b9d38")
-		(property "Reference" "#PWR44"
+		(property "Reference" "#PWR044"
 			(at 91.44 95.25 0)
 			(effects
 				(font
@@ -4918,7 +4898,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR44")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -5000,7 +4980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef58d9ef-1c6c-42c4-9651-63c0355e36f6")
-		(property "Reference" "#PWR40"
+		(property "Reference" "#PWR040"
 			(at 173.99 45.72 0)
 			(effects
 				(font
@@ -5050,7 +5030,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR40")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -5066,7 +5046,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5cf2223-1a77-4696-84ac-dfb9f0b5bf46")
-		(property "Reference" "#PWR43"
+		(property "Reference" "#PWR043"
 			(at 119.38 95.25 0)
 			(effects
 				(font
@@ -5116,159 +5096,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "005-ICs:74LVC1T45GW,125")
-		(at 64.77 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f7fcaa57-35c9-4e32-b42e-d65a02047a27")
-		(property "Reference" "U11"
-			(at 64.77 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LVC1T45GW,125"
-			(at 64.77 75.184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "005-ICs:TSSOP6_SOT363-2.step"
-			(at 65.024 78.994 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf"
-			(at 64.77 72.898 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Level shifter 1-CH"
-			(at 64.77 86.868 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Web link" "https://www.digikey.ch/en/products/detail/nexperia-usa-inc/74LVC1T45GW-125/2530577"
-			(at 64.77 88.646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Nexperia USA Inc."
-			(at 64.77 76.962 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer P/N" "74LVC1T45GW,125"
-			(at 64.77 84.836 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey P/N" "1727-4560-1-ND"
-			(at 64.77 81.026 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.29"
-			(at 64.77 82.804 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.1"
-			(at 64.77 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature" "-40 to 125"
-			(at 64.77 90.678 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value Disp" "74LVC1T45GW"
-			(at 64.77 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "f01d93e2-e46e-4967-bce3-b98d1ab10841")
-		)
-		(pin "6"
-			(uuid "addc8f49-0c97-43a7-954c-1d78bdcb834b")
-		)
-		(pin "4"
-			(uuid "e78b48bd-b885-446f-8d18-d08561822966")
-		)
-		(pin "5"
-			(uuid "8aa2dc4d-d117-4789-8354-30c4e1d54eb8")
-		)
-		(pin "1"
-			(uuid "bbca8d8b-2719-4d5b-945b-df5c2a0cce79")
-		)
-		(pin "2"
-			(uuid "bb25282a-a476-48ce-9716-299c4887adc6")
-		)
-		(instances
-			(project "relativeGPS"
-				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "U11")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5284,7 +5112,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb0d1ba1-86fb-40f1-9251-d74339a234a0")
-		(property "Reference" "#PWR49"
+		(property "Reference" "#PWR049"
 			(at 198.12 106.68 0)
 			(effects
 				(font
@@ -5334,7 +5162,7 @@
 		(instances
 			(project "relativeGPS"
 				(path "/9255e348-2f0c-48d3-8a71-46491dcb1a12/0163d1bd-977b-4b50-9d38-5cf06cb7c696"
-					(reference "#PWR49")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
