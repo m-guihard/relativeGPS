@@ -3625,12 +3625,100 @@
 		(uuid "f3c4d58c-0e6c-4dd8-a9ec-8a03db3cad98")
 	)
 	(no_connect
+		(at 259.08 69.85)
+		(uuid "09902e10-f7e5-4354-ae52-bd1ef15519aa")
+	)
+	(no_connect
+		(at 226.06 129.54)
+		(uuid "1d59551b-60a1-407f-aca3-9a7e2e0980c2")
+	)
+	(no_connect
+		(at 259.08 128.27)
+		(uuid "2bd099cb-62f8-4ef7-b533-de7eebb89fec")
+	)
+	(no_connect
+		(at 226.06 68.58)
+		(uuid "3491bc09-37af-4625-812c-91341be641cb")
+	)
+	(no_connect
+		(at 259.08 77.47)
+		(uuid "37dd501d-5deb-45da-9df1-2c4dbae6aa35")
+	)
+	(no_connect
+		(at 259.08 74.93)
+		(uuid "3efd7ec1-8c1d-41c4-9f7d-fba5c7436083")
+	)
+	(no_connect
+		(at 226.06 101.6)
+		(uuid "50b32c6b-9ec7-4716-b651-717bc853516e")
+	)
+	(no_connect
+		(at 259.08 97.79)
+		(uuid "5c472b1f-ab47-4fc0-a252-62261bb05980")
+	)
+	(no_connect
+		(at 226.06 96.52)
+		(uuid "5eab6ccd-0bf8-411c-a1f6-58e793ac1fb7")
+	)
+	(no_connect
+		(at 226.06 99.06)
+		(uuid "5fd07997-7a85-4ab4-82fb-459117580df7")
+	)
+	(no_connect
+		(at 259.08 59.69)
+		(uuid "6194279d-ac6f-42bc-812b-841462fd3f04")
+	)
+	(no_connect
+		(at 259.08 113.03)
+		(uuid "646e58f3-3b1f-4d13-9292-a53eed5a3b7c")
+	)
+	(no_connect
+		(at 226.06 71.12)
+		(uuid "68c40a25-9070-453e-bb49-65899e455987")
+	)
+	(no_connect
+		(at 226.06 127)
+		(uuid "6dfbcaab-d857-4fad-984c-80ca818d152e")
+	)
+	(no_connect
+		(at 259.08 125.73)
+		(uuid "85bab430-3b35-45f4-a5b3-11462620c5d1")
+	)
+	(no_connect
+		(at 259.08 115.57)
+		(uuid "9412edf0-ae4b-45bc-8ac5-3949f064ca2b")
+	)
+	(no_connect
+		(at 259.08 130.81)
+		(uuid "aa0f3fb0-81af-49e3-be0d-a8874e47c2f0")
+	)
+	(no_connect
 		(at 99.06 152.4)
 		(uuid "b5a39c42-e223-458f-91a9-de1cde7e63a2")
 	)
 	(no_connect
 		(at 95.25 180.34)
 		(uuid "b7481c75-075c-4486-87fb-5eb44840cc15")
+	)
+	(no_connect
+		(at 259.08 110.49)
+		(uuid "c6331259-ea20-408f-9f97-6593a617c125")
+	)
+	(no_connect
+		(at 259.08 102.87)
+		(uuid "c9a17915-383c-4f44-a805-8efdd09254f4")
+	)
+	(no_connect
+		(at 259.08 62.23)
+		(uuid "cb7dadcf-1c95-486b-bb92-5a8eb33644be")
+	)
+	(no_connect
+		(at 226.06 93.98)
+		(uuid "d24c9eed-c7ae-472c-bc5e-3a12394bac73")
+	)
+	(no_connect
+		(at 226.06 132.08)
+		(uuid "d4d41cd5-c6f6-4710-838e-cc242365326b")
 	)
 	(wire
 		(pts
@@ -4907,7 +4995,7 @@
 		(uuid "eedb2ce4-e5ac-4518-93ea-2cb86125ecd9")
 	)
 	(label "1V8_ACC_MAG_EN"
-		(at 146.05 111.76 0)
+		(at 259.08 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4940,7 +5028,7 @@
 		(uuid "043096cb-fcc4-47d9-85c2-92c52109b438")
 	)
 	(label "SD_DETECT"
-		(at 259.08 113.03 0)
+		(at 259.08 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5149,7 +5237,7 @@
 		(uuid "50bd1560-870b-4571-b835-e1ebad168f19")
 	)
 	(label "MAG_ACC_INT2"
-		(at 158.75 125.73 180)
+		(at 226.06 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5160,24 +5248,24 @@
 		(uuid "50d27dc2-e7de-49e1-9380-36af429b4412")
 	)
 	(label "MAG_ACC_INT1"
-		(at 158.75 121.92 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5a88c6b8-0230-4f98-8b3e-00a552de5d22")
-	)
-	(label "3V3_TESEO_EN"
-		(at 146.05 109.22 0)
+		(at 259.08 138.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
+		)
+		(uuid "5a88c6b8-0230-4f98-8b3e-00a552de5d22")
+	)
+	(label "3V3_TESEO_EN"
+		(at 226.06 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
 		(uuid "5bac0917-0cd8-4aaa-8abd-deb19271e673")
 	)
@@ -5248,13 +5336,13 @@
 		(uuid "711ebc1a-3de2-4ba3-bbe1-e6acff4778d3")
 	)
 	(label "BUTTON_1"
-		(at 189.23 85.09 180)
+		(at 259.08 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "71c95d92-24bd-419f-b635-eddb7c703d68")
 	)
@@ -5303,7 +5391,7 @@
 		(uuid "8e95adec-d513-4744-bcea-a7e082c47748")
 	)
 	(label "3V3_RYLR_EN"
-		(at 146.05 114.3 0)
+		(at 259.08 133.35 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5567,13 +5655,13 @@
 		(uuid "e7327de2-b92f-4139-81d7-41837618e4a7")
 	)
 	(label "MAG_ACC_DRDY"
-		(at 158.75 129.54 180)
+		(at 259.08 135.89 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "e7bf82b3-4751-42a3-a4c6-4a49c060d68b")
 	)
