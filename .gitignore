@@ -1,2 +1,3 @@
 # Build folder
 firmware/build/
+*.lck
