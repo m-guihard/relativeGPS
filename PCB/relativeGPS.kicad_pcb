@@ -252,6 +252,93 @@
 	(net 103 "unconnected-(U11-PH3-BOOT0-Pad60)")
 	(net 104 "unconnected-(U11-PB9-Pad62)")
 	(net 105 "unconnected-(U11-PA7-Pad23)")
+	(net 106 "unconnected-(CN1-Pad1)")
+	(net 107 "unconnected-(CN1-Pad2)")
+	(net 108 "unconnected-(CN1-Pad10)")
+	(net 109 "unconnected-(CN1-Pad9)")
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "02384b46-6d7a-4b0d-80d3-880e86231d29")
+		(at 59 117.5)
+		(property "Reference" "TP8"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9d4bf9ad-38d3-4e94-9759-e5b23bf5d991")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f7708a3-9c14-4325-b031-2e2eae904a8c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b44ded2-3a05-42f8-a337-c95cfb69aa9e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67b87cc7-f85b-4b19-a457-b9a370d8153e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/0a556df8-71a3-440f-aa98-fb69e413d0a5/8c0ecf4a-d34f-4664-91e4-12677844ea19")
+		(sheetname "/MAG_ACC/")
+		(sheetfile "MAG_ACC.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "5c1a3b47-c3fb-4f73-b2a3-1a9b32d4fda8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 20 "/MAG_ACC/LSM_SCL")
+			(pintype "bidirectional")
+			(uuid "e95bc1b0-cd9b-491e-8a57-49b242c235fb")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "002-Capacitors:C_0402_H0.55"
 		(layer "F.Cu")
 		(uuid "02eaa809-372a-40ff-b866-87ab554b3b1f")
@@ -411,7 +498,7 @@
 			)
 		)
 		(path "/0a556df8-71a3-440f-aa98-fb69e413d0a5/7b2f119e-009b-4561-a5fc-34ef673d6ae7")
-		(sheetname "MAG_ACC")
+		(sheetname "/MAG_ACC/")
 		(sheetfile "MAG_ACC.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -527,6 +614,89 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "0fb81f8e-a9b4-46b8-99e6-1c3e8c17469a")
+		(at 103.5 122.9)
+		(property "Reference" "TP1"
+			(at 0.1 1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "818f94ea-ecf6-4686-ab68-854f2639c2e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ebbcaba-f9f9-40c9-b4c0-81895455f182")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69db39ef-718b-42f2-bca4-a36d9a141b4d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "668fce74-7589-45a6-b493-68ed9c0433dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/15c1922d-035b-4771-885b-611376c0a6b7/d84dc219-c112-46fd-9518-4faa8ebb16da")
+		(sheetname "/POWER/")
+		(sheetfile "POWER.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "cfa9eedc-9f2a-4ab3-842f-eabb89ac8d81")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 49 "+BATT")
+			(pintype "bidirectional")
+			(uuid "2d500c4c-5e76-49d8-9659-f675dac78393")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "003-Inductors:LTF5022T-100M1R3-D"
 		(layer "F.Cu")
@@ -688,7 +858,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/1ed1bc21-c3d3-4b5b-8dc9-bc561e96c394")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_arc
@@ -1022,7 +1192,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/05cd5d0f-44a8-468b-ae41-9e9381fbe0dd")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1420,7 +1590,7 @@
 			)
 		)
 		(path "/0a556df8-71a3-440f-aa98-fb69e413d0a5/c8b428e7-97e5-455b-8cb8-a323f5631dc2")
-		(sheetname "MAG_ACC")
+		(sheetname "/MAG_ACC/")
 		(sheetfile "MAG_ACC.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1720,6 +1890,89 @@
 			)
 		)
 	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "212ccf03-fd60-4fcb-ad58-3a187cb351ad")
+		(at 51 123.5)
+		(property "Reference" "TP14"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "087be9a5-d3c2-4baf-bb12-0b03b3f18181")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ccd4a10d-0df8-4a69-b033-ade8b1ad9775")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b106e1a-5508-4028-a776-4159272ddc81")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a8af8bc-b56a-468f-8c04-c35444bb4297")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/1b69ef74-6b77-41a4-b920-641c24f3e97f")
+		(sheetname "/LED/")
+		(sheetfile "LED.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "13f9a9f3-1731-4564-af4f-f2b09b833a01")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 72 "/LED_DATA")
+			(pintype "bidirectional")
+			(uuid "545e3163-4a42-48cc-adf4-9bd85c185ff5")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "002-Capacitors:C_0603_H0.95"
 		(layer "F.Cu")
 		(uuid "236836e8-494c-4004-b985-8d895a959f68")
@@ -1880,7 +2133,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/ad983280-7c86-49cc-a9a1-38375d2199d8")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2184,7 +2437,7 @@
 			)
 		)
 		(path "/0a556df8-71a3-440f-aa98-fb69e413d0a5/381047f4-ed6f-4c8b-8145-6477a3e3e4fc")
-		(sheetname "MAG_ACC")
+		(sheetname "/MAG_ACC/")
 		(sheetfile "MAG_ACC.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2300,6 +2553,88 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "2e606e2c-536e-44cc-a8ec-e989a8b9aa9e")
+		(at 115.4 119.9)
+		(property "Reference" "TP2"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "77a6ad4c-47ab-439e-8399-4e8759f10e36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0c498823-3028-42e9-bd51-8e596998daab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03eb6fd3-c083-4005-981f-244fe4961ba0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f17f1b6-f290-49a5-a709-8a93559419f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/15c1922d-035b-4771-885b-611376c0a6b7/51d75a15-dcfb-4b0e-9380-bbe1b2ae421a")
+		(sheetname "/POWER/")
+		(sheetfile "POWER.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "f988ddc2-ec6a-4964-8496-5bade2082882")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 73 "+3V0")
+			(pintype "bidirectional")
+			(uuid "0f0083ad-67b1-4ba2-8063-5fb18f7db6c9")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "010-RF:ANT2525B00DT1516S"
 		(layer "F.Cu")
@@ -2460,7 +2795,7 @@
 			)
 		)
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/dc018331-1ec1-4a55-9f5c-b027fe41e3b3")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr through_hole)
 		(fp_rect
@@ -2733,7 +3068,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/897a2d64-6d5c-41ea-b129-0a258c1ea23d")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3038,7 +3373,7 @@
 			)
 		)
 		(path "/0a556df8-71a3-440f-aa98-fb69e413d0a5/bf527b5b-c201-4663-9d3e-0186c3602125")
-		(sheetname "MAG_ACC")
+		(sheetname "/MAG_ACC/")
 		(sheetfile "MAG_ACC.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3314,7 +3649,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/b6ed55d5-e2b9-4ad9-90e4-035fe44da30e")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3454,6 +3789,89 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "41ceb01a-4321-42e4-b9ed-b541f126fc4c")
+		(at 55 111.5)
+		(property "Reference" "TP5"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ad12bd91-bd2f-40a5-abd5-61c9608c3329")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f4325b1-6f01-46c5-9371-454ea96c8d71")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c4fa90e-e9bb-42bf-a9f8-39f4b8586a1f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8bfbf8df-bbb4-4467-b0b1-15a7866d979f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/15c1922d-035b-4771-885b-611376c0a6b7/33b7a126-c04b-4a05-90e5-39af702c5339")
+		(sheetname "/POWER/")
+		(sheetfile "POWER.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "426772a7-2d87-4773-b665-40abcf07e310")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 102 "+3.3V_LORA")
+			(pintype "bidirectional")
+			(uuid "0ed6f4be-3b64-41c3-a705-57775a7a2e83")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "001-Resistors:R_0402_H0.4"
 		(layer "F.Cu")
@@ -3613,7 +4031,7 @@
 			)
 		)
 		(path "/62d4ad05-e0fd-4790-9692-7583c1a6df7e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3889,7 +4307,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/59ede9da-6c40-4995-ad14-163e9353458a")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4298,7 +4716,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/3ad68eef-c07f-4dae-ba2e-aa42cafc12d8")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4574,7 +4992,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/cb223d86-bd0e-43df-958b-e50131205353")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4751,6 +5169,89 @@
 			)
 		)
 	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "51d85269-258a-4d6b-a53b-accd8d6629b1")
+		(at 57 111.5)
+		(property "Reference" "TP7"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9fc095f6-0a99-41d4-ba50-c05b352f91de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ce93ce8-b3e2-4cdf-af46-1c8f57dcd0a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4e3fecad-2c90-4a87-9b42-ce4f2d244d82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4bf5e3c7-6692-4b1d-950a-2d29143aeb5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/15c1922d-035b-4771-885b-611376c0a6b7/e235c73c-66d8-4639-8990-9af9d1006435")
+		(sheetname "/POWER/")
+		(sheetfile "POWER.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "320b7418-e482-49b3-adf6-1743895fabf2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 8 "+1V8")
+			(pintype "bidirectional")
+			(uuid "e95caa45-62a6-47b7-b310-36dec610a04d")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "006-Diodes:COM-16347"
 		(layer "F.Cu")
 		(uuid "589558fa-13a6-4769-8e76-c84adbcccd50")
@@ -4910,7 +5411,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/3ca82ac4-35e9-4b54-bbcd-423f45983b91")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5320,7 +5821,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/9c01674e-dfe8-4b7e-a914-54bb695a21e3")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5626,7 +6127,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/6f55ec9b-f15e-4c82-ab59-bcccf8a0fca4")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5931,7 +6432,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/d141f145-a18b-46ae-ac44-b07ec471aa30")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6340,7 +6841,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/68c6f4b2-a4ec-4941-b0a0-544ea4fd2e48")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6751,7 +7252,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/b675cd99-6fea-4452-bd88-e9fd93941bcc")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7057,7 +7558,7 @@
 			)
 		)
 		(path "/1325b0fd-5b70-4f48-9356-782ea1a8e95b/24c6bebd-99ce-4069-b19c-117672545a64")
-		(sheetname "SD")
+		(sheetname "/SD/")
 		(sheetfile "SD.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7809,7 +8310,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/a15603ae-fb7e-4a95-a284-6f6736a3d2c3")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8114,7 +8615,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/cab2a656-f60f-424c-aab1-1621105f9ef3")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8390,7 +8891,7 @@
 			)
 		)
 		(path "/bf8f6f94-3ffc-4012-b64d-7846202ef01e/aeadc611-c777-4475-9d2c-c26c535d310e")
-		(sheetname "LORA")
+		(sheetname "/LORA/")
 		(sheetfile "LORA.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8666,7 +9167,7 @@
 			)
 		)
 		(path "/0a556df8-71a3-440f-aa98-fb69e413d0a5/05fd1428-63bc-4745-9466-754b7e9bf713")
-		(sheetname "MAG_ACC")
+		(sheetname "/MAG_ACC/")
 		(sheetfile "MAG_ACC.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8782,6 +9283,89 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "7cefc70a-d660-42f8-8a73-c6dc408d8026")
+		(at 59 119.5)
+		(property "Reference" "TP9"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e3c1ead1-77b6-4e1a-81bd-0b867958ebe1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d99a84a9-3079-4467-ac57-7a43f791b126")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77449fd7-89aa-43be-894e-96f03019d2c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8ce73e7-6be4-456c-8ed6-9301c64bf30f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/0a556df8-71a3-440f-aa98-fb69e413d0a5/25949c15-9d5c-4251-80e2-e2bddde7bc59")
+		(sheetname "/MAG_ACC/")
+		(sheetfile "MAG_ACC.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "825aedf6-85db-4281-ba75-984fc5eed1d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 21 "/MAG_ACC/LSM_SDA")
+			(pintype "bidirectional")
+			(uuid "97c96c4b-e760-424b-8144-7d1fc07e76d7")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "002-Capacitors:C_0402_H0.55"
 		(layer "F.Cu")
@@ -8942,7 +9526,7 @@
 			)
 		)
 		(path "/0a556df8-71a3-440f-aa98-fb69e413d0a5/e31f1237-bb4f-40e0-8e9f-0fb4d075cdf2")
-		(sheetname "MAG_ACC")
+		(sheetname "/MAG_ACC/")
 		(sheetfile "MAG_ACC.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9219,7 +9803,7 @@
 			)
 		)
 		(path "/bf8f6f94-3ffc-4012-b64d-7846202ef01e/2738b1a2-5a30-4192-847a-cd4abdadcb86")
-		(sheetname "LORA")
+		(sheetname "/LORA/")
 		(sheetfile "LORA.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9524,7 +10108,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/52169c6f-ffa0-456b-894a-569d04ec0400")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9933,7 +10517,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/9ac2c82d-fb97-442d-bf76-8586f44ee8e8")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10049,6 +10633,89 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "847530e4-4f65-4a79-9cea-b7e166dfef62")
+		(at 59 123.5)
+		(property "Reference" "TP10"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "99f1807e-971e-48de-9802-ebc583a9f0f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a5b764b-3fd9-43bf-bc63-0a527dab04f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be6f7496-9d0d-4524-af7f-4ebd04ee639e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08305337-24cf-49eb-9f33-640331390a47")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/48245ceb-0806-41ad-b1b2-535fd41f5c4e")
+		(sheetname "/GPS/")
+		(sheetfile "GPS.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "6271ef63-d2db-457e-bc9b-15fcd5e06cd6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 7 "/GPS/3V3_TESEO_FILTERED")
+			(pintype "bidirectional")
+			(uuid "910012da-6378-4037-8fbf-8cf34c17168c")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "002-Capacitors:C_0402_H0.55"
 		(layer "F.Cu")
@@ -10209,7 +10876,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/1ddd4a1c-7af5-488b-94ca-77b1ead71368")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10485,7 +11152,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/64649800-cefb-47d2-8fd1-a13ce87ae269")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10894,7 +11561,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/7515b6f3-0cb8-4a19-ae8c-e2b7afdcc53f")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11304,7 +11971,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/8d23d544-4a17-41bd-a253-e8c1e1b229f4")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11624,7 +12291,7 @@
 			)
 		)
 		(path "/0a556df8-71a3-440f-aa98-fb69e413d0a5/972487b3-09ec-4dd9-8af3-87579b6477b9")
-		(sheetname "MAG_ACC")
+		(sheetname "/MAG_ACC/")
 		(sheetfile "MAG_ACC.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11901,7 +12568,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/4b41e639-d432-4800-8058-6944c79bfb81")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12165,7 +12832,7 @@
 			)
 		)
 		(path "/0a556df8-71a3-440f-aa98-fb69e413d0a5/be6d0a5b-29d8-4f27-9e86-d75dbc62855d")
-		(sheetname "MAG_ACC")
+		(sheetname "/MAG_ACC/")
 		(sheetfile "MAG_ACC.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12682,7 +13349,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/53307343-fc3a-4bc9-b090-ea809fceaff2")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12932,6 +13599,89 @@
 			)
 		)
 	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "977aa0af-3639-4650-b1a6-254a0db99750")
+		(at 51 117.5)
+		(property "Reference" "TP12"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6e800dd9-ed45-4313-865b-74a1381b1790")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52b2f4e0-859d-46a4-a1b2-8e71dc93a2eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5999bbd-dafa-4c27-8ef1-cc2e93d04710")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c139ad6d-3a60-4501-bb73-1e5d3d3c486c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/5e7fa0fd-c1ef-4da9-89ad-bd1526cdd061")
+		(sheetname "/")
+		(sheetfile "relativeGPS.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "005fcb70-78ed-48dc-9eed-15142dc2d91e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 23 "/SCL")
+			(pintype "bidirectional")
+			(uuid "255ca628-28f1-4d96-859a-fe6194028546")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "002-Capacitors:C_0603_H0.95"
 		(layer "F.Cu")
 		(uuid "97f37b61-7f1b-40c6-b9c6-b5092840c342")
@@ -13092,7 +13842,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/7f23ac95-61c2-4b57-8405-fcff552731ac")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13398,7 +14148,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/51124521-9a3f-46cd-bc36-2f18815dce7f")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13543,6 +14293,89 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "999409b1-ebb4-43fd-a375-cb2a8251682e")
+		(at 55 113.5)
+		(property "Reference" "TP6"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "40cccfaa-4d12-45a4-a4d6-3e1526b9cddb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c043c45e-071b-47f8-9cea-f9bd3496f991")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e503bf9c-fe1d-4201-8101-a28205bf3dd3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fae93e07-a359-48f3-8334-d3a38fd4fe58")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/15c1922d-035b-4771-885b-611376c0a6b7/795e9adb-0a77-4ea3-92e8-0df01ab8697e")
+		(sheetname "/POWER/")
+		(sheetfile "POWER.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "f25edbcd-6bd3-44d9-9ce9-8849283f867b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 9 "+3.3V")
+			(pintype "bidirectional")
+			(uuid "48458ed8-c160-48d7-9180-80c051a07834")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "003-Inductors:FERR_0402_H0.55"
 		(layer "F.Cu")
@@ -13704,7 +14537,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/bf8f6f94-3ffc-4012-b64d-7846202ef01e/56282a11-6ab4-47f3-abeb-d16775d520bd")
-		(sheetname "LORA")
+		(sheetname "/LORA/")
 		(sheetfile "LORA.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13982,7 +14815,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/e8350ec4-dfb5-4ba3-8d45-20b4c1f66bf3")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14258,7 +15091,7 @@
 			)
 		)
 		(path "/bf8f6f94-3ffc-4012-b64d-7846202ef01e/0e9f6e75-5c68-4cc4-bf36-da20be75977c")
-		(sheetname "LORA")
+		(sheetname "/LORA/")
 		(sheetfile "LORA.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14533,7 +15366,7 @@
 			)
 		)
 		(path "/d85e7441-c90c-402c-aa4f-2284547fc6c9")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14649,6 +15482,172 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "b667eeca-6038-47fc-96c4-e406fa1f9b79")
+		(at 53 113.5)
+		(property "Reference" "TP4"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "cfe9df66-340f-4d59-8962-a1717aa274e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5152daa8-d1be-4ad3-8fe6-c7b977009ac5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f031f0c2-c610-4e8d-aabc-306d5735d2c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "169c34d7-95f8-4909-876d-40f72c99cd6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/15c1922d-035b-4771-885b-611376c0a6b7/ccbed8ac-b084-4d19-afbe-8864de2c035e")
+		(sheetname "/POWER/")
+		(sheetfile "POWER.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "42a20766-3cfa-4f9c-8d0f-7077f0c94a67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 101 "+3.3V_GPS")
+			(pintype "bidirectional")
+			(uuid "b630765f-cd93-43be-b8f4-bddf7347d802")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "b87c4299-f940-49e0-92c5-7697d5a32c06")
+		(at 55 117.5)
+		(property "Reference" "TP18"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d738f841-cd5d-49bc-a5f7-602dff66b520")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a5f8afc-685e-4c08-b1de-0cc3f6db359d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "065f8e59-8c75-4b96-acf9-29a5e6a46605")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3258053f-cba6-4461-b6a4-242c9941a774")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/ec1336ff-2dff-48c1-a97a-b9e5d3fb1689")
+		(sheetname "/")
+		(sheetfile "relativeGPS.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "ee35ba40-d7b4-4547-9feb-e871df5d7f0c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 44 "/RYLR998_RX")
+			(pintype "bidirectional")
+			(uuid "ff846573-b662-4ba3-be5d-fadbc77e5ec6")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "002-Capacitors:C_0402_H0.55"
 		(layer "F.Cu")
@@ -14809,7 +15808,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/0604841a-c7c7-41db-8afd-4a139afd3b80")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15085,7 +16084,7 @@
 			)
 		)
 		(path "/00eb1f27-d615-485f-9d8b-3d605cd00570")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15465,7 +16464,7 @@
 			)
 		)
 		(path "/bf8f6f94-3ffc-4012-b64d-7846202ef01e/4dc97977-345e-4146-b4a9-121807080858")
-		(sheetname "LORA")
+		(sheetname "/LORA/")
 		(sheetfile "LORA.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15770,7 +16769,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/ba720bf7-184e-4fe6-86c4-7e866103f88a")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16179,7 +17178,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/ef0192c7-b511-4bf9-960c-f6da406f8c89")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16295,6 +17294,172 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "cf031811-6c9d-4d88-8eca-e711a80b0d4a")
+		(at 51 119.5)
+		(property "Reference" "TP13"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "232bac4c-1134-46da-86c1-e93ea73e11b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a799111-ebab-4096-8618-4594e54f933e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9524098f-85ba-432f-ae0e-f405774bb5c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcdb692b-dcb6-4171-a6f5-a1ae86e89ed3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/d14d837e-37f7-47c2-9ec5-edc7578ec7b8")
+		(sheetname "/")
+		(sheetfile "relativeGPS.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "65a7f0d7-472a-47e0-997f-60bc6e264ebd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 24 "/SDA")
+			(pintype "bidirectional")
+			(uuid "597199f7-5431-4028-9b14-366a35e4f271")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "d3fe555f-8172-4248-bf0a-45c7a35552fe")
+		(at 55 119.5)
+		(property "Reference" "TP19"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3fde2c1d-c72d-4f56-bfa1-1d0980401e31")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5595ad6c-213e-4fa9-9ad2-5bd7d7af3797")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "51d0ed44-c51b-4d98-aa8c-253e91a4df4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3f6c09f-ae8c-482b-b842-d8683ad4ab97")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/af980af4-2d50-4a64-a09d-03ceef2015f6")
+		(sheetname "/")
+		(sheetfile "relativeGPS.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "8f245c87-6536-482c-b1ac-6ac7426c77f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 46 "/RYLR998_TX")
+			(pintype "bidirectional")
+			(uuid "5290d52c-cd59-4708-8cdf-2c5a1971afe3")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "002-Capacitors:C_0402_H0.55"
 		(layer "F.Cu")
@@ -16455,7 +17620,7 @@
 			)
 		)
 		(path "/0a556df8-71a3-440f-aa98-fb69e413d0a5/1cd046bb-857e-4302-afdd-3a50db7d64de")
-		(sheetname "MAG_ACC")
+		(sheetname "/MAG_ACC/")
 		(sheetfile "MAG_ACC.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16731,7 +17896,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/67337b0f-c8cb-4504-92b4-d76a1c56d62e")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16982,6 +18147,172 @@
 			)
 		)
 	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "dd576a39-010d-4b47-9162-8d756fcf7afc")
+		(at 98.3 123)
+		(property "Reference" "TP3"
+			(at 0 1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2c4ad5c2-a463-4b46-b4f8-00a726a9a810")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2099ff77-a9c8-4104-8d64-e9fe54d1a805")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9fc8539-d575-463e-bc0f-027af7382398")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fbca1f0f-c07b-4130-8ac7-59d22682e4ed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/15c1922d-035b-4771-885b-611376c0a6b7/54aa8d9d-ac5b-41ec-8e1a-9f7dac95655b")
+		(sheetname "/POWER/")
+		(sheetfile "POWER.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "58b2b3a2-54b6-498e-8c94-7c38c3422509")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 4 "+5V")
+			(pintype "bidirectional")
+			(uuid "3b8dd406-bd63-4046-a50c-9d5ee723f40a")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "de342c35-9ab0-4ced-9f9a-4c1a67120bdd")
+		(at 100.3 123)
+		(property "Reference" "TP11"
+			(at 0.1 -1.3 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "99694e80-0409-4d22-a523-fc26fb1c56ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "151c0c89-1c31-435a-8382-3e762b22477b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2426dab9-12b8-4af4-b4f9-44259912116a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4485460-281f-4c3d-b234-38989b2ca019")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/15c1922d-035b-4771-885b-611376c0a6b7/62792b84-478b-4846-9d7b-8567da636366")
+		(sheetname "/POWER/")
+		(sheetfile "POWER.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "8fa28b65-c8a4-44b3-92ec-74f2c81d89eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 3 "GND")
+			(pintype "bidirectional")
+			(uuid "7b6b9a9c-420e-4a5f-9a6e-20870a63a18f")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "006-Diodes:COM-16347"
 		(layer "F.Cu")
 		(uuid "df0178ba-2c7a-4165-ae3c-82e400f6e2f6")
@@ -17141,7 +18472,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/7113f3fc-2007-4e69-8d63-329c4100068c")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17392,12 +18723,12 @@
 			)
 		)
 	)
-	(footprint "005-ICs:TSSOP6_SOT363-2.step"
+	(footprint "005-ICs:TSSOP6_SOT363-2"
 		(layer "F.Cu")
 		(uuid "e3e403e1-e16a-4883-bd9c-7bff2ed53ce0")
 		(at 94.1 128.6)
 		(property "Reference" "U7"
-			(at -0.2 -2.1 0)
+			(at 0 -4.88 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "8e6fe94b-0ce0-4f4f-bfe4-cc5acb7d0bc2")
@@ -17451,7 +18782,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6cbb6a71-54de-4f08-9aa8-c16251908dcf")
+			(uuid "271605fa-1af4-43ed-848e-3447652db2f0")
 			(effects
 				(font
 					(size 1 1)
@@ -17464,7 +18795,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "879cdbb3-7065-4645-87c7-ec140508ae7e")
+			(uuid "6d6717fe-bbde-4efb-95aa-592da909ef87")
 			(effects
 				(font
 					(size 1 1)
@@ -17477,7 +18808,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f3a9f7cd-f46f-40df-aec1-53e47ad21305")
+			(uuid "74d5de8f-a705-463e-87f5-3aa862bc9026")
 			(effects
 				(font
 					(size 1 1)
@@ -17490,7 +18821,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bb3453de-956f-4c07-bf08-b925094d90d0")
+			(uuid "ff1621ae-80b7-4bbb-8b0b-5aceee33431f")
 			(effects
 				(font
 					(size 1 1)
@@ -17503,7 +18834,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "67d2d6be-54af-4fe1-b3c9-273b75aedde4")
+			(uuid "f25a5421-619a-43c8-91bb-79a01ca2a79d")
 			(effects
 				(font
 					(size 1 1)
@@ -17516,7 +18847,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "524480b6-d818-449e-a1ba-22e71895ad9d")
+			(uuid "115f8dbd-009c-44f9-a986-88761ba0eb04")
 			(effects
 				(font
 					(size 1 1)
@@ -17529,7 +18860,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "de486fb6-408e-4a71-b905-932998bd521e")
+			(uuid "32622017-daae-4040-b874-338a94217385")
 			(effects
 				(font
 					(size 1 1)
@@ -17542,7 +18873,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b553a1de-7470-4ff5-b236-3aaa5b81b645")
+			(uuid "16878f5a-2f7f-4703-8208-a88db3ef3419")
 			(effects
 				(font
 					(size 1 1)
@@ -17551,7 +18882,7 @@
 			)
 		)
 		(path "/0163d1bd-977b-4b50-9d38-5cf06cb7c696/be25048c-b5ec-4f7c-bec6-edcb30f0637e")
-		(sheetname "LED")
+		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17562,7 +18893,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "75aee2f5-e9d5-4530-b58d-6e26c13eb378")
+			(uuid "8c898ed6-200e-4fe6-87b4-81968a0650a1")
 		)
 		(fp_line
 			(start 0.65 1.1)
@@ -17572,7 +18903,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "d3bc0424-b892-413c-ab9b-01ddac1e29eb")
+			(uuid "8efe26c6-c0ea-4d79-9ccd-e4b9b4b50b9c")
 		)
 		(fp_circle
 			(center -0.65 -1.1)
@@ -17583,7 +18914,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "029302b1-7abb-4006-b5fe-8ef0c539fc5d")
+			(uuid "d71155da-a860-40c0-8e96-6652cfb2b345")
 		)
 		(fp_rect
 			(start -1.8 -1.25)
@@ -17594,7 +18925,7 @@
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "2ae11c94-5162-4c1a-8884-e3ca43ce4946")
+			(uuid "f4e13f82-3fe6-49a1-ba2a-1f19281187ef")
 		)
 		(fp_rect
 			(start -0.625 -1)
@@ -17605,7 +18936,7 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "2e6fc746-ee09-486c-9e08-f636f3f5468a")
+			(uuid "2fba8f1a-3d2e-4792-ba1a-121e5d6c4371")
 		)
 		(fp_text user "${REFERENCE}"
 			(at -0.04 5.99 0)
@@ -17852,7 +19183,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/bf8f6f94-3ffc-4012-b64d-7846202ef01e/e8fb0d20-8519-4fb0-ba72-0f8660ff565a")
-		(sheetname "LORA")
+		(sheetname "/LORA/")
 		(sheetfile "LORA.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18130,7 +19461,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/8fefd384-c548-4ee8-b92d-bbb3fa584aa9")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18406,7 +19737,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/e1032ed5-14d0-4ac2-a95a-c7e8b1ccf60e")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18840,7 +20171,7 @@
 			)
 		)
 		(path "/659221dc-797a-4883-90bc-1ab556e50d71")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -19060,6 +20391,172 @@
 			)
 		)
 	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "f52050cb-b4f9-40aa-a8a5-578d48dbfbde")
+		(at 53 117.5)
+		(property "Reference" "TP16"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "367d9839-47d8-4133-a8f9-84fde6ed8467")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb9ae476-59f2-4804-b475-1696178dc413")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3012f3bb-b031-49e7-a1ec-c18d592dd7b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "542b22db-9ce3-4465-a7f3-20d1b488c115")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/f8f614f6-f12e-4ef9-b9a7-307e0851ef15")
+		(sheetname "/")
+		(sheetfile "relativeGPS.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "38bda086-3d02-4e42-88d2-c16d814e375e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 32 "/TESEO_RX")
+			(pintype "bidirectional")
+			(uuid "45c5f59f-4906-4995-a7ab-a8fe2139792f")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "fc295598-338e-42c9-8800-c7c73a2ed0af")
+		(at 53 119.5)
+		(property "Reference" "TP17"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ee39b3bd-d882-4ad7-8491-2e5612991f21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6496a1c4-4012-4c28-a662-b31652ec7739")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e56c1f97-cbfb-463c-9da3-3cb35ed2e89f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4985866-090d-4d89-a167-b32f07798be3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/84e54b01-e063-4479-802c-9d8c42c1fb77")
+		(sheetname "/")
+		(sheetfile "relativeGPS.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "85d2cf60-851b-4532-9f25-2992580b6b0c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 35 "/TESEO_TX")
+			(pintype "bidirectional")
+			(uuid "6d78e407-37ec-4bd4-8ab2-35b21d072474")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "010-RF:RYLR998_flat"
 		(layer "F.Cu")
 		(uuid "fd7a65bc-471a-47d5-a5ff-d520a1f4b74f")
@@ -19219,7 +20716,7 @@
 			)
 		)
 		(path "/bf8f6f94-3ffc-4012-b64d-7846202ef01e/a9315025-47f9-44ad-a605-57bef047de19")
-		(sheetname "LORA")
+		(sheetname "/LORA/")
 		(sheetfile "LORA.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -19535,6 +21032,89 @@
 			)
 		)
 	)
+	(footprint "011-Misc:Testpoint_square_1mm"
+		(layer "F.Cu")
+		(uuid "ff525b15-88ee-4d66-887d-b9840f00dae6")
+		(at 55 123.5)
+		(property "Reference" "TP15"
+			(at 0.5 -1.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "49ce50c3-6694-4d31-967e-83eac21becc3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "TP_square_1mm"
+			(at 0.04 7.79 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf16dc53-e989-4774-99f5-04bfbb691bb3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "835076a7-263f-48ee-a081-973f7b06549d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e3ff6a2-bcb8-47ee-af06-c88b8fe82298")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/1325b0fd-5b70-4f48-9356-782ea1a8e95b/fbd69319-4d0d-41c2-a889-09c8c3dbdb62")
+		(sheetname "/SD/")
+		(sheetfile "SD.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_text user "${REFERENCE}"
+			(at 0 6.16 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "e68e8024-0a01-406b-bc0b-5226076a7f00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0)
+			(size 1 1)
+			(property pad_prop_testpoint)
+			(layers "F.Cu" "F.Mask")
+			(net 54 "/SD_DETECT")
+			(pintype "bidirectional")
+			(uuid "7861a602-943e-44ee-a81c-c06a1d826790")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "001-Resistors:R_0402_H0.4"
 		(layer "B.Cu")
 		(uuid "016f968c-1540-4ffa-bbce-b22067ab5eb1")
@@ -19705,7 +21285,7 @@
 			)
 		)
 		(path "/1325b0fd-5b70-4f48-9356-782ea1a8e95b/9590dfef-c902-4d4b-9e39-f6331cacdd75")
-		(sheetname "SD")
+		(sheetname "/SD/")
 		(sheetfile "SD.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -19994,7 +21574,7 @@
 			)
 		)
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/66c73858-271d-4e24-bc2e-8aa94ba34c4e")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -20283,7 +21863,7 @@
 			)
 		)
 		(path "/f26e9e1c-1efd-4884-af1d-1ac0f46594c0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -20572,7 +22152,7 @@
 			)
 		)
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/f7afb617-5b95-4fe5-aa0a-ad6ea2ea91c3")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -20861,7 +22441,7 @@
 			)
 		)
 		(path "/ade46aa0-ddef-4bcc-a22a-6eeea4accbab")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -21150,7 +22730,7 @@
 			)
 		)
 		(path "/0e25dae4-be07-40b7-b7b8-eb9ff46f381b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -21351,12 +22931,18 @@
 			(at -3.81 -2.02 90)
 			(size 0.74 2.79)
 			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net 106 "unconnected-(CN1-Pad1)")
+			(pinfunction "1")
+			(pintype "no_connect")
 			(uuid "234ad9c0-2da3-4105-9275-955416bc7b50")
 		)
 		(pad "2" smd rect
 			(at -3.81 2.05 90)
 			(size 0.74 2.79)
 			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net 107 "unconnected-(CN1-Pad2)")
+			(pinfunction "2")
+			(pintype "no_connect")
 			(uuid "3eb3c7da-168d-4ed8-b896-04af046e41ee")
 		)
 		(pad "3" smd rect
@@ -21417,12 +23003,18 @@
 			(at 1.27 -2.02 90)
 			(size 0.74 2.79)
 			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net 109 "unconnected-(CN1-Pad9)")
+			(pinfunction "9")
+			(pintype "no_connect")
 			(uuid "faafd661-cb16-4ef3-9d1d-2508d9ad24d9")
 		)
 		(pad "10" smd rect
 			(at 1.27 2.05 90)
 			(size 0.74 2.79)
 			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net 108 "unconnected-(CN1-Pad10)")
+			(pinfunction "10")
+			(pintype "no_connect")
 			(uuid "9cf4d66e-d0f9-49fb-ab12-a3ccf6f96728")
 		)
 		(pad "11" smd rect
@@ -21645,7 +23237,7 @@
 			)
 		)
 		(path "/b089771a-6273-4a4b-b6fc-a9b1498c85d6")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -21933,7 +23525,7 @@
 			)
 		)
 		(path "/1325b0fd-5b70-4f48-9356-782ea1a8e95b/90e628b9-ad6d-4fc8-9e16-a3887cc32fd7")
-		(sheetname "SD")
+		(sheetname "/SD/")
 		(sheetfile "SD.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -22223,7 +23815,7 @@
 			)
 		)
 		(path "/51aabc27-13e8-43d7-96da-dd40506ea367")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -22537,7 +24129,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/509c2422-a53c-47bd-b30d-874478a515e4")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -22799,7 +24391,7 @@
 			)
 		)
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/c7767513-6fcb-47f6-80ea-a81a0a7c56e3")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -23089,7 +24681,7 @@
 			)
 		)
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/803fd02c-2188-41cf-a862-4d13bc1e44a4")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -23407,7 +24999,7 @@
 			)
 		)
 		(path "/f343103f-c679-4bb3-ad5f-404eb1b89246")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -23696,7 +25288,7 @@
 			)
 		)
 		(path "/6b07e5e9-274d-43e6-aeab-75560e0083ff")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -23985,7 +25577,7 @@
 			)
 		)
 		(path "/8095aa48-b3bd-45c4-92ef-af216b9ae680")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -24273,7 +25865,7 @@
 			)
 		)
 		(path "/1325b0fd-5b70-4f48-9356-782ea1a8e95b/eacac898-ca8d-41a7-ad38-d9928dcff827")
-		(sheetname "SD")
+		(sheetname "/SD/")
 		(sheetfile "SD.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -24562,7 +26154,7 @@
 			)
 		)
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/184274b4-be6c-4d85-85dc-229c590f9ff4")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -24871,7 +26463,7 @@
 			)
 		)
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/d825799a-c881-478f-b25f-87e2053a0f28")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(zone_connect 1)
 		(attr exclude_from_pos_files)
@@ -25144,7 +26736,7 @@
 			)
 		)
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/e33a74f4-eaaa-4243-9ea7-1f0db241f986")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -25433,7 +27025,7 @@
 			)
 		)
 		(path "/5cb55c9e-eab1-4b28-98b1-14c7fd06bee3")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -25722,7 +27314,7 @@
 			)
 		)
 		(path "/225847f0-622f-4796-9501-42582e0b5d62")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -26075,7 +27667,7 @@
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/a6d2e051-cba2-41ea-8916-2bdbbed4e24a")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -26203,7 +27795,7 @@
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.SilkS")
-			(uuid "33156b14-1e79-4b0c-b235-b5d324f9fafb")
+			(uuid "8ff27994-b595-47f5-9f8a-7bdc225af7ad")
 			(effects
 				(font
 					(size 1 1)
@@ -26216,7 +27808,7 @@
 			(at 19.75 -0.05 0)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "1c54d0f5-a564-4f86-aac2-8c65e8e375a2")
+			(uuid "c52d543b-4a13-4276-ae73-a09edea8f5ee")
 			(effects
 				(font
 					(size 1 1)
@@ -26230,7 +27822,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "8b84f11f-a328-4181-8078-f3e526e9c691")
+			(uuid "ee259621-0b6d-40a1-8352-3befeb6c5ac4")
 			(effects
 				(font
 					(size 1 1)
@@ -26244,7 +27836,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "688cb948-802d-4b64-aa86-252359930498")
+			(uuid "286bc344-c6f3-4f29-8aab-d88ec88e9efb")
 			(effects
 				(font
 					(size 1 1)
@@ -26366,7 +27958,7 @@
 			)
 		)
 		(path "/15c1922d-035b-4771-885b-611376c0a6b7/fdd48b07-e84e-46d0-8bde-65e39460f970")
-		(sheetname "POWER")
+		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr through_hole)
 		(fp_rect
@@ -26619,7 +28211,7 @@
 			)
 		)
 		(path "/1325b0fd-5b70-4f48-9356-782ea1a8e95b/5e2855db-0487-4f80-92ad-72570245ca4d")
-		(sheetname "SD")
+		(sheetname "/SD/")
 		(sheetfile "SD.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -26907,7 +28499,7 @@
 			)
 		)
 		(path "/1325b0fd-5b70-4f48-9356-782ea1a8e95b/6de9ef92-2899-45c7-bc25-e8ba0363f81b")
-		(sheetname "SD")
+		(sheetname "/SD/")
 		(sheetfile "SD.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -27210,7 +28802,7 @@
 			)
 		)
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/2c25cf7a-7fc6-4d6e-bb96-15896351c950")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -27425,7 +29017,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 30 "unconnected-(U6-NC-Pad15)")
 			(pinfunction "NC")
-			(pintype "unspecified")
+			(pintype "no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "025d0b23-ad1a-4d12-9fd1-2c9e3d54b84a")
 		)
@@ -27455,7 +29047,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 31 "unconnected-(U6-NC-Pad18)")
 			(pinfunction "NC")
-			(pintype "unspecified")
+			(pintype "no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "d2edbbe4-9a86-4d60-a783-d0fe2ab76109")
 		)
@@ -27643,7 +29235,7 @@
 			)
 		)
 		(path "/1145488a-6816-4ee0-96ef-7cafc7e1bdb9")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd exclude_from_pos_files)
 		(fp_line
@@ -27975,7 +29567,7 @@
 			)
 		)
 		(path "/034b4400-b62f-4fe3-b583-3224bd6921a0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -28264,7 +29856,7 @@
 			)
 		)
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/ac02d0a8-ef4a-4b3c-869c-0c7b5cc289be")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -28552,7 +30144,7 @@
 			)
 		)
 		(path "/1325b0fd-5b70-4f48-9356-782ea1a8e95b/da9cd64a-e1f1-4cc2-a738-614136a8648a")
-		(sheetname "SD")
+		(sheetname "/SD/")
 		(sheetfile "SD.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -28841,7 +30433,7 @@
 			)
 		)
 		(path "/8b6e0413-3ac3-47a2-92cd-0ee0902f5a5b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -29130,7 +30722,7 @@
 			)
 		)
 		(path "/1325b0fd-5b70-4f48-9356-782ea1a8e95b/413ca759-5bab-4b21-aca9-083d66bde185")
-		(sheetname "SD")
+		(sheetname "/SD/")
 		(sheetfile "SD.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -29420,7 +31012,7 @@
 			)
 		)
 		(path "/273de9fc-47df-4bf4-82b9-7faf6b333760/2097e51b-fcf8-4fef-99c7-1aa65cfe015a")
-		(sheetname "GPS")
+		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -29808,7 +31400,7 @@
 			)
 		)
 		(path "/db4a1574-ce30-4298-bdf3-8704293fcaf7")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -30199,7 +31791,7 @@
 			(roundrect_rratio 0.25)
 			(net 77 "unconnected-(U11-PC13-Pad2)")
 			(pinfunction "PC13")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "3f70794d-a33b-4825-83be-58e00d21b768")
 		)
 		(pad "3" smd roundrect
@@ -30209,7 +31801,7 @@
 			(roundrect_rratio 0.25)
 			(net 96 "unconnected-(U11-PC14-OSC32_IN-Pad3)")
 			(pinfunction "PC14-OSC32_IN")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "3732b4ef-6cc6-4888-989f-adbc5cb53987")
 		)
 		(pad "4" smd roundrect
@@ -30219,7 +31811,7 @@
 			(roundrect_rratio 0.25)
 			(net 82 "unconnected-(U11-PC15-OSC32_OUT-Pad4)")
 			(pinfunction "PC15-OSC32_OUT")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "28599926-6649-4081-9467-96583f0153f6")
 		)
 		(pad "5" smd roundrect
@@ -30239,7 +31831,7 @@
 			(roundrect_rratio 0.25)
 			(net 91 "unconnected-(U11-PH1-OSC_OUT-Pad6)")
 			(pinfunction "PH1-OSC_OUT")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "5af771dc-be13-4b31-acb7-ff2e3a50ed60")
 		)
 		(pad "7" smd roundrect
@@ -30259,7 +31851,7 @@
 			(roundrect_rratio 0.25)
 			(net 89 "unconnected-(U11-PC0-Pad8)")
 			(pinfunction "PC0")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "a869b143-a9f6-4f02-8278-7333ab47378d")
 		)
 		(pad "9" smd roundrect
@@ -30269,7 +31861,7 @@
 			(roundrect_rratio 0.25)
 			(net 92 "unconnected-(U11-PC1-Pad9)")
 			(pinfunction "PC1")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "42b25268-4852-4643-a521-85330b99257b")
 		)
 		(pad "10" smd roundrect
@@ -30279,7 +31871,7 @@
 			(roundrect_rratio 0.25)
 			(net 95 "unconnected-(U11-PC2-Pad10)")
 			(pinfunction "PC2")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "28cab427-8cd7-4555-b3b7-6ae6608c0fb7")
 		)
 		(pad "11" smd roundrect
@@ -30289,7 +31881,7 @@
 			(roundrect_rratio 0.25)
 			(net 78 "unconnected-(U11-PC3-Pad11)")
 			(pinfunction "PC3")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "9b200170-7105-4539-b20a-2c2b34f55db4")
 		)
 		(pad "12" smd roundrect
@@ -30319,7 +31911,7 @@
 			(roundrect_rratio 0.25)
 			(net 98 "unconnected-(U11-PA0-Pad14)")
 			(pinfunction "PA0")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "4fbdcd97-7024-40d3-bbb9-aff79b4a708f")
 		)
 		(pad "15" smd roundrect
@@ -30329,7 +31921,7 @@
 			(roundrect_rratio 0.25)
 			(net 94 "unconnected-(U11-PA1-Pad15)")
 			(pinfunction "PA1")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "92d49be6-f517-42da-b148-d8e2516554d6")
 		)
 		(pad "16" smd roundrect
@@ -30379,7 +31971,7 @@
 			(roundrect_rratio 0.25)
 			(net 85 "unconnected-(U11-PA4-Pad20)")
 			(pinfunction "PA4")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "5084bf6e-b3d3-4006-b6f9-3f0b30cddd8f")
 		)
 		(pad "21" smd roundrect
@@ -30399,7 +31991,7 @@
 			(roundrect_rratio 0.25)
 			(net 88 "unconnected-(U11-PA6-Pad22)")
 			(pinfunction "PA6")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "487002ea-ce67-49df-ad6e-a9af29ae175f")
 		)
 		(pad "23" smd roundrect
@@ -30409,7 +32001,7 @@
 			(roundrect_rratio 0.25)
 			(net 105 "unconnected-(U11-PA7-Pad23)")
 			(pinfunction "PA7")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "97e9bfdb-3337-4c19-8e2a-37d1c712fd3b")
 		)
 		(pad "24" smd roundrect
@@ -30439,7 +32031,7 @@
 			(roundrect_rratio 0.25)
 			(net 87 "unconnected-(U11-PB0-Pad26)")
 			(pinfunction "PB0")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "b9225b44-51a2-41f4-b8cc-24f737b2f006")
 		)
 		(pad "27" smd roundrect
@@ -30469,7 +32061,7 @@
 			(roundrect_rratio 0.25)
 			(net 86 "unconnected-(U11-PB10-Pad29)")
 			(pinfunction "PB10")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "8ab9a0f1-f15a-4dba-b351-d90288c71e39")
 		)
 		(pad "30" smd roundrect
@@ -30479,7 +32071,7 @@
 			(roundrect_rratio 0.25)
 			(net 80 "unconnected-(U11-PB11-Pad30)")
 			(pinfunction "PB11")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "b3014e82-4cbb-4ef9-924f-2a78ed3015e9")
 		)
 		(pad "31" smd roundrect
@@ -30679,7 +32271,7 @@
 			(roundrect_rratio 0.25)
 			(net 90 "unconnected-(U11-PA15-Pad50)")
 			(pinfunction "PA15")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "1f7ea05b-fb63-4908-b442-6c9a51b1b689")
 		)
 		(pad "51" smd roundrect
@@ -30729,7 +32321,7 @@
 			(roundrect_rratio 0.25)
 			(net 97 "unconnected-(U11-PB3-Pad55)")
 			(pinfunction "PB3")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "3eea4560-cb36-4003-8e2c-edcf8e98d173")
 		)
 		(pad "56" smd roundrect
@@ -30739,7 +32331,7 @@
 			(roundrect_rratio 0.25)
 			(net 79 "unconnected-(U11-PB4-Pad56)")
 			(pinfunction "PB4")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "f1acae04-3c32-417c-8e2b-66c2522b0ee2")
 		)
 		(pad "57" smd roundrect
@@ -30749,7 +32341,7 @@
 			(roundrect_rratio 0.25)
 			(net 93 "unconnected-(U11-PB5-Pad57)")
 			(pinfunction "PB5")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "2412543c-ecf5-4afe-babe-3fdbca975cc3")
 		)
 		(pad "58" smd roundrect
@@ -30779,7 +32371,7 @@
 			(roundrect_rratio 0.25)
 			(net 103 "unconnected-(U11-PH3-BOOT0-Pad60)")
 			(pinfunction "PH3-BOOT0")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "34efe4e4-9303-419f-81c4-5832a4e923df")
 		)
 		(pad "61" smd roundrect
@@ -30799,7 +32391,7 @@
 			(roundrect_rratio 0.25)
 			(net 104 "unconnected-(U11-PB9-Pad62)")
 			(pinfunction "PB9")
-			(pintype "bidirectional")
+			(pintype "bidirectional+no_connect")
 			(uuid "8b15621a-ad14-4a79-93fa-1f5a8db84f95")
 		)
 		(pad "63" smd roundrect
@@ -31165,6 +32757,14 @@
 		(layer "F.Cu")
 		(net 3)
 		(uuid "3934467f-d05a-4b9e-86f9-52556ea42fdf")
+	)
+	(segment
+		(start 100.3 123)
+		(end 100.3 124.1)
+		(width 0.15)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "3a18983d-0ee9-45c7-b9c2-e10f92fae2bc")
 	)
 	(segment
 		(start 103.780511 79.7)
@@ -31887,6 +33487,14 @@
 		(free yes)
 		(net 3)
 		(uuid "1ac50e10-6ce6-42e5-a093-b91e68678427")
+	)
+	(via
+		(at 100.3 124.1)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 3)
+		(uuid "1b32f7b8-8745-48ac-8c65-70d769e5bf1e")
 	)
 	(via
 		(at 109.2 76.5)
@@ -33542,6 +35150,14 @@
 		(uuid "5f7026b7-0462-4ebb-bf37-b7c667f60704")
 	)
 	(segment
+		(start 96.6 123)
+		(end 96.6 121.4)
+		(width 0.3)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "608c2b1f-84a5-49ca-8d98-2e758deb8644")
+	)
+	(segment
 		(start 95.25 127.95)
 		(end 95.25 125.75)
 		(width 0.3)
@@ -33644,6 +35260,14 @@
 		(layer "F.Cu")
 		(net 4)
 		(uuid "781f43f1-c325-4e1c-a182-46750df487c0")
+	)
+	(segment
+		(start 98.3 123)
+		(end 96.6 123)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "797d998c-ad51-4958-a042-23c252af8102")
 	)
 	(segment
 		(start 106.35 110.4)
@@ -33967,7 +35591,7 @@
 	)
 	(segment
 		(start 96.6 124.4)
-		(end 96.6 121.4)
+		(end 96.6 123)
 		(width 0.3)
 		(layer "F.Cu")
 		(net 4)
@@ -39409,6 +41033,14 @@
 		(uuid "fb3f7286-70b1-4c7e-bf7f-9975ecf2f331")
 	)
 	(segment
+		(start 103.5 122.9)
+		(end 106.3 122.9)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 49)
+		(uuid "19602c54-6490-406f-b9cc-9f098af09f12")
+	)
+	(segment
 		(start 108.55 121.7)
 		(end 107.5 121.7)
 		(width 0.5)
@@ -39431,6 +41063,14 @@
 		(layer "F.Cu")
 		(net 49)
 		(uuid "4e93505b-099e-464f-a00e-d47de4283ce1")
+	)
+	(segment
+		(start 106.3 122.9)
+		(end 106.35 122.85)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 49)
+		(uuid "82044b23-fee1-4b63-939f-0334b2652606")
 	)
 	(segment
 		(start 106.35 122.85)
@@ -41681,6 +43321,14 @@
 		(uuid "f3ab6148-8de7-4b49-a692-77a7a9937525")
 	)
 	(segment
+		(start 112.959 121.641)
+		(end 114.7 119.9)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 73)
+		(uuid "105af3f8-3a0a-4175-9755-63e68c51df06")
+	)
+	(segment
 		(start 110 112.85)
 		(end 109.9 112.95)
 		(width 0.3)
@@ -41735,6 +43383,14 @@
 		(layer "F.Cu")
 		(net 73)
 		(uuid "51918b66-e3f1-4855-b3ab-b49ef1162127")
+	)
+	(segment
+		(start 114.7 119.9)
+		(end 115.4 119.9)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 73)
+		(uuid "5ec33319-e500-42be-bb0f-3d15655ff039")
 	)
 	(segment
 		(start 102.7 78.3)
@@ -41831,6 +43487,14 @@
 		(layer "F.Cu")
 		(net 73)
 		(uuid "e5d9a06f-b59a-4705-868a-433d73a53c11")
+	)
+	(segment
+		(start 112.401661 121.641)
+		(end 112.959 121.641)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 73)
+		(uuid "f16787c5-50ca-4937-827e-76f7eec4fd0f")
 	)
 	(segment
 		(start 108.399999 114.1)
