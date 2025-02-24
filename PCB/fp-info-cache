@@ -1,4 +1,4 @@
-24815652572977075
+24814788506960865
 001-Resistors
 R_0402_H0.4
 
@@ -87961,6 +87961,20 @@ Potentiometer vertical vishay
 0
 3
 3
+RF
+Skyworks_SKY13575_639LF
+http://www.skyworksinc.com/uploads/documents/SKY13575_639LF_203270D.pdf
+Skyworks
+0
+19
+15
+RF
+Skyworks_SKY65404-31
+http://www.skyworksinc.com/uploads/documents/SKY65404_31_201512K.pdf
+Skyworks
+0
+7
+7
 RF_Antenna
 AVX_M620720
 868Mhz, 915Mhz ISM antenna, 6 x 2 x 1.08mm, http://datasheets.avx.com/ethertronics/AVX-E_M620720.pdf
@@ -89214,20 +89228,6 @@ WiFi IEEE802.11 b/g/n
 0
 44
 44
-RF_kicad
-Skyworks_SKY13575_639LF
-http://www.skyworksinc.com/uploads/documents/SKY13575_639LF_203270D.pdf
-Skyworks
-0
-19
-15
-RF_kicad
-Skyworks_SKY65404-31
-http://www.skyworksinc.com/uploads/documents/SKY65404_31_201512K.pdf
-Skyworks
-0
-7
-7
 Relay_SMD
 Relay_2P2T_10x6mm_TE_IMxxG
 Signal Relay, 10x6mm, 2 Form C, Gull Wings, https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F108-98001%7FZ.1%7Fpdf%7FEnglish%7FENG_DS_108-98001_Z.1.pdf

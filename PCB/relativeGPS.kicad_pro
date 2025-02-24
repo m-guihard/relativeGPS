@@ -587,7 +587,8 @@
       "Templates",
       "RF",
       "Sensors",
-      "Misc"
+      "Misc",
+      "011-Misc"
     ]
   },
   "meta": {
