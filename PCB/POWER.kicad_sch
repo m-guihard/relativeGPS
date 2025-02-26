@@ -2902,7 +2902,7 @@
 					(hide yes)
 				)
 			)
-			(property "Digikey P/N" "IC REG LINEAR 3.3V/3.3V 8MLF"
+			(property "Digikey P/N" "576-1947-1-ND"
 				(at -0.254 -37.084 0)
 				(effects
 					(font
@@ -9365,7 +9365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey P/N" "IC REG LINEAR 3.3V/3.3V 8MLF"
+		(property "Digikey P/N" "576-1947-1-ND"
 			(at 68.326 208.534 0)
 			(effects
 				(font
