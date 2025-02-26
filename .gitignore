@@ -1,3 +1,4 @@
 # Build folder
 firmware/build/
 *.lck
+PCB/relativeGPS-backups/

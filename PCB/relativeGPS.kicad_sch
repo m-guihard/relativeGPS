@@ -2620,6 +2620,44 @@
 						(type background)
 					)
 				)
+				(pin no_connect line
+					(at -11.43 20.32 0)
+					(length 2.54)
+					(hide yes)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -11.43 17.78 0)
+					(length 2.54)
+					(hide yes)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin output line
 					(at -11.43 5.08 0)
 					(length 2.54)
@@ -2703,6 +2741,44 @@
 						)
 					)
 					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 20.32 0)
+					(length 2.54)
+					(hide yes)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 17.78 0)
+					(length 2.54)
+					(hide yes)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6344,6 +6420,18 @@
 		)
 		(pin "8"
 			(uuid "de820fd2-2826-42fe-9f96-67ddbe0adf78")
+		)
+		(pin "2"
+			(uuid "8d5916ec-2880-4110-9485-5c925857c179")
+		)
+		(pin "10"
+			(uuid "df504f28-4e54-4770-ab96-71eb65fd031b")
+		)
+		(pin "1"
+			(uuid "f15d1263-e25d-4ff4-a4de-dbab9f06dfc8")
+		)
+		(pin "9"
+			(uuid "0fb7d8bc-83ac-44ce-b0c4-61e85fe51d4a")
 		)
 		(instances
 			(project "relativeGPS"
