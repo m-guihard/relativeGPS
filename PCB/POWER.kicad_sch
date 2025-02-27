@@ -2307,7 +2307,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "003-Inductors:L_4.7uH_20%_850mA_168mOhm"
+		(symbol "003-Inductors:L_4.7uH_20%_1.7A_120mOhm"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2326,7 +2326,7 @@
 					)
 				)
 			)
-			(property "Value" "L_4.7uH_20%_850mA_168mOhm"
+			(property "Value" "L_4.7uH_20%_1.7A_120mOhm"
 				(at 4.318 -5.08 0)
 				(effects
 					(font
@@ -2335,7 +2335,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "003-Inductors:LQH3NPZ4R7MGRL"
+			(property "Footprint" "003-Inductors:LQH3NPZ4R7MMEL"
 				(at 0 -8.89 0)
 				(effects
 					(font
@@ -2344,7 +2344,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-9130.pdf"
+			(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-9140.pdf"
 				(at 0 -23.114 0)
 				(effects
 					(font
@@ -2362,7 +2362,7 @@
 					(hide yes)
 				)
 			)
-			(property "Web link" "https://www.digikey.ch/en/products/detail/murata-electronics/LQH3NPZ4R7MGRL/6799390?s=N4IgjCBcoEwAwA4DsVQGMoDMCGAbAzgKYA0IA9lANogAsAdEgAQCtAEiALqkAOALlCACqAOwCWvAPKYAsoWz4ArgCdCIAL6kAtDFQgMkXkoUlyVEAFZOajSB2RqAGQCKrAMwA5AAqMAtsuy82FZAA"
+			(property "Web link" "https://www.digikey.ch/en/products/detail/murata-electronics/LQH3NPZ4R7MMEL/6800642"
 				(at 0.254 -20.574 0)
 				(effects
 					(font
@@ -2380,7 +2380,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer P/N" "LQH3NPZ4R7MGRL"
+			(property "Manufacturer P/N" "LQH3NPZ4R7MMEL"
 				(at 0 -18.542 0)
 				(effects
 					(font
@@ -2389,7 +2389,7 @@
 					(hide yes)
 				)
 			)
-			(property "Digikey P/N" "490-15965-1-ND"
+			(property "Digikey P/N" "490-LQH3NPZ4R7MMELCT-ND"
 				(at 0.254 -14.224 0)
 				(effects
 					(font
@@ -2398,7 +2398,7 @@
 					(hide yes)
 				)
 			)
-			(property "Price" "0.35"
+			(property "Price" "0.32"
 				(at 0.254 -27.178 0)
 				(effects
 					(font
@@ -2407,7 +2407,7 @@
 					(hide yes)
 				)
 			)
-			(property "Height" "1"
+			(property "Height" "1.5"
 				(at 0.254 -11.938 0)
 				(effects
 					(font
@@ -2451,7 +2451,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "L_4.7uH_20%_850mA_168mOhm_0_1"
+			(symbol "L_4.7uH_20%_1.7A_120mOhm_0_1"
 				(arc
 					(start -2.54 0)
 					(mid -1.905 0.6323)
@@ -2501,7 +2501,7 @@
 					)
 				)
 			)
-			(symbol "L_4.7uH_20%_850mA_168mOhm_1_1"
+			(symbol "L_4.7uH_20%_1.7A_120mOhm_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 1.27)
@@ -7771,7 +7771,7 @@
 		)
 	)
 	(symbol
-		(lib_id "003-Inductors:L_4.7uH_20%_850mA_168mOhm")
+		(lib_id "003-Inductors:L_4.7uH_20%_1.7A_120mOhm")
 		(at 49.53 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7788,7 +7788,7 @@
 				)
 			)
 		)
-		(property "Value" "L_4.7uH_20%_850mA_168mOhm"
+		(property "Value" "L_4.7uH_20%_1.7A_120mOhm"
 			(at 53.848 90.17 0)
 			(effects
 				(font
@@ -7797,7 +7797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "003-Inductors:LQH3NPZ4R7MGRL"
+		(property "Footprint" "003-Inductors:LQH3NPZ4R7MMEL"
 			(at 49.53 93.98 0)
 			(effects
 				(font
@@ -7806,7 +7806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-9130.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-9140.pdf"
 			(at 49.53 108.204 0)
 			(effects
 				(font
@@ -7824,7 +7824,7 @@
 				(hide yes)
 			)
 		)
-		(property "Web link" "https://www.digikey.ch/en/products/detail/murata-electronics/LQH3NPZ4R7MGRL/6799390?s=N4IgjCBcoEwAwA4DsVQGMoDMCGAbAzgKYA0IA9lANogAsAdEgAQCtAEiALqkAOALlCACqAOwCWvAPKYAsoWz4ArgCdCIAL6kAtDFQgMkXkoUlyVEAFZOajSB2RqAGQCKrAMwA5AAqMAtsuy82FZAA"
+		(property "Web link" "https://www.digikey.ch/en/products/detail/murata-electronics/LQH3NPZ4R7MMEL/6800642"
 			(at 49.784 105.664 0)
 			(effects
 				(font
@@ -7842,7 +7842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer P/N" "LQH3NPZ4R7MGRL"
+		(property "Manufacturer P/N" "LQH3NPZ4R7MMEL"
 			(at 49.53 103.632 0)
 			(effects
 				(font
@@ -7851,7 +7851,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey P/N" "490-15965-1-ND"
+		(property "Digikey P/N" "490-LQH3NPZ4R7MMELCT-ND"
 			(at 49.784 99.314 0)
 			(effects
 				(font
@@ -7860,7 +7860,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" "0.35"
+		(property "Price" "0.32"
 			(at 49.784 112.268 0)
 			(effects
 				(font
@@ -7869,7 +7869,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "1"
+		(property "Height" "1.5"
 			(at 49.784 97.028 0)
 			(effects
 				(font
