@@ -173,7 +173,7 @@ LIBDIR =
 LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
 
 # default action: build all
-all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin
+all: $(BUILD_DIR)/release/$(TARGET).elf $(BUILD_DIR)/release/$(TARGET).hex $(BUILD_DIR)/release/$(TARGET).bin
 
 
 #######################################
@@ -196,18 +196,21 @@ $(BUILD_DIR)/%.o: %.s Makefile | $(BUILD_DIR)
 $(BUILD_DIR)/%.o: %.S Makefile | $(BUILD_DIR)
 	$(AS) -c $(CFLAGS) $< -o $@
 
-$(BUILD_DIR)/$(TARGET).elf: $(OBJECTS) Makefile
+$(BUILD_DIR)/release/$(TARGET).elf: $(OBJECTS) Makefile | $(BUILD_DIR)/release
 	$(CC) $(OBJECTS) $(LDFLAGS) -o $@
 	$(SZ) $@
 
-$(BUILD_DIR)/%.hex: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
+$(BUILD_DIR)/release/%.hex: $(BUILD_DIR)/release/%.elf | $(BUILD_DIR)/release
 	$(HEX) $< $@
 	
-$(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
+$(BUILD_DIR)/release/%.bin: $(BUILD_DIR)/release/%.elf | $(BUILD_DIR)/release
 	$(BIN) $< $@	
 	
 $(BUILD_DIR):
 	mkdir $@		
+
+$(BUILD_DIR)/release: $(BUILD_DIR)
+	mkdir $(BUILD_DIR)\release
 
 #######################################
 # clean up
