@@ -264,7 +264,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "9d4bf9ad-38d3-4e94-9759-e5b23bf5d991")
 			(effects
 				(font
@@ -316,6 +315,17 @@
 		(sheetname "/MAG_ACC/")
 		(sheetfile "MAG_ACC.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "d6c450ae-cec4-41b4-a5d8-9e0b84c420e6")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -347,7 +357,6 @@
 			(at 0.05 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "374eb0c9-493a-4d56-83a8-ab55e92e0504")
 			(effects
 				(font
@@ -624,7 +633,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "818f94ea-ecf6-4686-ab68-854f2639c2e0")
 			(effects
 				(font
@@ -676,6 +684,17 @@
 		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "e608c9d9-1cf3-441c-a0b7-acb2b53611bb")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -707,7 +726,6 @@
 			(at -0.000033 0.023721 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "e897662a-dc50-40df-b123-6552fde13332")
 			(effects
 				(font
@@ -1043,7 +1061,6 @@
 			(at 0.05 1.85 22.5)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "7367a2bc-2a90-49dc-8cc5-3164448f55f0")
 			(effects
 				(font
@@ -1442,7 +1459,6 @@
 			(at 0 -2 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "b73e1eeb-c646-4eed-bbdf-0559e4e3c75b")
 			(effects
 				(font
@@ -1902,7 +1918,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "087be9a5-d3c2-4baf-bb12-0b03b3f18181")
 			(effects
 				(font
@@ -1954,6 +1969,17 @@
 		(sheetname "/LED/")
 		(sheetfile "LED.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "de1bcb4e-de43-482c-86d3-be5d2ee4e8d2")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -1986,7 +2012,6 @@
 		(property "Reference" "C20"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "1f7e629f-f5d3-437b-95f8-ddc05e1d6d82")
 			(effects
 				(font
@@ -2291,7 +2316,6 @@
 		(property "Reference" "R5"
 			(at 0 0 270)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "dad7be0a-25b4-4223-8210-f5a7b5f16658")
 			(effects
 				(font
@@ -2567,7 +2591,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "77a6ad4c-47ab-439e-8399-4e8759f10e36")
 			(effects
 				(font
@@ -2619,6 +2642,17 @@
 		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "a61ae85d-6d48-4122-94ea-441f86c4165e")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -2650,7 +2684,6 @@
 			(at -0.1 -4.85 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "92949059-4903-4d86-9828-17c6e55753f5")
 			(effects
 				(font
@@ -2925,7 +2958,6 @@
 		(property "Reference" "C25"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "085ed248-3d50-4821-91b0-83cad4f9468d")
 			(effects
 				(font
@@ -3230,7 +3262,6 @@
 			(at 0.05 0 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "54f18357-2e99-4e9b-b525-392c40ae6e11")
 			(effects
 				(font
@@ -3507,7 +3538,6 @@
 			(at 0 -3 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "fb7b5c08-82d9-4b70-bf03-f4ee613e1937")
 			(effects
 				(font
@@ -3808,7 +3838,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "ad12bd91-bd2f-40a5-abd5-61c9608c3329")
 			(effects
 				(font
@@ -3860,6 +3889,17 @@
 		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "91ead63a-dfc5-4046-ba4b-48258de2e749")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -3891,7 +3931,6 @@
 		(property "Reference" "R10"
 			(at 0 0 90)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "95f51818-c2d3-49cb-810b-526870092bb0")
 			(effects
 				(font
@@ -4167,7 +4206,6 @@
 			(at 0.35 0.05 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "ef6075d1-780d-4878-886f-ccdfac3b45e0")
 			(effects
 				(font
@@ -4577,7 +4615,6 @@
 		(property "Reference" "R1"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "6935c4bb-a1ae-4476-a75a-9670e628379d")
 			(effects
 				(font
@@ -4853,7 +4890,6 @@
 			(at 0.099999 -0.1 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "51e763a0-6e2d-4bb9-a2ac-bf4a20dff0da")
 			(effects
 				(font
@@ -5190,7 +5226,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "a5cca105-af79-4a30-8e6f-f0e04f188eb6")
 			(effects
 				(font
@@ -5242,6 +5277,17 @@
 		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "17fd5ec3-f98c-4b68-a97f-4e1e7a7bef48")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -5273,7 +5319,6 @@
 			(at 0.35 0.05 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "9e4b07e0-0d60-4dcc-90d1-eac7f0023cc6")
 			(effects
 				(font
@@ -5684,7 +5729,6 @@
 		(property "Reference" "C19"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "4c88495f-34cc-4bb8-a61f-5f2f565d7928")
 			(effects
 				(font
@@ -5990,7 +6034,6 @@
 		(property "Reference" "C15"
 			(at 0 0 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "9324f3d6-2f55-4fed-8987-aee878d78093")
 			(effects
 				(font
@@ -6295,7 +6338,6 @@
 			(at 0.35 0.05 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "309ce09b-0c18-422e-976f-ee500b7cd951")
 			(effects
 				(font
@@ -6705,7 +6747,6 @@
 			(at 0.35 0.05 45)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "c3b98e25-eadd-43b1-b2fa-d34bd287a746")
 			(effects
 				(font
@@ -7117,7 +7158,6 @@
 		(property "Reference" "C2"
 			(at 0 0 180)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "ccb55252-15ce-48f2-99ea-52b73b35cf86")
 			(effects
 				(font
@@ -7423,7 +7463,6 @@
 			(at -6.95 -8.55 22.5)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "588dbf3a-b4ef-4d40-af2c-a0850de1f88f")
 			(effects
 				(font
@@ -8176,7 +8215,6 @@
 		(property "Reference" "C18"
 			(at 0 0 180)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "193aea8e-40bb-4ebd-8752-f90fa119a7cd")
 			(effects
 				(font
@@ -8481,7 +8519,6 @@
 		(property "Reference" "R4"
 			(at 0 0 270)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "ebc457d0-4920-4c12-b9d6-49ad700d131d")
 			(effects
 				(font
@@ -8757,7 +8794,6 @@
 			(at 0.05 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "591eda6f-83fc-4b81-abe6-b0c98296b8b3")
 			(effects
 				(font
@@ -9034,7 +9070,6 @@
 		(property "Reference" "R8"
 			(at 0 0 180)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "94ca1075-decd-492b-af3f-ec31eb057f81")
 			(effects
 				(font
@@ -9310,7 +9345,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "e3c1ead1-77b6-4e1a-81bd-0b867958ebe1")
 			(effects
 				(font
@@ -9362,6 +9396,17 @@
 		(sheetname "/MAG_ACC/")
 		(sheetfile "MAG_ACC.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "86d1c4e2-4b92-4728-ad5f-af5c96ab2b0e")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -9393,7 +9438,6 @@
 			(at 0.05 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "d4ed5429-8c90-4e7e-b91b-e656f354b843")
 			(effects
 				(font
@@ -9671,7 +9715,6 @@
 		(property "Reference" "C23"
 			(at 0 0 270)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "47d65d21-e060-418d-94da-85038d1b39d5")
 			(effects
 				(font
@@ -9976,7 +10019,6 @@
 			(at 0.35 0.05 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "8b1c7523-d467-4114-b8bb-7bf49d1dbb37")
 			(effects
 				(font
@@ -10386,7 +10428,6 @@
 		(property "Reference" "R3"
 			(at 0 0 270)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "359b7422-e7ea-4331-8b87-f04373e49679")
 			(effects
 				(font
@@ -10662,7 +10703,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "99f1807e-971e-48de-9802-ebc583a9f0f9")
 			(effects
 				(font
@@ -10714,6 +10754,17 @@
 		(sheetname "/GPS/")
 		(sheetfile "GPS.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "21441b3b-7385-44ed-bd0c-6f2e2ccfcce0")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -10745,7 +10796,6 @@
 			(at 0.05 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "a27df025-0860-473c-a117-d84f954a282e")
 			(effects
 				(font
@@ -11022,7 +11072,6 @@
 			(at 0.35 0.05 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "c0bb0ec8-34f0-42bb-9e5c-b554ba6fbe3b")
 			(effects
 				(font
@@ -11432,7 +11481,6 @@
 			(at 0.35 0.05 225)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "d706fea8-17ef-4ab2-87e6-751f2eb5541c")
 			(effects
 				(font
@@ -11843,7 +11891,6 @@
 			(at 0.0525 0.050001 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "5318d8c9-9cdc-41a5-99ed-39b9ec9f0d00")
 			(effects
 				(font
@@ -12165,7 +12212,6 @@
 		(property "Reference" "R7"
 			(at 0 0 270)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "d1c91a0f-316e-4893-b952-98b5639ba7cf")
 			(effects
 				(font
@@ -12707,7 +12753,6 @@
 			(at 0 -2.05 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "f7b2f860-1382-4e08-85a0-b764426dda92")
 			(effects
 				(font
@@ -13225,7 +13270,6 @@
 			(at 0.35 0.05 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "501be350-28ff-4899-98f9-6c042d164190")
 			(effects
 				(font
@@ -13635,7 +13679,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "6e800dd9-ed45-4313-865b-74a1381b1790")
 			(effects
 				(font
@@ -13687,6 +13730,17 @@
 		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ceedab9a-cc90-4115-9c23-3d6af92b47ff")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -13719,7 +13773,6 @@
 		(property "Reference" "C16"
 			(at 0 0 270)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "2455b89e-b7d3-402d-8d6d-0e273ce3c8a4")
 			(effects
 				(font
@@ -14025,7 +14078,6 @@
 		(property "Reference" "C3"
 			(at 0 0 45)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "01e4ac49-7471-4ca3-a56c-78157415712f")
 			(effects
 				(font
@@ -14330,7 +14382,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "40cccfaa-4d12-45a4-a4d6-3e1526b9cddb")
 			(effects
 				(font
@@ -14382,6 +14433,17 @@
 		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "307bc937-eae1-4253-95fa-901c0af5b276")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -14413,7 +14475,6 @@
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "ccada6c3-b167-4132-9390-965db4b62103")
 			(effects
 				(font
@@ -14693,7 +14754,6 @@
 			(at 0.05 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "494eeb7b-ff7c-4b7a-9b52-0311c8f76035")
 			(effects
 				(font
@@ -14970,7 +15030,6 @@
 			(at 0.05 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "bea2096a-11bf-42a4-8610-8e5700717260")
 			(effects
 				(font
@@ -15247,7 +15306,6 @@
 		(property "Reference" "R9"
 			(at 0 0 270)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "2b9d773c-870c-4b96-9646-c7172a9c6a04")
 			(effects
 				(font
@@ -15523,7 +15581,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "cfe9df66-340f-4d59-8962-a1717aa274e0")
 			(effects
 				(font
@@ -15575,6 +15632,17 @@
 		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "617356b8-e51f-41f9-99e3-ded0629d17d6")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -15606,7 +15674,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "d738f841-cd5d-49bc-a5f7-602dff66b520")
 			(effects
 				(font
@@ -15658,6 +15725,17 @@
 		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "2fcf7996-c98f-4250-822e-1fe0bf679cc7")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -15689,7 +15767,6 @@
 			(at 0.05 0 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "1ab3d50d-0719-441e-977b-5913d8475605")
 			(effects
 				(font
@@ -15966,7 +16043,6 @@
 			(at 0 -2.5 112.5)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "5161ab9d-65ab-44c8-918c-5700ed019679")
 			(effects
 				(font
@@ -16347,7 +16423,6 @@
 		(property "Reference" "C22"
 			(at 0 0 270)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "7e3961f8-4be1-49a4-b232-b50a45858a37")
 			(effects
 				(font
@@ -16652,7 +16727,6 @@
 			(at 0.35 0.05 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "fa5c3a84-ca49-4a4f-9612-38c4f0e09dfe")
 			(effects
 				(font
@@ -17062,7 +17136,6 @@
 			(at 0.05 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "13ebe918-86ce-40f8-b768-121ef25639f7")
 			(effects
 				(font
@@ -17339,7 +17412,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "232bac4c-1134-46da-86c1-e93ea73e11b0")
 			(effects
 				(font
@@ -17391,6 +17463,17 @@
 		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "92e4a571-c5ea-45ad-9268-b43faf8b1eb1")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -17422,7 +17505,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "3fde2c1d-c72d-4f56-bfa1-1d0980401e31")
 			(effects
 				(font
@@ -17474,6 +17556,17 @@
 		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "f960c9b6-286c-4878-93a4-197c101da739")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -17505,7 +17598,6 @@
 			(at 0.05 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "9fe93d0d-80b4-40fa-a188-1404bc5879f6")
 			(effects
 				(font
@@ -17782,7 +17874,6 @@
 			(at 0.35 0.05 315)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "089bbaf7-72d9-44c9-a22a-bba4400ac4ba")
 			(effects
 				(font
@@ -18193,7 +18284,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "2c4ad5c2-a463-4b46-b4f8-00a726a9a810")
 			(effects
 				(font
@@ -18245,6 +18335,17 @@
 		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "16fb11e8-964a-4697-891e-8e515f70bea1")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -18276,7 +18377,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "99694e80-0409-4d22-a523-fc26fb1c56ba")
 			(effects
 				(font
@@ -18328,6 +18428,17 @@
 		(sheetname "/POWER/")
 		(sheetfile "POWER.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "9b4c9efb-e569-4a04-9b23-e6af2b0a4e0e")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -18359,7 +18470,6 @@
 			(at 0.35 0.05 135)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "22ad9723-4f76-40bc-af0a-78ef0d068c10")
 			(effects
 				(font
@@ -18770,7 +18880,6 @@
 			(at 0.15 -2 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "8e6fe94b-0ce0-4f4f-bfe4-cc5acb7d0bc2")
 			(effects
 				(font
@@ -19071,7 +19180,6 @@
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "b83baf74-703f-4aac-90f3-f20fcef7fda6")
 			(effects
 				(font
@@ -19351,7 +19459,6 @@
 			(at 0.05 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "0a5725e9-3f7f-4f4c-b402-f71771788f2e")
 			(effects
 				(font
@@ -19628,7 +19735,6 @@
 			(at 0 -2.5 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "752951ee-7fbf-44bb-b06f-11f9607898fb")
 			(effects
 				(font
@@ -20063,7 +20169,6 @@
 			(at 0 -2.5 247.5)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "00874e64-0e2c-4ecd-995d-c0895c1b8f13")
 			(effects
 				(font
@@ -20443,7 +20548,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "367d9839-47d8-4133-a8f9-84fde6ed8467")
 			(effects
 				(font
@@ -20495,6 +20599,17 @@
 		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "d34371d8-4cae-4c08-ba8f-3de3adb0f1dd")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -20526,7 +20641,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "ee39b3bd-d882-4ad7-8491-2e5612991f21")
 			(effects
 				(font
@@ -20578,6 +20692,17 @@
 		(sheetname "/")
 		(sheetfile "relativeGPS.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "287c1634-2814-4d81-950f-096e6852dc1b")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
@@ -20609,7 +20734,6 @@
 			(at 3.75 0 270)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "e8c51c02-7f3f-448d-b41e-c2c4aa4ec694")
 			(effects
 				(font
@@ -21085,7 +21209,6 @@
 			(at 0.5 -1.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "49ce50c3-6694-4d31-967e-83eac21becc3")
 			(effects
 				(font
@@ -21137,6 +21260,17 @@
 		(sheetname "/SD/")
 		(sheetfile "SD.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_rect
+			(start -0.8 -0.8)
+			(end 0.8 0.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "6ee4f51e-b22c-489c-a21b-98e9c726b2b1")
+		)
 		(fp_text user "${REFERENCE}"
 			(at 0 6.16 0)
 			(unlocked yes)
