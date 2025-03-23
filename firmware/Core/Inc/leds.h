@@ -5,7 +5,13 @@
 extern "C" {
 #endif
 
+#include "tim.h"
 
+void leds_init();
+void leds_hello();
+void leds_setColor(int led_id, uint8_t red, uint8_t green, uint8_t blue);
+HAL_StatusTypeDef leds_apply();
+void leds_erase();
 
 #ifdef __cplusplus
 }

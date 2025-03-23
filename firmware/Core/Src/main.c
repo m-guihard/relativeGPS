@@ -29,6 +29,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include "leds.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -95,12 +97,15 @@ int main(void)
   MX_DMA_Init();
   MX_I2C1_Init();
   MX_SDMMC1_SD_Init();
-  MX_TIM15_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
   MX_FATFS_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
+  
+  leds_init();
+  leds_hello();
 
   /* USER CODE END 2 */
 
@@ -178,6 +183,17 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
+    leds_erase();
+    leds_apply();
+
+    HAL_Delay(500);
+
+    leds_setColor(8, 1, 0, 0);
+    leds_setColor(9, 1, 0, 0);
+    leds_setColor(10, 1, 0, 0);
+    leds_apply();
+
+    HAL_Delay(500);
   }
   /* USER CODE END Error_Handler_Debug */
 }
