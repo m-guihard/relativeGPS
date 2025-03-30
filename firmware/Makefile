@@ -80,7 +80,8 @@ Middlewares/Third_Party/FatFs/src/ff_gen_drv.c \
 Middlewares/Third_Party/FatFs/src/option/syscall.c
 
 MY_CSOURCES = \
-Core/Src/leds.c
+Core/Src/leds.c \
+Core/Src/printer.c
 
 C_SOURCES += $(MY_CSOURCES)
 

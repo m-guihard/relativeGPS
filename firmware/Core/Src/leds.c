@@ -9,15 +9,14 @@ static bool leds_busy = false;
 
 void leds_init()
 {
-    MX_DMA_Init();
-    MX_TIM1_Init();
+    //
 }
 
 void leds_hello()
 {
     HAL_Delay(500);
     int idx = 0;
-    static const delay = 70;
+    static const int delay = 30;
     for (int i=0; i<8; i++) {
         leds_erase();
         leds_setColor(idx, 0, 0, 10);
@@ -55,7 +54,7 @@ void leds_setColor(int led_id, uint8_t red, uint8_t green, uint8_t blue)
 
 HAL_StatusTypeDef leds_apply()
 {
-    uint16_t pwmData[(24*LEDS_NB)+50];
+    uint16_t pwmData[(24*LEDS_NB)+60];
 
     int i, j;
     for (i=0; i<LEDS_NB; i++) {
@@ -66,12 +65,12 @@ HAL_StatusTypeDef leds_apply()
         }
     }
 
-    for (i=24*LEDS_NB; i<(24*LEDS_NB)+50; i++) {
+    for (i=24*LEDS_NB; i<(24*LEDS_NB)+60; i++) {
         pwmData[i] = 0;
     }
     
     while (leds_busy){};
-    HAL_StatusTypeDef ret =  HAL_TIMEx_PWMN_Start_DMA(&htim1, TIM_CHANNEL_3, (uint32_t *)pwmData, (24*LEDS_NB)+50);
+    HAL_StatusTypeDef ret =  HAL_TIMEx_PWMN_Start_DMA(&htim1, TIM_CHANNEL_3, (uint32_t *)pwmData, (24*LEDS_NB)+60);
     
     if (ret == HAL_OK) leds_busy = true;
 
