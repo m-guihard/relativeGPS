@@ -31,6 +31,12 @@
 
 #include "leds.h"
 #include "printer.h"
+#include "lora.h"
+
+__attribute__((weak)) void _close(void){} 
+__attribute__((weak)) void _lseek(void){} 
+__attribute__((weak)) void _read(void){} 
+__attribute__((weak)) void _write(void){}
 
 /* USER CODE END Includes */
 
@@ -58,6 +64,8 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+
+void enter_stop_mode();
 
 /* USER CODE END PFP */
 
@@ -107,6 +115,7 @@ int main(void)
   
   leds_init();
   leds_hello();
+  lora_init();
 
   /* USER CODE END 2 */
 
@@ -114,10 +123,45 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    uint32_t now = HAL_GetTick();
+
+    // Process LoRa messages (if any)
+    lora_process_msg();
+
+    // TODO Read accelerometer + magnetometer
+    // TODO Read GPS
+    // TODO Update LEDs accordingly
+    // Send current pos to Lora (in interrupt)
+
+    // TODO save positions to SD
+
+    // TODO update state from buttons
+    // TODO update state from timeout
+    // TODO enter stop mode if required
+
+    uint8_t temp_msg[10] = "AT+BAND?\r\n";
+    HAL_UART_Transmit(&huart1, temp_msg, 10, 10);
+
+    static uint32_t last_send = 0;
+    if (now - last_send >= 2000) {
+        last_send = now;
+
+        static int on = 0;
+        if (on) {
+            leds_setColor(8, 0, 0, 0);
+            leds_apply();
+            on = 0;
+        } else {
+            leds_setColor(8, 100, 0, 0);
+            leds_apply();
+            on = 1;
+        }
+    }
+
+    HAL_Delay(2000);
+
     /* USER CODE END WHILE */
-    uint8_t text[] = "test";
-    printer(text, 4);
-    HAL_Delay(1000);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -172,6 +216,18 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void enter_stop_mode()
+{
+    // TODO Handle power
+    // TODO Disable some interrupts
+    // TODO enter sleep / stop mode
+
+    // STOP MODE
+
+    // TODO Handle power
+    // TODO Enable interrupts
+}
 
 /* USER CODE END 4 */
 

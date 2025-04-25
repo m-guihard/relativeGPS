@@ -5,7 +5,7 @@
 #define LEDS_NB 11
 
 static uint8_t led_data[LEDS_NB][3] = {0};
-static bool leds_busy = false;
+volatile static bool leds_busy = false;
 
 void leds_init()
 {
@@ -39,13 +39,13 @@ void leds_hello()
         HAL_Delay(delay);
     }
     leds_erase();
-    leds_setColor(8, 0, 0, 1);
+    leds_setColor(8, 1, 0, 0);
     leds_apply();
 }
 
 void leds_setColor(int led_id, uint8_t red, uint8_t green, uint8_t blue)
 {
-    if (led_id >= LEDS_NB) return;
+    if (led_id >= LEDS_NB || led_id < 0) return;
 
     led_data[led_id][0] = red;
     led_data[led_id][1] = green;
@@ -71,7 +71,7 @@ HAL_StatusTypeDef leds_apply()
     
     while (leds_busy){};
     HAL_StatusTypeDef ret =  HAL_TIMEx_PWMN_Start_DMA(&htim1, TIM_CHANNEL_3, (uint32_t *)pwmData, (24*LEDS_NB)+60);
-    
+
     if (ret == HAL_OK) leds_busy = true;
 
     return ret;
