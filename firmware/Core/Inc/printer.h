@@ -1,3 +1,3 @@
 #include "usart.h"
 
-void printer(uint8_t* data, int length);
+void printer(USART_TypeDef * USART_LINE, uint8_t* data, int length);

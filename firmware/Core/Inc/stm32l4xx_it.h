@@ -43,6 +43,8 @@ extern "C" {
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
 
+#define ARRAY_LEN(x)            (sizeof(x) / sizeof((x)[0]))
+
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
@@ -57,7 +59,10 @@ void PendSV_Handler(void);
 void SysTick_Handler(void);
 void DMA1_Channel7_IRQHandler(void);
 void USART1_IRQHandler(void);
+void DMA2_Channel7_IRQHandler(void);
 /* USER CODE BEGIN EFP */
+
+extern uint8_t lora_usart_rx_dma_buffer[64];
 
 /* USER CODE END EFP */
 

@@ -121,6 +121,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  printer(USART_DEBUG, "Init done!\r\n", 12);
   while (1)
   {
     uint32_t now = HAL_GetTick();
@@ -139,9 +140,6 @@ int main(void)
     // TODO update state from timeout
     // TODO enter stop mode if required
 
-    uint8_t temp_msg[10] = "AT+BAND?\r\n";
-    HAL_UART_Transmit(&huart1, temp_msg, 10, 10);
-
     static uint32_t last_send = 0;
     if (now - last_send >= 2000) {
         last_send = now;
@@ -158,7 +156,7 @@ int main(void)
         }
     }
 
-    HAL_Delay(2000);
+    HAL_Delay(1000);
 
     /* USER CODE END WHILE */
 

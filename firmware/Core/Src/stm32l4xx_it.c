@@ -22,6 +22,9 @@
 #include "stm32l4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+
+#include "lora.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,10 +45,14 @@
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
 
+uint8_t lora_usart_rx_dma_buffer[64];
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN PFP */
+
+void lora_usart_rx_check(void);
 
 /* USER CODE END PFP */
 
@@ -56,7 +63,6 @@
 
 /* External variables --------------------------------------------------------*/
 extern DMA_HandleTypeDef hdma_tim1_ch3;
-extern UART_HandleTypeDef huart1;
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -220,13 +226,93 @@ void USART1_IRQHandler(void)
 {
   /* USER CODE BEGIN USART1_IRQn 0 */
 
+    /* Check for IDLE line interrupt */
+    if (LL_USART_IsEnabledIT_IDLE(USART1) && LL_USART_IsActiveFlag_IDLE(USART1)) {
+        LL_USART_ClearFlag_IDLE(USART1);        /* Clear IDLE line flag */
+        lora_usart_rx_check();                       /* Check for data to process */
+    }
+
   /* USER CODE END USART1_IRQn 0 */
-  HAL_UART_IRQHandler(&huart1);
   /* USER CODE BEGIN USART1_IRQn 1 */
 
   /* USER CODE END USART1_IRQn 1 */
 }
 
+/**
+  * @brief This function handles DMA2 channel7 global interrupt.
+  */
+void DMA2_Channel7_IRQHandler(void)
+{
+  /* USER CODE BEGIN DMA2_Channel7_IRQn 0 */
+
+    if (LL_DMA_IsEnabledIT_HT(DMA2, LL_DMA_CHANNEL_7) && LL_DMA_IsActiveFlag_HT7(DMA2)) {
+        LL_DMA_ClearFlag_HT7(DMA2);             /* Clear half-transfer complete flag */
+        lora_usart_rx_check();                       /* Check for data to process */
+    }
+
+    /* Check transfer-complete interrupt */
+    if (LL_DMA_IsEnabledIT_TC(DMA2, LL_DMA_CHANNEL_7) && LL_DMA_IsActiveFlag_TC7(DMA2)) {
+        LL_DMA_ClearFlag_TC7(DMA2);             /* Clear transfer complete flag */
+        lora_usart_rx_check();                       /* Check for data to process */
+    }
+
+  /* USER CODE END DMA2_Channel7_IRQn 0 */
+  /* USER CODE BEGIN DMA2_Channel7_IRQn 1 */
+
+  /* USER CODE END DMA2_Channel7_IRQn 1 */
+}
+
 /* USER CODE BEGIN 1 */
+
+void lora_usart_rx_check(void) {
+    static size_t old_pos;
+    size_t pos;
+
+    /* Calculate current position in buffer and check for new data available */
+    pos = ARRAY_LEN(lora_usart_rx_dma_buffer) - LL_DMA_GetDataLength(DMA2, LL_DMA_CHANNEL_7);
+    if (pos != old_pos) {                       /* Check change in received data */
+        if (pos > old_pos) {                    /* Current position is over previous one */
+            /*
+             * Processing is done in "linear" mode.
+             *
+             * Application processing is fast with single data block,
+             * length is simply calculated by subtracting pointers
+             *
+             * [   0   ]
+             * [   1   ] <- old_pos |------------------------------------|
+             * [   2   ]            |                                    |
+             * [   3   ]            | Single block (len = pos - old_pos) |
+             * [   4   ]            |                                    |
+             * [   5   ]            |------------------------------------|
+             * [   6   ] <- pos
+             * [   7   ]
+             * [ N - 1 ]
+             */
+            lora_usart_process_data(&lora_usart_rx_dma_buffer[old_pos], pos - old_pos);
+        } else {
+            /*
+             * Processing is done in "overflow" mode..
+             *
+             * Application must process data twice,
+             * since there are 2 linear memory blocks to handle
+             *
+             * [   0   ]            |---------------------------------|
+             * [   1   ]            | Second block (len = pos)        |
+             * [   2   ]            |---------------------------------|
+             * [   3   ] <- pos
+             * [   4   ] <- old_pos |---------------------------------|
+             * [   5   ]            |                                 |
+             * [   6   ]            | First block (len = N - old_pos) |
+             * [   7   ]            |                                 |
+             * [ N - 1 ]            |---------------------------------|
+             */
+            lora_usart_process_data(&lora_usart_rx_dma_buffer[old_pos], ARRAY_LEN(lora_usart_rx_dma_buffer) - old_pos);
+            if (pos > 0) {
+                lora_usart_process_data(&lora_usart_rx_dma_buffer[0], pos);
+            }
+        }
+        old_pos = pos;                          /* Save current position as old for next transfers */
+    }
+}
 
 /* USER CODE END 1 */

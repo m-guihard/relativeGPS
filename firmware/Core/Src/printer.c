@@ -1,8 +1,13 @@
 #include "printer.h"
 
-void printer(uint8_t* data, int length)
+void printer(USART_TypeDef * USART_LINE, uint8_t* data, int length)
 {
-    HAL_UART_Transmit(&huart2, data, length, 1000);
-    uint8_t carriage_return[2] = "\n\r";
-    HAL_UART_Transmit(&huart2, carriage_return, 2, 1000);
+    uint8_t* d = data;
+
+    for (; length > 0; --length, ++d) {
+        LL_USART_TransmitData8(USART_LINE, *d);
+        while (!LL_USART_IsActiveFlag_TXE(USART_LINE)) {}
+    }
+
+    while (!LL_USART_IsActiveFlag_TC(USART_LINE)) {}
 }
