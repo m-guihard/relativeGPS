@@ -32,6 +32,7 @@
 #include "leds.h"
 #include "printer.h"
 #include "lora.h"
+#include "lsm303.h"
 
 __attribute__((weak)) void _close(void){} 
 __attribute__((weak)) void _lseek(void){} 
@@ -115,13 +116,22 @@ int main(void)
 
   printer(USART_DEBUG, "\r\n************\r\nRELATIVE GPS\r\n************\r\n\r\n", 46);
   
+  // Init LEDs
   leds_init();
   leds_hello();
 
+  // Init LoRa
   if (lora_init(5)) {
       printer(USART_DEBUG, "Lora init success\r\n", 19);
   } else {
       printer(USART_DEBUG, "Lora init fail\r\n", 16);
+  }
+
+  // Init Mag & Acc
+  if (lsm303_init()) {
+    printer(USART_DEBUG, "Mag & Acc init success\r\n", 24);
+  } else {
+    printer(USART_DEBUG, "Mag & Acc init fail\r\n", 21);
   }
 
   /* USER CODE END 2 */

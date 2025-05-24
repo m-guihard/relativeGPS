@@ -1,5 +1,9 @@
-#ifndef __MAG_ACC_H__
-#define __MAG_ACC_H__
+#ifndef __LSM303_H__
+#define __LSM303_H__
+
+#include <stdbool.h>
+
+bool lsm303_init();
 
 #define ACC_ADDRESS                   0x1D
 #define ACC_REG_WHO_AM_I              0x0F    // Should be 0x43
