@@ -1,4 +1,3 @@
-#include <stdbool.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
@@ -14,13 +13,6 @@ static uint8_t msg_buffer[MAX_MSG_LENGTH];
 static bool new_rx_data = false;
 
 #define POSITION_MSG_LENGTH 25
-
-typedef enum {
-    LORA_MSG_NONE,
-    LORA_MSG_OK,
-    LORA_MSG_RESET,
-    LORA_MSG_POSITION,
-} lora_msg_t;
 
 static bool lora_test();
 static bool lora_reset();
@@ -43,7 +35,7 @@ bool lora_init(uint8_t address)
         success &= lora_config_address(address);
         success &= lora_config_networkid(12);
         success &= lora_config_cpin(pwd);
-        success &= config_crfop();
+        success &= lora_config_crfop();
         
         if (success) {
             return true;
@@ -70,13 +62,18 @@ void lora_usart_process_data(const void* data, size_t len) {
 }
 
 lora_msg_t lora_process_msg() {
+    if (!new_rx_data) return LORA_MSG_NONE;
+
     lora_msg_t ret = LORA_MSG_NONE;
+    uint8_t len = 0;
 
     if (!memcmp(msg_buffer, "+OK", 3)) {
         ret = LORA_MSG_OK;
+        len = 5;
 
     } else if (!memcmp(msg_buffer, "+RESET", 6)) {
         ret = LORA_MSG_RESET;
+        len = 5;
 
     } else if (!memcmp(msg_buffer, "+RCV", 4)) {
         if (msg_buffer_idx < POSITION_MSG_LENGTH) {
@@ -85,10 +82,15 @@ lora_msg_t lora_process_msg() {
             // TODO: Process the position msg
 
             ret = LORA_MSG_POSITION;
-            memmove(data, &data[POSITION_MSG_LENGTH], POSITION_MSG_LENGTH);
-            length -= POSITION_MSG_LENGTH;
+            len = POSITION_MSG_LENGTH + 2;
         }
     }
+
+    if (len) {
+        memmove(msg_buffer, &msg_buffer[len], MAX_MSG_LENGTH - len);
+        msg_buffer_idx -= len;
+    }
+    
 
     new_rx_data = false;
     return ret;
@@ -107,7 +109,7 @@ bool lora_wait_for_answer(lora_msg_t answer, uint32_t timeout)
 
 bool lora_test()
 {
-    printer(USART_DEBUG, "AT\r\n", 4);
+    printer(USART_LORA, "AT\r\n", 4);
 
     return lora_wait_for_answer(LORA_MSG_OK, 1000);
 }
@@ -136,7 +138,7 @@ bool lora_config_rf_parameters()
 
 bool lora_config_address(uint8_t address)
 {
-    uint8_t buffer[14] = "AT+ADDRESS=0\r\n"
+    uint8_t buffer[14] = "AT+ADDRESS=0\r\n";
     buffer[11] += address;
     printer(USART_LORA, buffer, 14);
 
@@ -145,7 +147,7 @@ bool lora_config_address(uint8_t address)
 
 bool lora_config_networkid(uint8_t network_id)
 {
-    uint8_t buffer[17] = "AT+NETWORKID=00\r\n"
+    uint8_t buffer[17] = "AT+NETWORKID=00\r\n";
     buffer[13] += network_id / 10;
     buffer[14] += network_id % 10;
     printer(USART_LORA, buffer, 17);
@@ -155,7 +157,7 @@ bool lora_config_networkid(uint8_t network_id)
 
 bool lora_config_cpin(uint8_t* password)
 {
-    uint8_t buffer[18] = "AT+CPIN=00000000\r\n"
+    uint8_t buffer[18] = "AT+CPIN=00000000\r\n";
     for (int i=0; i<8; i++) {
         buffer[8 + i] = password[i];
     }

@@ -1,5 +1,6 @@
 # Build folder
 firmware/build/
+firmware/release/
 *.vscode/
 *.lck
 PCB/relativeGPS-backups/

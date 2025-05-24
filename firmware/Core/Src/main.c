@@ -112,10 +112,17 @@ int main(void)
   MX_FATFS_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
+
+  printer(USART_DEBUG, "\r\n************\r\nRELATIVE GPS\r\n************\r\n\r\n", 46);
   
   leds_init();
   leds_hello();
-  lora_init();
+
+  if (lora_init(5)) {
+      printer(USART_DEBUG, "Lora init success\r\n", 19);
+  } else {
+      printer(USART_DEBUG, "Lora init fail\r\n", 16);
+  }
 
   /* USER CODE END 2 */
 
@@ -140,9 +147,9 @@ int main(void)
     // TODO update state from timeout
     // TODO enter stop mode if required
 
-    static uint32_t last_send = 0;
-    if (now - last_send >= 2000) {
-        last_send = now;
+    static uint32_t last_toggle = 0;
+    if (now - last_toggle >= 2000) {
+        last_toggle = now;
 
         static int on = 0;
         if (on) {
@@ -155,8 +162,6 @@ int main(void)
             on = 1;
         }
     }
-
-    HAL_Delay(1000);
 
     /* USER CODE END WHILE */
 

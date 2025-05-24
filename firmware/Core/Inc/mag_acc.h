@@ -1,3 +1,6 @@
+#ifndef __MAG_ACC_H__
+#define __MAG_ACC_H__
+
 #define ACC_ADDRESS                   0x1D
 #define ACC_REG_WHO_AM_I              0x0F    // Should be 0x43
 #define ACC_REG_CTRL1                 0x20    // Control registers
@@ -61,3 +64,5 @@
 #define MAG_REG_CFG_A_DEF             0x90
 #define MAG_REG_CFG_B_DEF             0x01
 #define MAG_REG_CFG_C_DEF             0x10
+
+#endif

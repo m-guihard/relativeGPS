@@ -30,6 +30,7 @@ OPT = -Og
 #######################################
 # Build path
 BUILD_DIR = build
+RELEASE_DIR = release
 
 ######################################
 # source
@@ -193,7 +194,7 @@ LIBDIR =
 LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
 
 # default action: build all
-all: $(BUILD_DIR)/release/$(TARGET).elf $(BUILD_DIR)/release/$(TARGET).hex $(BUILD_DIR)/release/$(TARGET).bin
+all: $(RELEASE_DIR)/$(TARGET).elf $(RELEASE_DIR)/$(TARGET).hex $(RELEASE_DIR)/$(TARGET).bin
 
 
 #######################################
@@ -216,27 +217,34 @@ $(BUILD_DIR)/%.o: %.s Makefile | $(BUILD_DIR)
 $(BUILD_DIR)/%.o: %.S Makefile | $(BUILD_DIR)
 	$(AS) -c $(CFLAGS) $< -o $@
 
-$(BUILD_DIR)/release/$(TARGET).elf: $(OBJECTS) Makefile | $(BUILD_DIR)/release
+$(RELEASE_DIR)/$(TARGET).elf: $(OBJECTS) Makefile | $(RELEASE_DIR) 
 	$(CC) $(OBJECTS) $(LDFLAGS) -o $@
 	$(SZ) $@
 
-$(BUILD_DIR)/release/%.hex: $(BUILD_DIR)/release/%.elf | $(BUILD_DIR)/release
+$(RELEASE_DIR)/%.hex: $(RELEASE_DIR)/%.elf | $(RELEASE_DIR) 
 	$(HEX) $< $@
 	
-$(BUILD_DIR)/release/%.bin: $(BUILD_DIR)/release/%.elf | $(BUILD_DIR)/release
+$(RELEASE_DIR)/%.bin: $(RELEASE_DIR)/%.elf | $(RELEASE_DIR) 
 	$(BIN) $< $@	
 	
 $(BUILD_DIR):
 	mkdir $@		
 
-$(BUILD_DIR)/release: $(BUILD_DIR)
-	test -d $(BUILD_DIR)\release || mkdir $(BUILD_DIR)\release
+$(RELEASE_DIR):
+	mkdir $@
 
 #######################################
 # clean up
 #######################################
 clean:
 	@$(RM) $(RMFLAGS) $(BUILD_DIR)
+	@$(RM) $(RMFLAGS) $(RELEASE_DIR)
+
+#######################################
+# open ocd
+#######################################
+flash: all
+	openocd -f interface/stlink.cfg -f target/stm32l4x.cfg -c "program $(RELEASE_DIR)/$(TARGET).elf verify reset exit"
   
 #######################################
 # dependencies
