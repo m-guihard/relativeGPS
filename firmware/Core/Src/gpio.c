@@ -44,114 +44,115 @@
 void MX_GPIO_Init(void)
 {
 
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
+  LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOC_CLK_ENABLE();
-  __HAL_RCC_GPIOH_CLK_ENABLE();
-  __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
-  __HAL_RCC_GPIOD_CLK_ENABLE();
+  LL_AHB2_GRP1_EnableClock(LL_AHB2_GRP1_PERIPH_GPIOC);
+  LL_AHB2_GRP1_EnableClock(LL_AHB2_GRP1_PERIPH_GPIOH);
+  LL_AHB2_GRP1_EnableClock(LL_AHB2_GRP1_PERIPH_GPIOA);
+  LL_AHB2_GRP1_EnableClock(LL_AHB2_GRP1_PERIPH_GPIOB);
+  LL_AHB2_GRP1_EnableClock(LL_AHB2_GRP1_PERIPH_GPIOD);
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(TESEO_WKUP_GPIO_Port, TESEO_WKUP_Pin, GPIO_PIN_RESET);
+  /**/
+  LL_GPIO_ResetOutputPin(TESEO_WKUP_GPIO_Port, TESEO_WKUP_Pin);
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, TESEO_NRST_Pin|RYLR_3V3_EN_Pin, GPIO_PIN_SET);
+  /**/
+  LL_GPIO_ResetOutputPin(TESEO_3V3_EN_GPIO_Port, TESEO_3V3_EN_Pin);
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(TESEO_3V3_EN_GPIO_Port, TESEO_3V3_EN_Pin, GPIO_PIN_RESET);
+  /**/
+  LL_GPIO_SetOutputPin(GPIOB, TESEO_NRST_Pin|RYLR_3V3_EN_Pin);
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, RYLR998_NRST_Pin|ACC_MAG_1V8_EN_Pin, GPIO_PIN_SET);
+  /**/
+  LL_GPIO_SetOutputPin(GPIOA, RYLR998_NRST_Pin|ACC_MAG_1V8_EN_Pin);
 
-  /*Configure GPIO pins : PC13 PC14 PC15 PC0
-                           PC1 PC2 PC3 */
-  GPIO_InitStruct.Pin = GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15|GPIO_PIN_0
-                          |GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+  /**/
+  GPIO_InitStruct.Pin = LL_GPIO_PIN_13|LL_GPIO_PIN_14|LL_GPIO_PIN_15|LL_GPIO_PIN_0
+                          |LL_GPIO_PIN_1|LL_GPIO_PIN_2|LL_GPIO_PIN_3;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PH1 PH3 */
-  GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_3;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
+  /**/
+  GPIO_InitStruct.Pin = LL_GPIO_PIN_1|LL_GPIO_PIN_3;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(GPIOH, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PA0 PA1 PA4 PA6
-                           PA7 PA15 */
-  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_4|GPIO_PIN_6
-                          |GPIO_PIN_7|GPIO_PIN_15;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  /**/
+  GPIO_InitStruct.Pin = LL_GPIO_PIN_0|LL_GPIO_PIN_1|LL_GPIO_PIN_4|LL_GPIO_PIN_6
+                          |LL_GPIO_PIN_7|LL_GPIO_PIN_15;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : BUTTON1_Pin */
+  /**/
   GPIO_InitStruct.Pin = BUTTON1_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(BUTTON1_GPIO_Port, &GPIO_InitStruct);
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+  LL_GPIO_Init(BUTTON1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB0 PB10 PB11 PB3
-                           PB4 PB5 PB9 */
-  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_3
-                          |GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_9;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+  /**/
+  GPIO_InitStruct.Pin = LL_GPIO_PIN_0|LL_GPIO_PIN_10|LL_GPIO_PIN_11|LL_GPIO_PIN_3
+                          |LL_GPIO_PIN_4|LL_GPIO_PIN_5|LL_GPIO_PIN_9;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : TESEO_WKUP_Pin */
+  /**/
   GPIO_InitStruct.Pin = TESEO_WKUP_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(TESEO_WKUP_GPIO_Port, &GPIO_InitStruct);
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_DOWN;
+  LL_GPIO_Init(TESEO_WKUP_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : TESEO_NRST_Pin RYLR_3V3_EN_Pin */
+  /**/
   GPIO_InitStruct.Pin = TESEO_NRST_Pin|RYLR_3V3_EN_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : MAG_ACC_DRDY_Pin MAG_ACC_INT1_Pin */
+  /**/
   GPIO_InitStruct.Pin = MAG_ACC_DRDY_Pin|MAG_ACC_INT1_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : MAG_ACC_INT2_Pin */
+  /**/
   GPIO_InitStruct.Pin = MAG_ACC_INT2_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(MAG_ACC_INT2_GPIO_Port, &GPIO_InitStruct);
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(MAG_ACC_INT2_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : TESEO_3V3_EN_Pin */
+  /**/
   GPIO_InitStruct.Pin = TESEO_3V3_EN_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(TESEO_3V3_EN_GPIO_Port, &GPIO_InitStruct);
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(TESEO_3V3_EN_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : SD_DETECT_Pin */
+  /**/
   GPIO_InitStruct.Pin = SD_DETECT_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(SD_DETECT_GPIO_Port, &GPIO_InitStruct);
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(SD_DETECT_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : RYLR998_NRST_Pin ACC_MAG_1V8_EN_Pin */
+  /**/
   GPIO_InitStruct.Pin = RYLR998_NRST_Pin|ACC_MAG_1V8_EN_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : BUTTON2_Pin */
+  /**/
   GPIO_InitStruct.Pin = BUTTON2_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(BUTTON2_GPIO_Port, &GPIO_InitStruct);
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+  LL_GPIO_Init(BUTTON2_GPIO_Port, &GPIO_InitStruct);
 
 }
 

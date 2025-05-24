@@ -32,21 +32,20 @@ void MX_USART1_UART_Init(void)
 
   /* USER CODE BEGIN USART1_Init 0 */
 
+  LL_DMA_SetPeriphAddress(DMA2, LL_DMA_CHANNEL_7, LL_USART_DMA_GetRegAddr(USART1, LL_USART_DMA_REG_DATA_RECEIVE));
+  LL_DMA_SetMemoryAddress(DMA2, LL_DMA_CHANNEL_7, (uint32_t)lora_usart_rx_dma_buffer);
+  LL_DMA_SetDataLength(DMA2, LL_DMA_CHANNEL_7, ARRAY_LEN(lora_usart_rx_dma_buffer));
+
+  LL_DMA_EnableIT_HT(DMA2, LL_DMA_CHANNEL_7);
+  LL_DMA_EnableIT_TC(DMA2, LL_DMA_CHANNEL_7);
+
   /* USER CODE END USART1_Init 0 */
 
   LL_USART_InitTypeDef USART_InitStruct = {0};
 
   LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
-  /** Initializes the peripherals clock
-  */
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1;
-  PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK2;
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  LL_RCC_SetUSARTClockSource(LL_RCC_USART1_CLKSOURCE_PCLK2);
 
   /* Peripheral clock enable */
   LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_USART1);
@@ -56,7 +55,7 @@ void MX_USART1_UART_Init(void)
   PA9   ------> USART1_TX
   PA10   ------> USART1_RX
   */
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_9|LL_GPIO_PIN_10;
+  GPIO_InitStruct.Pin = RYLR998_UART_TX_Pin|RYLR998_UART_RX_Pin;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_VERY_HIGH;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
@@ -65,13 +64,6 @@ void MX_USART1_UART_Init(void)
   LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* USART1 DMA Init */
-
-  LL_DMA_SetPeriphAddress(DMA2, LL_DMA_CHANNEL_7, LL_USART_DMA_GetRegAddr(USART1, LL_USART_DMA_REG_DATA_RECEIVE));
-  LL_DMA_SetMemoryAddress(DMA2, LL_DMA_CHANNEL_7, (uint32_t)lora_usart_rx_dma_buffer);
-  LL_DMA_SetDataLength(DMA2, LL_DMA_CHANNEL_7, ARRAY_LEN(lora_usart_rx_dma_buffer));
-
-  LL_DMA_EnableIT_HT(DMA2, LL_DMA_CHANNEL_7);
-  LL_DMA_EnableIT_TC(DMA2, LL_DMA_CHANNEL_7);
 
   /* USART1_RX Init */
   LL_DMA_SetPeriphRequest(DMA2, LL_DMA_CHANNEL_7, LL_DMA_REQUEST_2);
@@ -129,16 +121,8 @@ void MX_USART2_UART_Init(void)
   LL_USART_InitTypeDef USART_InitStruct = {0};
 
   LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
-  /** Initializes the peripherals clock
-  */
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART2;
-  PeriphClkInit.Usart2ClockSelection = RCC_USART2CLKSOURCE_PCLK1;
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  LL_RCC_SetUSARTClockSource(LL_RCC_USART2_CLKSOURCE_PCLK1);
 
   /* Peripheral clock enable */
   LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_USART2);
@@ -155,6 +139,29 @@ void MX_USART2_UART_Init(void)
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   GPIO_InitStruct.Alternate = LL_GPIO_AF_7;
   LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /* USART2 DMA Init */
+
+  /* USART2_RX Init */
+  LL_DMA_SetPeriphRequest(DMA1, LL_DMA_CHANNEL_6, LL_DMA_REQUEST_2);
+
+  LL_DMA_SetDataTransferDirection(DMA1, LL_DMA_CHANNEL_6, LL_DMA_DIRECTION_PERIPH_TO_MEMORY);
+
+  LL_DMA_SetChannelPriorityLevel(DMA1, LL_DMA_CHANNEL_6, LL_DMA_PRIORITY_LOW);
+
+  LL_DMA_SetMode(DMA1, LL_DMA_CHANNEL_6, LL_DMA_MODE_CIRCULAR);
+
+  LL_DMA_SetPeriphIncMode(DMA1, LL_DMA_CHANNEL_6, LL_DMA_PERIPH_NOINCREMENT);
+
+  LL_DMA_SetMemoryIncMode(DMA1, LL_DMA_CHANNEL_6, LL_DMA_MEMORY_INCREMENT);
+
+  LL_DMA_SetPeriphSize(DMA1, LL_DMA_CHANNEL_6, LL_DMA_PDATAALIGN_BYTE);
+
+  LL_DMA_SetMemorySize(DMA1, LL_DMA_CHANNEL_6, LL_DMA_MDATAALIGN_BYTE);
+
+  /* USART2 interrupt Init */
+  NVIC_SetPriority(USART2_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),2, 0));
+  NVIC_EnableIRQ(USART2_IRQn);
 
   /* USER CODE BEGIN USART2_Init 1 */
 
@@ -186,16 +193,8 @@ void MX_USART3_UART_Init(void)
   LL_USART_InitTypeDef USART_InitStruct = {0};
 
   LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
-  /** Initializes the peripherals clock
-  */
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART3;
-  PeriphClkInit.Usart3ClockSelection = RCC_USART3CLKSOURCE_PCLK1;
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  LL_RCC_SetUSARTClockSource(LL_RCC_USART3_CLKSOURCE_PCLK1);
 
   /* Peripheral clock enable */
   LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_USART3);
@@ -205,7 +204,7 @@ void MX_USART3_UART_Init(void)
   PC4   ------> USART3_TX
   PC5   ------> USART3_RX
   */
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_4|LL_GPIO_PIN_5;
+  GPIO_InitStruct.Pin = TESEO_UART_TX_Pin|TESEO_UART_RX_Pin;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_VERY_HIGH;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;

@@ -30,16 +30,16 @@ extern "C" {
 #include "stm32l4xx_hal.h"
 
 #include "stm32l4xx_ll_dma.h"
-#include "stm32l4xx_ll_usart.h"
+#include "stm32l4xx_ll_crs.h"
 #include "stm32l4xx_ll_rcc.h"
 #include "stm32l4xx_ll_bus.h"
-#include "stm32l4xx_ll_cortex.h"
 #include "stm32l4xx_ll_system.h"
+#include "stm32l4xx_ll_exti.h"
+#include "stm32l4xx_ll_cortex.h"
 #include "stm32l4xx_ll_utils.h"
 #include "stm32l4xx_ll_pwr.h"
+#include "stm32l4xx_ll_usart.h"
 #include "stm32l4xx_ll_gpio.h"
-
-#include "stm32l4xx_ll_exti.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -69,35 +69,39 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define BUTTON1_Pin GPIO_PIN_5
+#define BUTTON1_Pin LL_GPIO_PIN_5
 #define BUTTON1_GPIO_Port GPIOA
-#define TESEO_WKUP_Pin GPIO_PIN_1
+#define TESEO_UART_TX_Pin LL_GPIO_PIN_4
+#define TESEO_UART_TX_GPIO_Port GPIOC
+#define TESEO_UART_RX_Pin LL_GPIO_PIN_5
+#define TESEO_UART_RX_GPIO_Port GPIOC
+#define TESEO_WKUP_Pin LL_GPIO_PIN_1
 #define TESEO_WKUP_GPIO_Port GPIOB
-#define TESEO_NRST_Pin GPIO_PIN_2
+#define TESEO_NRST_Pin LL_GPIO_PIN_2
 #define TESEO_NRST_GPIO_Port GPIOB
-#define RYLR_3V3_EN_Pin GPIO_PIN_12
+#define RYLR_3V3_EN_Pin LL_GPIO_PIN_12
 #define RYLR_3V3_EN_GPIO_Port GPIOB
-#define MAG_ACC_DRDY_Pin GPIO_PIN_13
+#define MAG_ACC_DRDY_Pin LL_GPIO_PIN_13
 #define MAG_ACC_DRDY_GPIO_Port GPIOB
-#define MAG_ACC_INT1_Pin GPIO_PIN_14
+#define MAG_ACC_INT1_Pin LL_GPIO_PIN_14
 #define MAG_ACC_INT1_GPIO_Port GPIOB
-#define LED_DATA_Pin GPIO_PIN_15
+#define LED_DATA_Pin LL_GPIO_PIN_15
 #define LED_DATA_GPIO_Port GPIOB
-#define MAG_ACC_INT2_Pin GPIO_PIN_6
+#define MAG_ACC_INT2_Pin LL_GPIO_PIN_6
 #define MAG_ACC_INT2_GPIO_Port GPIOC
-#define TESEO_3V3_EN_Pin GPIO_PIN_7
+#define TESEO_3V3_EN_Pin LL_GPIO_PIN_7
 #define TESEO_3V3_EN_GPIO_Port GPIOC
-#define SD_DETECT_Pin GPIO_PIN_8
+#define SD_DETECT_Pin LL_GPIO_PIN_8
 #define SD_DETECT_GPIO_Port GPIOA
-#define RYLR998_UART_TX_Pin GPIO_PIN_9
+#define RYLR998_UART_TX_Pin LL_GPIO_PIN_9
 #define RYLR998_UART_TX_GPIO_Port GPIOA
-#define RYLR998_UART_RX_Pin GPIO_PIN_10
+#define RYLR998_UART_RX_Pin LL_GPIO_PIN_10
 #define RYLR998_UART_RX_GPIO_Port GPIOA
-#define RYLR998_NRST_Pin GPIO_PIN_11
+#define RYLR998_NRST_Pin LL_GPIO_PIN_11
 #define RYLR998_NRST_GPIO_Port GPIOA
-#define ACC_MAG_1V8_EN_Pin GPIO_PIN_12
+#define ACC_MAG_1V8_EN_Pin LL_GPIO_PIN_12
 #define ACC_MAG_1V8_EN_GPIO_Port GPIOA
-#define BUTTON2_Pin GPIO_PIN_8
+#define BUTTON2_Pin LL_GPIO_PIN_8
 #define BUTTON2_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
