@@ -62,7 +62,7 @@ void lora_usart_rx_check(void);
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern DMA_HandleTypeDef hdma_tim1_ch3;
+
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -224,9 +224,14 @@ void DMA1_Channel6_IRQHandler(void)
 void DMA1_Channel7_IRQHandler(void)
 {
   /* USER CODE BEGIN DMA1_Channel7_IRQn 0 */
+  
+    if (LL_DMA_IsActiveFlag_TC7(DMA1)) // Check Transfer Complete flag
+    {
+        LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_7);
+        LL_DMA_ClearFlag_TC7(DMA1); // Clear flag
+    }
 
   /* USER CODE END DMA1_Channel7_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_tim1_ch3);
   /* USER CODE BEGIN DMA1_Channel7_IRQn 1 */
 
   /* USER CODE END DMA1_Channel7_IRQn 1 */

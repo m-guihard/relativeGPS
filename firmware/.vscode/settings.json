@@ -3,6 +3,9 @@
         "leds.h": "c",
         "stm32l4xx_it.h": "c",
         "main.h": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "stm32l4xx_ll_tim.h": "c",
+        "stdbool.h": "c",
+        "printer.h": "c"
     }
 }

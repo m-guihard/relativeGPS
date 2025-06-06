@@ -123,6 +123,7 @@ int main(void)
   // Init LEDs
   leds_init();
   leds_hello();
+  printer(USART_DEBUG, "LED hello done\r\n", 16);
 
   // Init LoRa
   if (lora_init(5)) {
@@ -142,7 +143,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  printer(USART_DEBUG, "Init done!\r\n", 12);
+  printer(USART_DEBUG, "Init done! Entering loop\r\n", 26);
   while (1)
   {
     uint32_t now = HAL_GetTick();
