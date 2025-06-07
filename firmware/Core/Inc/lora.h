@@ -13,5 +13,6 @@ typedef enum {
 bool lora_init(uint8_t address);
 lora_msg_t lora_process_msg();
 void lora_usart_process_data(const void* data, size_t len);
+bool lora_reset();
 
 #endif

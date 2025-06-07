@@ -6,6 +6,7 @@
         "stdint.h": "c",
         "stm32l4xx_ll_tim.h": "c",
         "stdbool.h": "c",
-        "printer.h": "c"
+        "printer.h": "c",
+        "usart.h": "c"
     }
 }

@@ -32,7 +32,7 @@ void MX_USART1_UART_Init(void)
 
   /* USER CODE BEGIN USART1_Init 0 */
 
-  LL_DMA_SetPeriphAddress(DMA2, LL_DMA_CHANNEL_7, LL_USART_DMA_GetRegAddr(USART1, LL_USART_DMA_REG_DATA_RECEIVE));
+  LL_DMA_SetPeriphAddress(DMA2, LL_DMA_CHANNEL_7, LL_USART_DMA_GetRegAddr(USART_LORA, LL_USART_DMA_REG_DATA_RECEIVE));
   LL_DMA_SetMemoryAddress(DMA2, LL_DMA_CHANNEL_7, (uint32_t)lora_usart_rx_dma_buffer);
   LL_DMA_SetDataLength(DMA2, LL_DMA_CHANNEL_7, ARRAY_LEN(lora_usart_rx_dma_buffer));
 
@@ -88,8 +88,8 @@ void MX_USART1_UART_Init(void)
 
   /* USER CODE BEGIN USART1_Init 1 */
 
-    LL_USART_EnableDMAReq_RX(USART1);
-    LL_USART_EnableIT_IDLE(USART1);
+    LL_USART_EnableDMAReq_RX(USART_LORA);
+    LL_USART_EnableIT_IDLE(USART_LORA);
 
   /* USER CODE END USART1_Init 1 */
   USART_InitStruct.BaudRate = 115200;

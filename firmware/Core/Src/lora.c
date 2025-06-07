@@ -15,7 +15,6 @@ static bool new_rx_data = false;
 #define POSITION_MSG_LENGTH 25
 
 static bool lora_test();
-static bool lora_reset();
 static bool lora_wait_for_answer(lora_msg_t answer, uint32_t timeout);
 static bool lora_config_band();
 static bool lora_config_rf_parameters();
@@ -46,19 +45,18 @@ bool lora_init(uint8_t address)
 }
 
 void lora_usart_process_data(const void* data, size_t len) {
-
+    printer(USART_DEBUG, data, len);
     // Add bytes to local buffer
     if (msg_buffer_idx < MAX_MSG_LENGTH - len) {
         memcpy(&msg_buffer[msg_buffer_idx], data, len);
         msg_buffer_idx += len;
-        new_rx_data = true;
     } else {
         // Overflow: a too long message was received. Replace it with the current message.
         memset(msg_buffer, 0, MAX_MSG_LENGTH);
         memcpy(msg_buffer, data, len);
         msg_buffer_idx = len;
-        new_rx_data = true;
     }
+    new_rx_data = true;
 }
 
 lora_msg_t lora_process_msg() {

@@ -125,6 +125,10 @@ int main(void)
   leds_hello();
   printer(USART_DEBUG, "LED hello done\r\n", 16);
 
+  // bool success = lora_reset();
+  // if (success) printer(USART_DEBUG, "Reset OK\r\n", 10);
+  // else printer(USART_DEBUG, "Reset NOK\r\n", 11);
+
   // Init LoRa
   if (lora_init(5)) {
       printer(USART_DEBUG, "Lora init success\r\n", 19);
