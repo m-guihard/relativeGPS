@@ -131,22 +131,27 @@ int main(void)
 
   // Init LoRa
   if (lora_init(5)) {
-      printer(USART_DEBUG, "Lora init success\r\n", 19);
+      printer(USART_DEBUG, "[OK] Lora init success\r\n", 24);
   } else {
-      printer(USART_DEBUG, "Lora init fail\r\n", 16);
+      printer(USART_DEBUG, "[ERROR] Lora init fail\r\n", 24);
   }
 
   // Init Mag & Acc
   if (lsm303_init()) {
-    printer(USART_DEBUG, "Mag & Acc init success\r\n", 24);
+    printer(USART_DEBUG, "[OK] Mag & Acc init success\r\n", 29);
   } else {
-    printer(USART_DEBUG, "Mag & Acc init fail\r\n", 21);
+    printer(USART_DEBUG, "[ERROR] Mag & Acc init fail\r\n", 29);
   }
+
+  // TODO: Init GPS
+
+  // TODO: Init SD card
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   printer(USART_DEBUG, "Init done, entering loop!\r\n", 27);
   while (1)
   {
@@ -155,16 +160,16 @@ int main(void)
     // Process LoRa messages (if any)
     lora_process_msg();
 
-    // TODO Read accelerometer + magnetometer
-    // TODO Read GPS
-    // TODO Update LEDs accordingly
-    // Send current pos to Lora (in interrupt)
+    // TODO: Read accelerometer + magnetometer
+    // TODO: Read GPS
+    // TODO: Update LEDs accordingly
+    // TODO: Send current pos to Lora (in interrupt)
 
-    // TODO save positions to SD
+    // TODO: save positions to SD
 
-    // TODO update state from buttons
-    // TODO update state from timeout
-    // TODO enter stop mode if required
+    // TODO: update state from buttons
+    // TODO: update state from timeout
+    // TODO: enter stop mode if required
 
     static uint32_t last_toggle = 0;
     if (now - last_toggle >= 2000) {
@@ -260,14 +265,14 @@ void PeriphCommonClock_Config(void)
 
 void enter_stop_mode()
 {
-    // TODO Handle power
-    // TODO Disable some interrupts
-    // TODO enter sleep / stop mode
+    // TODO: Handle power
+    // TODO: Disable some interrupts
+    // TODO: enter sleep / stop mode
 
     // STOP MODE
 
-    // TODO Handle power
-    // TODO Enable interrupts
+    // TODO: Handle power
+    // TODO: Enable interrupts
 }
 
 /* USER CODE END 4 */
