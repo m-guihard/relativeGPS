@@ -147,7 +147,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  printer(USART_DEBUG, "Init done! Entering loop\r\n", 26);
+  printer(USART_DEBUG, "Init done, entering loop!\r\n", 27);
   while (1)
   {
     uint32_t now = HAL_GetTick();

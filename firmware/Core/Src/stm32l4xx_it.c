@@ -244,7 +244,7 @@ void DMA1_Channel7_IRQHandler(void)
 void USART1_IRQHandler(void)
 {
   /* USER CODE BEGIN USART1_IRQn 0 */
-    printer(USART_DEBUG, "OHO\r\n", 5);
+
     /* Check for IDLE line interrupt */
     if (LL_USART_IsEnabledIT_IDLE(USART1) && LL_USART_IsActiveFlag_IDLE(USART1)) {
         LL_USART_ClearFlag_IDLE(USART1);        /* Clear IDLE line flag */
@@ -276,7 +276,7 @@ void USART2_IRQHandler(void)
 void DMA2_Channel7_IRQHandler(void)
 {
   /* USER CODE BEGIN DMA2_Channel7_IRQn 0 */
-    printer(USART_DEBUG, "AHA\r\n", 5);
+
     if (LL_DMA_IsEnabledIT_HT(DMA2, LL_DMA_CHANNEL_7) && LL_DMA_IsActiveFlag_HT7(DMA2)) {
         LL_DMA_ClearFlag_HT7(DMA2);             /* Clear half-transfer complete flag */
         lora_usart_rx_check();                       /* Check for data to process */

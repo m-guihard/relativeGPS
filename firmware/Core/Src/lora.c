@@ -20,12 +20,12 @@ static bool lora_config_band();
 static bool lora_config_rf_parameters();
 static bool lora_config_address(uint8_t address);
 static bool lora_config_networkid(uint8_t network_id);
-static bool lora_config_cpin(uint8_t* password);
+static bool lora_config_cpin(const char* password);
 static bool lora_config_crfop();
 
 bool lora_init(uint8_t address)
 {
-    const uint8_t* pwd = "A53FB94C";
+    const char pwd[] = "A53FB94C";
     for (int i=0; i< 3; i++) {
         bool success = true;
         success &= lora_test();
@@ -45,7 +45,7 @@ bool lora_init(uint8_t address)
 }
 
 void lora_usart_process_data(const void* data, size_t len) {
-    printer(USART_DEBUG, data, len);
+
     // Add bytes to local buffer
     if (msg_buffer_idx < MAX_MSG_LENGTH - len) {
         memcpy(&msg_buffer[msg_buffer_idx], data, len);
@@ -136,7 +136,7 @@ bool lora_config_rf_parameters()
 
 bool lora_config_address(uint8_t address)
 {
-    uint8_t buffer[14] = "AT+ADDRESS=0\r\n";
+    char buffer[14] = "AT+ADDRESS=0\r\n";
     buffer[11] += address;
     printer(USART_LORA, buffer, 14);
 
@@ -145,7 +145,7 @@ bool lora_config_address(uint8_t address)
 
 bool lora_config_networkid(uint8_t network_id)
 {
-    uint8_t buffer[17] = "AT+NETWORKID=00\r\n";
+    char buffer[17] = "AT+NETWORKID=00\r\n";
     buffer[13] += network_id / 10;
     buffer[14] += network_id % 10;
     printer(USART_LORA, buffer, 17);
@@ -153,9 +153,9 @@ bool lora_config_networkid(uint8_t network_id)
     return lora_wait_for_answer(LORA_MSG_OK, 1000);
 }
 
-bool lora_config_cpin(uint8_t* password)
+bool lora_config_cpin(const char* password)
 {
-    uint8_t buffer[18] = "AT+CPIN=00000000\r\n";
+    char buffer[18] = "AT+CPIN=00000000\r\n";
     for (int i=0; i<8; i++) {
         buffer[8 + i] = password[i];
     }
