@@ -320,7 +320,7 @@ void lora_usart_rx_check(void) {
              * [   7   ]
              * [ N - 1 ]
              */
-            lora_usart_process_data(&lora_usart_rx_dma_buffer[old_pos], pos - old_pos);
+            lora_usart_cb_process_data(&lora_usart_rx_dma_buffer[old_pos], pos - old_pos);
         } else {
             /*
              * Processing is done in "overflow" mode..
@@ -338,9 +338,9 @@ void lora_usart_rx_check(void) {
              * [   7   ]            |                                 |
              * [ N - 1 ]            |---------------------------------|
              */
-            lora_usart_process_data(&lora_usart_rx_dma_buffer[old_pos], ARRAY_LEN(lora_usart_rx_dma_buffer) - old_pos);
+            lora_usart_cb_process_data(&lora_usart_rx_dma_buffer[old_pos], ARRAY_LEN(lora_usart_rx_dma_buffer) - old_pos);
             if (pos > 0) {
-                lora_usart_process_data(&lora_usart_rx_dma_buffer[0], pos);
+                lora_usart_cb_process_data(&lora_usart_rx_dma_buffer[0], pos);
             }
         }
         old_pos = pos;                          /* Save current position as old for next transfers */
