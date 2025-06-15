@@ -54,13 +54,13 @@ void MX_GPIO_Init(void)
   LL_AHB2_GRP1_EnableClock(LL_AHB2_GRP1_PERIPH_GPIOD);
 
   /**/
-  LL_GPIO_ResetOutputPin(TESEO_WKUP_GPIO_Port, TESEO_WKUP_Pin);
+  LL_GPIO_ResetOutputPin(GPIOB, TESEO_WKUP_Pin|RYLR_3V3_EN_Pin);
 
   /**/
   LL_GPIO_ResetOutputPin(TESEO_3V3_EN_GPIO_Port, TESEO_3V3_EN_Pin);
 
   /**/
-  LL_GPIO_SetOutputPin(GPIOB, TESEO_NRST_Pin|RYLR_3V3_EN_Pin);
+  LL_GPIO_SetOutputPin(TESEO_NRST_GPIO_Port, TESEO_NRST_Pin);
 
   /**/
   LL_GPIO_SetOutputPin(GPIOA, RYLR998_NRST_Pin|ACC_MAG_1V8_EN_Pin);

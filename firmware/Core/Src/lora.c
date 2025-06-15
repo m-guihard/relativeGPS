@@ -33,6 +33,9 @@ static bool lora_config_crfop();
 
 bool lora_init(uint8_t address)
 {
+    LL_GPIO_SetOutputPin(RYLR_3V3_EN_GPIO_Port, RYLR_3V3_EN_Pin);
+    LL_GPIO_SetOutputPin(RYLR998_NRST_GPIO_Port, RYLR998_NRST_Pin);
+
     const uint8_t tries = 3;
     const char pwd[] = "A53FB94C";
 
