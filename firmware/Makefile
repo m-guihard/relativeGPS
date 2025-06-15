@@ -87,7 +87,8 @@ MY_CSOURCES = \
 Core/Src/leds.c \
 Core/Src/printer.c \
 Core/Src/rylr.c \
-Core/Src/lsm303.c
+Core/Src/lsm303.c \
+Core/Src/teseo.h
 
 C_SOURCES += $(MY_CSOURCES)
 

@@ -33,6 +33,7 @@
 #include "printer.h"
 #include "rylr.h"
 #include "lsm303.h"
+#include "teseo.h"
 
 __attribute__((weak)) void _close(void){} 
 __attribute__((weak)) void _lseek(void){} 
