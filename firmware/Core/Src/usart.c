@@ -33,8 +33,8 @@ void MX_USART1_UART_Init(void)
   /* USER CODE BEGIN USART1_Init 0 */
 
   LL_DMA_SetPeriphAddress(DMA2, LL_DMA_CHANNEL_7, LL_USART_DMA_GetRegAddr(USART_LORA, LL_USART_DMA_REG_DATA_RECEIVE));
-  LL_DMA_SetMemoryAddress(DMA2, LL_DMA_CHANNEL_7, (uint32_t)lora_usart_rx_dma_buffer);
-  LL_DMA_SetDataLength(DMA2, LL_DMA_CHANNEL_7, ARRAY_LEN(lora_usart_rx_dma_buffer));
+  LL_DMA_SetMemoryAddress(DMA2, LL_DMA_CHANNEL_7, (uint32_t)rylr_usart_rx_dma_buffer);
+  LL_DMA_SetDataLength(DMA2, LL_DMA_CHANNEL_7, ARRAY_LEN(rylr_usart_rx_dma_buffer));
 
   LL_DMA_EnableIT_HT(DMA2, LL_DMA_CHANNEL_7);
   LL_DMA_EnableIT_TC(DMA2, LL_DMA_CHANNEL_7);

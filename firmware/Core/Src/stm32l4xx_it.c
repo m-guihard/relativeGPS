@@ -23,7 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
-#include "lora.h"
+#include "rylr.h"
 #include "printer.h"
 
 /* USER CODE END Includes */
@@ -46,14 +46,14 @@
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
 
-uint8_t lora_usart_rx_dma_buffer[64];
+uint8_t rylr_usart_rx_dma_buffer[64];
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN PFP */
 
-void lora_usart_rx_check(void);
+void rylr_usart_rx_check(void);
 
 /* USER CODE END PFP */
 
@@ -235,7 +235,7 @@ void USART1_IRQHandler(void)
     /* Check for IDLE line interrupt */
     if (LL_USART_IsEnabledIT_IDLE(USART1) && LL_USART_IsActiveFlag_IDLE(USART1)) {
         LL_USART_ClearFlag_IDLE(USART1);        /* Clear IDLE line flag */
-        lora_usart_rx_check();                       /* Check for data to process */
+        rylr_usart_rx_check();                       /* Check for data to process */
     }
 
   /* USER CODE END USART1_IRQn 0 */
@@ -266,13 +266,13 @@ void DMA2_Channel7_IRQHandler(void)
 
     if (LL_DMA_IsEnabledIT_HT(DMA2, LL_DMA_CHANNEL_7) && LL_DMA_IsActiveFlag_HT7(DMA2)) {
         LL_DMA_ClearFlag_HT7(DMA2);             /* Clear half-transfer complete flag */
-        lora_usart_rx_check();                       /* Check for data to process */
+        rylr_usart_rx_check();                       /* Check for data to process */
     }
 
     /* Check transfer-complete interrupt */
     if (LL_DMA_IsEnabledIT_TC(DMA2, LL_DMA_CHANNEL_7) && LL_DMA_IsActiveFlag_TC7(DMA2)) {
         LL_DMA_ClearFlag_TC7(DMA2);             /* Clear transfer complete flag */
-        lora_usart_rx_check();                       /* Check for data to process */
+        rylr_usart_rx_check();                       /* Check for data to process */
     }
 
   /* USER CODE END DMA2_Channel7_IRQn 0 */
@@ -283,12 +283,12 @@ void DMA2_Channel7_IRQHandler(void)
 
 /* USER CODE BEGIN 1 */
 
-void lora_usart_rx_check(void) {
+void rylr_usart_rx_check(void) {
     static size_t old_pos;
     size_t pos;
 
     /* Calculate current position in buffer and check for new data available */
-    pos = ARRAY_LEN(lora_usart_rx_dma_buffer) - LL_DMA_GetDataLength(DMA2, LL_DMA_CHANNEL_7);
+    pos = ARRAY_LEN(rylr_usart_rx_dma_buffer) - LL_DMA_GetDataLength(DMA2, LL_DMA_CHANNEL_7);
     if (pos != old_pos) {                       /* Check change in received data */
         if (pos > old_pos) {                    /* Current position is over previous one */
             /*
@@ -307,7 +307,7 @@ void lora_usart_rx_check(void) {
              * [   7   ]
              * [ N - 1 ]
              */
-            lora_usart_cb_process_data(&lora_usart_rx_dma_buffer[old_pos], pos - old_pos);
+            rylr_usart_cb_process_data(&rylr_usart_rx_dma_buffer[old_pos], pos - old_pos);
         } else {
             /*
              * Processing is done in "overflow" mode..
@@ -325,9 +325,9 @@ void lora_usart_rx_check(void) {
              * [   7   ]            |                                 |
              * [ N - 1 ]            |---------------------------------|
              */
-            lora_usart_cb_process_data(&lora_usart_rx_dma_buffer[old_pos], ARRAY_LEN(lora_usart_rx_dma_buffer) - old_pos);
+            rylr_usart_cb_process_data(&rylr_usart_rx_dma_buffer[old_pos], ARRAY_LEN(rylr_usart_rx_dma_buffer) - old_pos);
             if (pos > 0) {
-                lora_usart_cb_process_data(&lora_usart_rx_dma_buffer[0], pos);
+                rylr_usart_cb_process_data(&rylr_usart_rx_dma_buffer[0], pos);
             }
         }
         old_pos = pos;                          /* Save current position as old for next transfers */

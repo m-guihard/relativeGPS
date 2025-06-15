@@ -63,7 +63,7 @@ void USART2_IRQHandler(void);
 void DMA2_Channel7_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
-extern uint8_t lora_usart_rx_dma_buffer[64];
+extern uint8_t rylr_usart_rx_dma_buffer[64];
 
 /* USER CODE END EFP */
 

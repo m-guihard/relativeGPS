@@ -11,11 +11,11 @@ typedef enum {
     LORA_MSG_POSITION,
     LORA_MSG_INVALID,
     LORA_MSG_ERROR
-} lora_msg_t;
+} rylr_msg_t;
 
-bool lora_init(uint8_t address);
-lora_msg_t lora_process_msg();
-void lora_usart_cb_process_data(const void* data, size_t len);
-bool lora_reset();
+bool rylr_init(uint8_t address);
+rylr_msg_t rylr_process_msg();
+void rylr_usart_cb_process_data(const void* data, size_t len);
+bool rylr_reset();
 
 #endif

@@ -31,7 +31,7 @@
 
 #include "leds.h"
 #include "printer.h"
-#include "lora.h"
+#include "rylr.h"
 #include "lsm303.h"
 
 __attribute__((weak)) void _close(void){} 
@@ -125,12 +125,8 @@ int main(void)
   leds_hello();
   printer(USART_DEBUG, "LED hello done\r\n", 16);
 
-  // bool success = lora_reset();
-  // if (success) printer(USART_DEBUG, "Reset OK\r\n", 10);
-  // else printer(USART_DEBUG, "Reset NOK\r\n", 11);
-
   // Init LoRa
-  if (lora_init(5)) {
+  if (rylr_init(5)) {
       printer(USART_DEBUG, "[OK] Lora init success\r\n", 24);
   } else {
       printer(USART_DEBUG, "[ERROR] Lora init fail\r\n", 24);
@@ -158,7 +154,7 @@ int main(void)
     uint32_t now = HAL_GetTick();
 
     // Process LoRa messages (if any)
-    lora_process_msg();
+    rylr_process_msg();
 
     // TODO: Read accelerometer + magnetometer
     // TODO: Read GPS

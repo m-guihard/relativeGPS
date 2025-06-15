@@ -3,7 +3,7 @@
 #include <string.h>
 
 #include "usart.h"
-#include "lora.h"
+#include "rylr.h"
 #include "printer.h"
 
 // UART RX handling
@@ -22,19 +22,19 @@ static bool new_rx_data = false;
 uint8_t find_next_crlf(uint8_t* buffer, uint8_t max);
 void process_pos_msg(uint8_t* buffer);
 
-static bool lora_test();
-static bool lora_wait_for_answer(lora_msg_t answer, uint32_t timeout);
-static bool lora_config_band();
-static bool lora_config_rf_parameters();
-static bool lora_config_address(uint8_t address);
-static bool lora_config_networkid(uint8_t network_id);
-static bool lora_config_cpin(const char* password);
-static bool lora_config_crfop();
+static bool rylr_test();
+static bool rylr_wait_for_answer(rylr_msg_t answer, uint32_t timeout);
+static bool rylr_config_band();
+static bool rylr_config_rf_parameters();
+static bool rylr_config_address(uint8_t address);
+static bool rylr_config_networkid(uint8_t network_id);
+static bool rylr_config_cpin(const char* password);
+static bool rylr_config_crfop();
 
-bool lora_init(uint8_t address)
+bool rylr_init(uint8_t address)
 {
     LL_GPIO_SetOutputPin(RYLR_3V3_EN_GPIO_Port, RYLR_3V3_EN_Pin);
-    LL_GPIO_SetOutputPin(RYLR998_NRST_GPIO_Port, RYLR998_NRST_Pin);
+    LL_GPIO_SetOutputPin(RYLR_NRST_GPIO_Port, RYLR_NRST_Pin);
 
     const uint8_t tries = 3;
     const char pwd[] = "A53FB94C";
@@ -42,14 +42,14 @@ bool lora_init(uint8_t address)
     bool success = true;
 
     for (int i=0; i<tries; i++) {
-        // success &= lora_wait_ready();
-        success &= lora_test();
-        success &= lora_config_band();
-        success &= lora_config_rf_parameters();
-        success &= lora_config_address(address);
-        success &= lora_config_networkid(12);
-        success &= lora_config_cpin(pwd);
-        success &= lora_config_crfop();
+        // success &= rylr_wait_ready();
+        success &= rylr_test();
+        success &= rylr_config_band();
+        success &= rylr_config_rf_parameters();
+        success &= rylr_config_address(address);
+        success &= rylr_config_networkid(12);
+        success &= rylr_config_cpin(pwd);
+        success &= rylr_config_crfop();
         
         if (success) {
             return true;
@@ -59,7 +59,7 @@ bool lora_init(uint8_t address)
     return false;
 }
 
-void lora_usart_cb_process_data(const void* data, size_t len) {
+void rylr_usart_cb_process_data(const void* data, size_t len) {
 
     // Add bytes to local buffer
     if (msg_buffer_idx < MAX_MSG_LENGTH - len) {
@@ -80,10 +80,10 @@ void lora_usart_cb_process_data(const void* data, size_t len) {
     }
 }
 
-lora_msg_t lora_process_msg() {
+rylr_msg_t rylr_process_msg() {
     if (!new_rx_data) return LORA_MSG_NONE;
 
-    lora_msg_t ret = LORA_MSG_NONE;
+    rylr_msg_t ret = LORA_MSG_NONE;
     uint8_t len = 0;
 
     if (strncmp((char*)msg_buffer, "+OK\r\n", MSG_LEN_OK) == 0) {
@@ -145,66 +145,66 @@ void process_pos_msg(uint8_t* buffer)
     // sscanf(buffer, "");
 }
 
-bool lora_wait_for_answer(lora_msg_t answer, uint32_t timeout)
+bool rylr_wait_for_answer(rylr_msg_t answer, uint32_t timeout)
 {
     const uint32_t start = HAL_GetTick();
-    lora_msg_t msg = LORA_MSG_NONE;
+    rylr_msg_t msg = LORA_MSG_NONE;
     while (msg != answer && (HAL_GetTick() - start) < timeout) {
-        msg = lora_process_msg();
+        msg = rylr_process_msg();
     }
 
     return msg == answer;
 }
 
-bool lora_test()
+bool rylr_test()
 {
     printer(USART_LORA, "AT\r\n", 4);
 
-    return lora_wait_for_answer(LORA_MSG_OK, 1000);
+    return rylr_wait_for_answer(LORA_MSG_OK, 1000);
 }
 
-bool lora_reset()
+bool rylr_reset()
 {
     printer(USART_LORA, "AT+RESET\r\n", 10);
 
-    return lora_wait_for_answer(LORA_MSG_RESET, 1000);
+    return rylr_wait_for_answer(LORA_MSG_RESET, 1000);
 }
 
-bool lora_config_band()
+bool rylr_config_band()
 {
     printer(USART_LORA, "AT+BAND=868000000,M\r\n", 21);
 
-    return lora_wait_for_answer(LORA_MSG_OK, 1000);
+    return rylr_wait_for_answer(LORA_MSG_OK, 1000);
 }
 
-bool lora_config_rf_parameters()
+bool rylr_config_rf_parameters()
 {
     // TODO: determine those parameters
     printer(USART_LORA, "AT+PARAMETER=9,7,1,12\r\n",23);
 
-    return lora_wait_for_answer(LORA_MSG_OK, 1000);
+    return rylr_wait_for_answer(LORA_MSG_OK, 1000);
 }
 
-bool lora_config_address(uint8_t address)
+bool rylr_config_address(uint8_t address)
 {
     char buffer[14] = "AT+ADDRESS=0\r\n";
     buffer[11] += address;
     printer(USART_LORA, buffer, 14);
 
-    return lora_wait_for_answer(LORA_MSG_OK, 1000);
+    return rylr_wait_for_answer(LORA_MSG_OK, 1000);
 }
 
-bool lora_config_networkid(uint8_t network_id)
+bool rylr_config_networkid(uint8_t network_id)
 {
     char buffer[17] = "AT+NETWORKID=00\r\n";
     buffer[13] += network_id / 10;
     buffer[14] += network_id % 10;
     printer(USART_LORA, buffer, 17);
 
-    return lora_wait_for_answer(LORA_MSG_OK, 1000);
+    return rylr_wait_for_answer(LORA_MSG_OK, 1000);
 }
 
-bool lora_config_cpin(const char* password)
+bool rylr_config_cpin(const char* password)
 {
     char buffer[18] = "AT+CPIN=00000000\r\n";
     for (int i=0; i<8; i++) {
@@ -212,13 +212,13 @@ bool lora_config_cpin(const char* password)
     }
     printer(USART_LORA, buffer, 18);
 
-    return lora_wait_for_answer(LORA_MSG_OK, 2000);
+    return rylr_wait_for_answer(LORA_MSG_OK, 2000);
 }
 
-bool lora_config_crfop()
+bool rylr_config_crfop()
 {
     // TOD: determine the output power
     printer(USART_LORA, "AT+CRFOP=11\r\n", 13);
 
-    return lora_wait_for_answer(LORA_MSG_OK, 2000);
+    return rylr_wait_for_answer(LORA_MSG_OK, 2000);
 }

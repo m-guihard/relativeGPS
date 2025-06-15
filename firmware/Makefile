@@ -86,7 +86,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_tim.c
 MY_CSOURCES = \
 Core/Src/leds.c \
 Core/Src/printer.c \
-Core/Src/lora.c \
+Core/Src/rylr.c \
 Core/Src/lsm303.c
 
 C_SOURCES += $(MY_CSOURCES)
