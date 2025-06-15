@@ -63,7 +63,7 @@ void MX_GPIO_Init(void)
   LL_GPIO_SetOutputPin(TESEO_NRST_GPIO_Port, TESEO_NRST_Pin);
 
   /**/
-  LL_GPIO_SetOutputPin(GPIOA, RYLR998_NRST_Pin|ACC_MAG_1V8_EN_Pin);
+  LL_GPIO_SetOutputPin(GPIOA, RYLR_NRST_Pin|ACC_MAG_1V8_EN_Pin);
 
   /**/
   GPIO_InitStruct.Pin = LL_GPIO_PIN_13|LL_GPIO_PIN_14|LL_GPIO_PIN_15|LL_GPIO_PIN_0
@@ -115,16 +115,16 @@ void MX_GPIO_Init(void)
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /**/
-  GPIO_InitStruct.Pin = MAG_ACC_DRDY_Pin|MAG_ACC_INT1_Pin;
+  GPIO_InitStruct.Pin = ACC_MAG_DRDY_Pin|ACC_MAG_INT1_Pin;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /**/
-  GPIO_InitStruct.Pin = MAG_ACC_INT2_Pin;
+  GPIO_InitStruct.Pin = ACC_MAG_INT2_Pin;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  LL_GPIO_Init(MAG_ACC_INT2_GPIO_Port, &GPIO_InitStruct);
+  LL_GPIO_Init(ACC_MAG_INT2_GPIO_Port, &GPIO_InitStruct);
 
   /**/
   GPIO_InitStruct.Pin = TESEO_3V3_EN_Pin;
@@ -141,7 +141,7 @@ void MX_GPIO_Init(void)
   LL_GPIO_Init(SD_DETECT_GPIO_Port, &GPIO_InitStruct);
 
   /**/
-  GPIO_InitStruct.Pin = RYLR998_NRST_Pin|ACC_MAG_1V8_EN_Pin;
+  GPIO_InitStruct.Pin = RYLR_NRST_Pin|ACC_MAG_1V8_EN_Pin;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;

@@ -2,7 +2,7 @@
 
 void printer(USART_TypeDef * USART_LINE, char* data, int length)
 {
-    uint8_t* d = data;
+    uint8_t* d = (uint8_t*) data;
 
     for (; length > 0; --length, ++d) {
         LL_USART_TransmitData8(USART_LINE, *d);
